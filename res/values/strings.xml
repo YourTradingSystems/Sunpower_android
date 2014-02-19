@@ -8,6 +8,11 @@
     <string name="login_screen_err_text">LOGIN / MOT DE PASSE ERRON</string>
     <string name="login_screen_connect_text">CONNEXION</string>
 
+    <!-- ~~~~~~~~~~~ HOME SCREEN ~~~~~~~~~~~ -->
+    <string name="home_screen_mon_table_text">Mon tableau de bord</string>
+    <string name="home_screen_presentation_text">Presentation de l`offre</string>
+    <string name="home_screen_eligibility_text">Éligibilite &amp; rendement</string>
+
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~ -->
     <!-- Etap1 -->
     <string name="environment">ENVIRONMENT</string>

@@ -1,14 +1,16 @@
-package com.example.SunPower;
+package com.example.SunPower.screens.argumentarie;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.SunPower.R;
+
 /**
  * Created by Denis on 19.02.14.
  */
-public final class LoginScreen extends Activity implements View.OnClickListener{
+public final class Login extends Activity implements View.OnClickListener{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public final class LoginScreen extends Activity implements View.OnClickListener{
         switch (v.getId())
         {
             case R.id.btnConnect_LS:
-                startActivity(new Intent(getBaseContext(), HomeScreen.class));
+                startActivity(new Intent(getBaseContext(), Home.class));
                 break;
         }
     }

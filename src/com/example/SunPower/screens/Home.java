@@ -1,14 +1,16 @@
-package com.example.SunPower;
+package com.example.SunPower.screens.argumentarie;
 
 import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.SunPower.R;
+
 /**
  * Created by Denis on 19.02.14.
  */
-public final class HomeScreen extends Activity implements View.OnClickListener {
+public final class Home extends Activity implements View.OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
