@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/llLogin_LS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvLogin_LS"
+                style="@style/TextViewBlackTitle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:text="@string/login_screen_login_text" />
+
+            <EditText
+                android:id="@+id/etLogin_LS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvLogin_LS"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llPass_LS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llLogin_LS"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvPass_LS"
+                style="@style/TextViewBlackTitle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:text="@string/login_screen_pass_text" />
+
+            <EditText
+                android:id="@+id/etPass_LS"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_toRightOf="@id/tvPass_LS" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llError_LS"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llPass_LS"
+            android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivError_LS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBlackSubTitle"
+            android:layout_toRightOf="@id/ivError_LS"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="@string/login_screen_err_text" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnConnect_LS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llError_LS"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_screen_connect_text" />
+
+    </RelativeLayout>
+</RelativeLayout>

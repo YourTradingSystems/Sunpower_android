@@ -2,6 +2,12 @@
 <resources>
     <string name="app_name">SunPower</string>
 
+    <!-- ~~~~~~~~~~~ LOGIN SCREEN ~~~~~~~~~~~ -->
+    <string name="login_screen_login_text">LOGIN :</string>
+    <string name="login_screen_pass_text">MOT DE PASSE :</string>
+    <string name="login_screen_err_text">LOGIN / MOT DE PASSE ERRON</string>
+    <string name="login_screen_connect_text">CONNEXION</string>
+
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~ -->
     <!-- Etap1 -->
     <string name="fragment_check_list_etap1_banner_text">L#39ENVIRONNEMENT</string>
