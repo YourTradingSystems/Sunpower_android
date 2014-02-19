@@ -9,50 +9,56 @@
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap1Banner"
-              android:text="@string/fragment_check_list_etap1_banner_text"
+              android:text="@string/environment"
               android:textSize="@dimen/text_size_banner"
+              android:textColor="@color/white_color"
               android:gravity="center"/>
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap1subtitle"
-              android:text="@string/fragment_check_list_etap1_subtitle_text"
+              android:text="@string/environment_more"
               android:textSize="@dimen/text_size_subtitle"
+              android:textColor="@color/white_color"
               android:gravity="center"/>
-    <LinearLayout android:layout_width="match_parent"
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group_left"
+                android:layout_weight="1"
+                android:orientation="vertical">
+        <RadioButton android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  >
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:orientation="vertical"
-                      android:layout_weight="1">
-
-            <CheckBox android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="Blala"
-                      android:gravity="right"/>
-            <CheckBox android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="Blala"
-                      android:gravity="right"/>
-            <CheckBox android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:text="Blala"
-                      android:gravity="right"/>
-
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="wrap_content"
-                      android:orientation="vertical"
-                      android:layout_weight="1">
-            <CheckBox android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="Blala"/>
-            <CheckBox android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="Blala"/>
-
-        </LinearLayout>
+                  android:id="@+id/radio_btn_environment_more"
+                  android:text="@string/environment_more"/>
+        <RadioButton android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/radio_btn_environment"
+                  android:text="@string/environment"/>
+        <RadioButton android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/radio_btn_coastal_zone"
+                  android:text="@string/coastal_zone"
+                  android:enabled="true"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radio_group_right"
+            android:orientation="vertical">
+        <RadioButton android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/radio_btn_urban"
+                  android:text="@string/urban"/>
+        <RadioButton android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/suburbs"
+                  android:id="@+id/radio_btn_suburbs"/>
+    </RadioGroup>
     </LinearLayout>
 
 </LinearLayout>
