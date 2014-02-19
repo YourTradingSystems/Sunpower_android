@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- //////////////// screens ////////////////////////////////// -->
+    <color name="background_screen_orange">#FEB822</color>
+    <color name="white_color">@android:color/white</color>
+    <!-- ////////////////////////////////////////////////////////// -->
+
+</resources>

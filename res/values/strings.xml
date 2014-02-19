@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SunPower</string>
+
+    <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~ -->
+    <!-- Etap1 -->
+    <string name="fragment_check_list_etap1_banner_text">L#39ENVIRONNEMENT</string>
+    <string name="fragment_check_list_etap1_subtitle_text">Environnement plus particulièrement décrit comme :</string>
+
+</resources>
