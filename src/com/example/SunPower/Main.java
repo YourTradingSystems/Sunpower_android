@@ -6,6 +6,7 @@ import android.os.Bundle;
 public class Main extends Activity {
     /**
      * Called when the activity is first created.
+     * govno
      */
 
     @Override
