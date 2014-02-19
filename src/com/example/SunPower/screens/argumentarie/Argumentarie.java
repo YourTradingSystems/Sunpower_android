@@ -9,11 +9,11 @@ import com.example.SunPower.R;
  * Date: 19.02.14
  * Time: 14:55
  */
-public class Argumentarie extends Activity {
+public final class Argumentarie extends Activity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public final void onCreate(final Bundle _savedInstanceState) {
+        super.onCreate(_savedInstanceState);
         setContentView(R.layout.screen_argumentarie);
     }
 }
