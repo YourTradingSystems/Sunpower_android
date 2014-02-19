@@ -4,8 +4,13 @@
 
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~ -->
     <!-- Etap1 -->
-    <string name="fragment_check_list_etap1_banner_text">L#39ENVIRONNEMENT</string>
-    <string name="fragment_check_list_etap1_subtitle_text">Environnement plus particulièrement décrit comme :</string>
+    <string name="environment">ENVIRONMENT</string>
+    <string name="environment_more">Environment more particularly described as</string>
+    <string name="coastal_zone">Coastal zone</string>
+    <string name="urban">Urban</string>
+    <string name="suburbs">Suburbs</string>
+    <string name="open_space">Open space</string>
+    <string name="open_terrain">Open terrain with occasional obstacles</string>
 
     <!-- Etap5 -->
     <string name="fragment_check_list_etap5_banner_text">VOTRE MAISON</string>
