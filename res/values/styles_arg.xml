@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ArgTitle">
+        <item name="android:textSize">@dimen/ts_arg_title</item>
+        <item name="android:textColor">@color/arg_title</item>
+        <item name="android:layout_marginRight">@dimen/mrl_arg_title</item>
+        <item name="android:layout_marginLeft">@dimen/mrl_arg_title</item>
+    </style>
+
+    <style name="ArgMessage">
+        <item name="android:textSize">@dimen/ts_arg_message</item>
+        <item name="android:textColor">@color/arg_message</item>
+        <item name="android:layout_marginRight">@dimen/mrl_arg_message</item>
+        <item name="android:layout_marginLeft">@dimen/mrl_arg_message</item>
+    </style>
+
+    <style name="ArgIndicator">
+        <item name="android:paddingBottom">@dimen/ptb_indicator</item>
+        <item name="android:paddingTop">@dimen/ptb_indicator</item>
+        <item name="android:background">@color/bg_indicator</item>
+    </style>
+
+</resources>

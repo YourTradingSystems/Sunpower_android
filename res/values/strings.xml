@@ -51,4 +51,14 @@
     <string name="the_area_of_my_roof">The area of ​​my roof:</string>
     <string name="your_address">Your address: </string>
     <string name="the_orientation_of_my_roof">The orientation of my roof:</string>
+
+    <!-- Etap13 -->
+    <string name="fragment_check_list_etap13_banner_text">VOTRE MAISON</string>
+    <string name="fragment_check_list_etap13_subtitle_text">ETAPE #5</string>
+    <string name="fragment_check_list_etap13_question1_text">Toit complet en zone ombragée plus de 4 heures par jour ?</string>
+    <string name="fragment_check_list_etap13_question2_text">Surface du toit exposé au soleil inférieure à 34m2 ?</string>
+    <string name="fragment_check_list_etap13_question3_text">OUI</string>
+    <string name="fragment_check_list_etap13_question4_text">NON</string>
+    <string name="fragment_check_list_etap13_question5_text">NON</string>
+
 </resources>

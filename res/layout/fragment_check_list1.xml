@@ -4,21 +4,21 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/background_screen_orange"
+              android:background="@color/background_screen_checklist"
         >
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap1Banner"
               android:text="@string/environment"
               android:textSize="@dimen/text_size_banner"
-              android:textColor="@color/background_screen_white"
+              android:textColor="@color/background_screen_login"
               android:gravity="center"/>
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap1subtitle"
               android:text="@string/environment_more"
               android:textSize="@dimen/text_size_subtitle"
-              android:textColor="@color/background_screen_white"
+              android:textColor="@color/background_screen_login"
               android:gravity="center"/>
     <LinearLayout
             android:layout_width="match_parent"

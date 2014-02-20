@@ -6,38 +6,55 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="5dp"
-    android:background="@color/button_brown_color">
+    android:paddingBottom="5dp"
+    android:background="@color/background_screen_home">
 
-    <Button
-        android:id="@+id/btnHome_CAb"
-        style="@style/TextViewBlackTitle"
+    <LinearLayout
+        android:id="@+id/llHome_CAb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="40dp"
-        android:text="@string/action_bar_home_text"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="3dp"
+        android:background="@drawable/background_action_bar_button">
 
-    <ImageView
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/custom_radio_button"/>
+
+        <TextView
+            android:id="@+id/btnHome_CAb"
+            style="@style/TextViewBlackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="@string/action_bar_home_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWork_CAb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/btnHome_CAb"
-        android:layout_alignLeft="@id/btnHome_CAb"
-        android:padding="5dp"
-        android:src="@drawable/custom_radio_button"/>
-
-    <Button
-        android:id="@+id/btnFaire_CAb"
-        style="@style/TextViewBlackTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="40dp"
+        android:orientation="horizontal"
         android:layout_alignParentRight="true"
-        android:text="@string/action_bar_faire_text"/>
+        android:padding="3dp"
+        android:background="@drawable/background_action_bar_button"
+        android:gravity="center">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/btnFaire_CAb"
-        android:layout_alignLeft="@id/btnFaire_CAb"
-        android:padding="5dp"
-        android:src="@drawable/custom_radio_button"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/custom_radio_button"/>
+
+        <TextView
+            android:id="@+id/btnWork_CAb"
+            style="@style/TextViewBlackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="@string/action_bar_work_text"/>
+    </LinearLayout>
 </RelativeLayout>
