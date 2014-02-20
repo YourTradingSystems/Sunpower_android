@@ -7,7 +7,7 @@
     android:paddingRight="10dp"
     android:paddingTop="5dp"
     android:paddingBottom="5dp"
-    android:background="@color/background_screen_home">
+    android:background="@color/bg_screen_home">
 
     <LinearLayout
         android:id="@+id/llHome_CAb"
@@ -27,8 +27,6 @@
         <TextView
             android:id="@+id/btnHome_CAb"
             style="@style/TextViewBlackTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:paddingRight="10dp"
             android:text="@string/action_bar_home_text"/>
     </LinearLayout>
@@ -52,8 +50,6 @@
         <TextView
             android:id="@+id/btnWork_CAb"
             style="@style/TextViewBlackTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:paddingRight="10dp"
             android:text="@string/action_bar_work_text"/>
     </LinearLayout>
