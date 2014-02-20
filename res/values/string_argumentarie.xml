@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+     Used in argumentarie ViewPager
+     entries count determines number of pages in argumentarie screen
+     arrays must be equals in size
+     -->
+
+    <string-array name="arg_titles">
+        <item>Sunpower, l’un des leaders du solaire dans le monde</item>
+        <item>Une implantation solide en France</item>
+        <item>Des r?f?rences mondiales</item>
+        <item>Une qualit? haut de gamme avec notre technologie brevet?e</item>
+        <item>Une int?gration harmonieuse sur votre toit gr?ce ? un design ?pur?</item>
+        <item>Sunpower innove et cr?e le revenu solaire avec Sunpower Prime</item>
+        <item>Un loyer qui peut aller jusqu’? 750 euros par an</item>
+        <item>Du financement des panneaux aux d?marches administratives, tout est pris en charge</item>
+        <item>Comment ?a marche ?</item>
+        <item>Une solution de plus en plus rentable
+            avec le temps</item>
+        <item>Sunpower s’engage</item>
+        <item>Une installation simple et rapide</item>
+    </string-array>
+
+    <string-array name="arg_messages">
+        <item>De la start-up de la Silicon Valley en 1985 ? la filiale du groupe Total en 2011</item>
+        <item>Sunpower b?n?ficie d’une pr?sence commerciale ? Lyon et ? Paris, de deux usines de production en France (Toulouse et De Vernejoul) et de partenaires qualifi?s dans toute la France.</item>
+        <item>Sunpower ?quipe HP, Apple et plus de cent mille maisons individuelles.</item>
+        <item>La technologie Maxeon qui assure fiabilit? et longue dur?e de vie.</item>
+        <item></item>
+        <item>D?couvrez le revenu solaire garanti, sans aucun investissement. Sunpower Prime loue votre toit pour y installer ses panneaux solaires et vous recevez un loyer pour cela.</item>
+        <item>Selon la disposition, l’inclinaison et la surface de votre to?t.</item>
+        <item>Nous finan?ons les panneaux et nous prenons en charge :
+            Leur installation
+            Leur maintenance
+            Les autorisations administratives
+            Les garanties
+            et EDF rach?te l’?nergie produite. Vous touchez une partie de l’argent.</item>
+        <item>Les panneaux sont raccord?s au r?seau ?lectrique public
+            Les assurances</item>
+        <item>• + 12 ans : Vous pouvez racheter les panneaux solaires
+            et toucher l’int?gralit? des revenus EDF.
+            • + 20 ans : les panneaux vous reviennent automatiquement.
+            • Si vous revendez votre bien, le contrat bascule sur le nouveau propri?taire.</item>
+        <item>• Avec un contrat clair.
+            • En vous accompagnant tout au long de votre projet.</item>
+        <item>1   Un technicien vient expertiser votre toît
+            pour calculer le montant exact de votre revenu solaire
+            2   Les panneaux sont fabriqués sur-mesure puis posés sur votre toiture
+            3   Vous recevez votre revenu solaire dès la première année</item>
+    </string-array>
+
+</resources>
