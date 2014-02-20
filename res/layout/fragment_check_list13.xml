@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvCheckListEtap13Banner"
+              android:text="@string/fragment_check_list_etap13_banner_text"
+              android:layout_alignParentTop="true"
+              style="@style/CheckListEtapBanner"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvCheckListEtap13subtitle"
+              android:text="@string/fragment_check_list_etap13_subtitle_text"
+              android:layout_below="@id/tvCheckListEtap13Banner"
+              style="@style/CheckListEtapSubtitle"/>
+<RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/tvCheckListEtap13subtitle">
+             <TextView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/tvCheckListEtap13Question1"
+                       android:layout_alignParentLeft="true"
+                       android:layout_toLeftOf="@+id/etCheckListEtap13Question1"
+                       android:text="@string/fragment_check_list_etap13_question1_text"
+                       android:layout_alignBottom="@+id/etCheckListEtap13Question1"
+                       android:layout_alignTop="@+id/etCheckListEtap13Question1"
+                       android:gravity="center"
+                       style="@style/CheckListEtapStandard"/>
+             <EditText android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/etCheckListEtap13Question1"
+                       android:text="enter text ..."
+                       android:layout_alignParentRight="true"
+                       android:inputType="text"
+                       android:textSize="@dimen/text_size_standard"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question2Button"
+                    android:text="@string/fragment_check_list_etap13_question2_text"
+                    android:id="@+id/tvCheckListEtap13Question2"
+                    android:layout_below="@+id/etCheckListEtap13Question1"
+                    android:layout_alignBottom="@+id/tvCheckListEtap13Question2Button"
+                    android:layout_alignTop="@+id/tvCheckListEtap13Question2Button"
+                    android:gravity="center"
+                    style="@style/CheckListEtapStandard"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="..."
+                    android:id="@+id/tvCheckListEtap13Question2Button"
+                    android:layout_below="@+id/etCheckListEtap13Question1"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question3Button"
+                    android:text="@string/fragment_check_list_etap13_question3_text"
+                    android:id="@+id/tvCheckListEtap13Question3"
+                    android:layout_below="@+id/tvCheckListEtap13Question2"
+                    android:layout_alignBottom="@+id/tvCheckListEtap13Question3Button"
+                    android:layout_alignTop="@+id/tvCheckListEtap13Question3Button"
+                    android:gravity="center"
+                    style="@style/CheckListEtapStandard"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="..."
+                    android:id="@+id/tvCheckListEtap13Question3Button"
+                    android:layout_below="@+id/tvCheckListEtap13Question2Button"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question4Button"
+                    android:text="@string/fragment_check_list_etap13_question4_text"
+                    android:id="@+id/tvCheckListEtap13Question4"
+                    android:layout_below="@+id/tvCheckListEtap13Question3"
+                    android:layout_alignBottom="@+id/tvCheckListEtap13Question4Button"
+                    android:layout_alignTop="@+id/tvCheckListEtap13Question4Button"
+                    android:gravity="center"
+                    style="@style/CheckListEtapStandard"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="..."
+                    android:id="@+id/tvCheckListEtap13Question4Button"
+                    android:layout_below="@+id/tvCheckListEtap13Question3Button"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question5Button"
+                    android:text="@string/fragment_check_list_etap13_question5_text"
+                    android:id="@+id/tvCheckListEtap13Question5"
+                    android:layout_below="@+id/tvCheckListEtap13Question4"
+                    android:layout_alignBottom="@+id/tvCheckListEtap13Question5Button"
+                    android:layout_alignTop="@+id/tvCheckListEtap13Question5Button"
+                    android:gravity="center"
+                    style="@style/CheckListEtapStandard"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="..."
+                    android:id="@+id/tvCheckListEtap13Question5Button"
+                    android:layout_below="@+id/tvCheckListEtap13Question4Button"/>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

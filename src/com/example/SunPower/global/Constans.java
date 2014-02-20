@@ -7,4 +7,5 @@ package com.example.SunPower.global;
  * Time: 14:56
  */
 public abstract class Constans {
+    public static final int RESULT_LOAD_IMAGE = 1;
 }

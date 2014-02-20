@@ -9,13 +9,13 @@
     <string name="login_screen_connect_text">CONNEXION</string>
 
     <!-- ~~~~~~~~~~~ HOME SCREEN ~~~~~~~~~~~ -->
-    <string name="home_screen_mon_table_text">Mon tableau de bord</string>
+    <string name="home_screen_my_table_text">Mon tableau de bord</string>
     <string name="home_screen_presentation_text">Presentation de l`offre</string>
     <string name="home_screen_eligibility_text">Éligibilite &amp; rendement</string>
 
     <!-- ~~~~~~~~~~~ ACTION BAR ~~~~~~~~~~~~ -->
     <string name="action_bar_home_text">HOME</string>
-    <string name="action_bar_faire_text">FAIRE DÉCOUVRIR</string>
+    <string name="action_bar_work_text">FAIRE DÉCOUVRIR</string>
 
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~~ -->
     <!-- Etap0 -->
@@ -43,4 +43,14 @@
     <string name="fragment_check_list_etap5_question2_text">Surface du toit exposé au soleil inférieure à 34m2 ?</string>
     <string name="fragment_check_list_etap5_question_var1">OUI</string>
     <string name="fragment_check_list_etap5_question_var2">NON</string>
+
+    <!-- Etap13 -->
+    <string name="fragment_check_list_etap13_banner_text">VOTRE MAISON</string>
+    <string name="fragment_check_list_etap13_subtitle_text">ETAPE #5</string>
+    <string name="fragment_check_list_etap13_question1_text">Toit complet en zone ombragée plus de 4 heures par jour ?</string>
+    <string name="fragment_check_list_etap13_question2_text">Surface du toit exposé au soleil inférieure à 34m2 ?</string>
+    <string name="fragment_check_list_etap13_question3_text">OUI</string>
+    <string name="fragment_check_list_etap13_question4_text">NON</string>
+    <string name="fragment_check_list_etap13_question5_text">NON</string>
+
 </resources>

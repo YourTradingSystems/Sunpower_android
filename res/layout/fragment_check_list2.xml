@@ -4,14 +4,14 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/background_screen_orange"
+              android:background="@color/background_screen_checklist"
         >
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap2Banner"
               android:text="@string/environment"
               android:textSize="@dimen/text_size_banner"
-              android:textColor="@color/background_screen_white"
+              android:textColor="@color/background_screen_login"
               android:gravity="center"/>
 
     <TextView android:layout_width="match_parent"
@@ -19,7 +19,7 @@
               android:id="@+id/tvCheckListEtap2subtitle"
               android:text="@string/distance_to_sea"
               android:textSize="@dimen/text_size_subtitle"
-              android:textColor="@color/background_screen_white"
+              android:textColor="@color/background_screen_login"
               android:gravity="center"/>
 
         <RadioGroup

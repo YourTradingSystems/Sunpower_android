@@ -28,7 +28,12 @@
         </activity>
 
         <activity android:name=".screens.argumentarie.Argumentarie"
-                  android:screenOrientation="landscape">
+                  android:screenOrientation="landscape"
+                  android:theme="@style/ThemeDarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.ANSWER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         
     </application>

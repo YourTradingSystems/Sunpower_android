@@ -8,13 +8,13 @@
               android:id="@+id/tvCheckListEtap5Banner"
               android:text="@string/fragment_check_list_etap5_banner_text"
               android:layout_alignParentTop="true"
-              style="@style/tvCheckListEtapBanner"/>
+              style="@style/CheckListEtapBanner"/>
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap5subtitle"
               android:text="@string/fragment_check_list_etap5_subtitle_text"
               android:layout_below="@id/tvCheckListEtap5Banner"
-              style="@style/tvCheckListEtapSubtitle"/>
+              style="@style/CheckListEtapSubtitle"/>
 
     <RelativeLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
                         android:text="@string/fragment_check_list_etap5_question1_text"
                         android:id="@+id/tvCheckListEtap5Text1"
                         android:layout_alignParentTop="true"
-                        style="@style/tvCheckListEtapStandard"/>
+                        style="@style/CheckListEtapStandard"/>
 
               <RadioGroup android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                   android:text="@string/fragment_check_list_etap5_question2_text"
                   android:id="@+id/tvCheckListEtap5Text2"
                   android:layout_below="@id/tvCheckListEtap5RadioGroup1"
-                  style="@style/tvCheckListEtapStandard"/>
+                  style="@style/CheckListEtapStandard"/>
 
               <RadioGroup android:layout_width="match_parent"
                     android:layout_height="wrap_content"
