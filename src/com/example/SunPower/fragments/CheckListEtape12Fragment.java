@@ -23,6 +23,13 @@ public final class CheckListEtape12Fragment extends Fragment {
     private TextView tvValueIncome;
 
 
+    private CheckListEtape12Fragment(){}
+
+    public final CheckListEtape12Fragment create(){
+        return new CheckListEtape12Fragment();
+    }
+
+
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list12, _container, false);

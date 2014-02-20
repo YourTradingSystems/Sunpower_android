@@ -23,6 +23,12 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
 
     private int checkedRadioButton = -1;
 
+    private CheckListEtape11Fragment(){}
+
+    public final CheckListEtape11Fragment create(){
+        return new CheckListEtape11Fragment();
+    }
+
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {

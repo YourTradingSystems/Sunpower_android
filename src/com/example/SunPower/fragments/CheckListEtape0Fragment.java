@@ -19,6 +19,12 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
     private Button btnLeadChange;
     private Button btnNewLead;
 
+    private CheckListEtape0Fragment(){}
+
+    public final CheckListEtape0Fragment create(){
+        return new CheckListEtape0Fragment();
+    }
+
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list0, _container, false);

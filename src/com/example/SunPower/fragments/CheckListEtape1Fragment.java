@@ -17,6 +17,12 @@ public final class CheckListEtape1Fragment extends Fragment implements OnChecked
     private RadioGroup radioGroupLeft;
     private RadioGroup radioGroupRight;
 
+    private CheckListEtape1Fragment(){}
+
+    public final CheckListEtape1Fragment create(){
+        return new CheckListEtape1Fragment();
+    }
+
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list1, _container, false);

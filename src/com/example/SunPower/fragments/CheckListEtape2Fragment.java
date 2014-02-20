@@ -14,6 +14,12 @@ import com.example.SunPower.R;
 public final class CheckListEtape2Fragment extends Fragment implements RadioGroup.OnCheckedChangeListener {
     private RadioGroup radioGroup;
 
+    private CheckListEtape2Fragment(){}
+
+    public final CheckListEtape2Fragment create(){
+        return new CheckListEtape2Fragment();
+    }
+
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list2, _container, false);
