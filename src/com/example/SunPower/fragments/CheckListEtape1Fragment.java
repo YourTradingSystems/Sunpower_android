@@ -37,7 +37,7 @@ public final class CheckListEtape1Fragment extends Fragment implements OnChecked
     }
 
     public final void findView(final View view){
-        radioGroupLeft = (RadioGroup)view.findViewById(R.id.radio_group_left);
+        radioGroupLeft = (RadioGroup)view.findViewById(R.id.rg);
         radioGroupRight = (RadioGroup)view.findViewById(R.id.radio_group_right);
     }
 
