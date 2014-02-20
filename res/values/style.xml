@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="tvCheckListEtapBanner">
+    <style name="CheckListEtapBanner">
         <item name="android:textSize">@dimen/text_size_banner</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="tvCheckListEtapSubtitle">
+    <style name="CheckListEtapSubtitle">
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginBottom">@dimen/text_size_subtitle_bottom_margin</item>
     </style>
 
-    <style name="tvCheckListEtapStandard">
+    <style name="CheckListEtapStandard">
         <item name="android:textSize">@dimen/text_size_standard</item>
         <item name="android:gravity">center</item>
     </style>
