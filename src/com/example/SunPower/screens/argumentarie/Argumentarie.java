@@ -16,7 +16,7 @@ import com.example.SunPower.screens.Home;
  * Date: 19.02.14
  * Time: 14:55
  */
-public final class Argumentarie extends Activity implements View.OnClickListener{
+public final class Argumentarie extends Activity implements View.OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,8 +28,7 @@ public final class Argumentarie extends Activity implements View.OnClickListener
     /**
      *  set the action bar options and custom layout
      */
-    public final void initActionBar()
-    {
+    public final void initActionBar() {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setDisplayShowTitleEnabled(false);

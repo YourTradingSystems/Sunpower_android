@@ -10,7 +10,7 @@ import com.example.SunPower.R;
 /**
  * Created by Denis on 19.02.14.
  */
-public final class Login extends Activity implements View.OnClickListener{
+public final class Login extends Activity implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -8,7 +8,7 @@ import com.example.SunPower.R;
 /**
  * Created by Denis on 20.02.14.
  */
-public final class Eligibility extends Activity{
+public final class Eligibility extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
