@@ -43,4 +43,12 @@
     <string name="fragment_check_list_etap5_question2_text">Surface du toit exposé au soleil inférieure à 34m2 ?</string>
     <string name="fragment_check_list_etap5_question_var1">OUI</string>
     <string name="fragment_check_list_etap5_question_var2">NON</string>
+
+    <!-- Etap12  -->
+    <string name="your_income">YOUR INCOME</string>
+    <string name="estimated_annual_income">Estimated annual income with solar supply Solarprime</string>
+    <string name="estimated_annual_production">Estimated annual production</string>
+    <string name="the_area_of_my_roof">The area of ​​my roof:</string>
+    <string name="your_address">Your address: </string>
+    <string name="the_orientation_of_my_roof">The orientation of my roof:</string>
 </resources>
