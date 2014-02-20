@@ -35,8 +35,8 @@ public final class Home extends Activity implements View.OnClickListener {
         actionBar.setDisplayShowCustomEnabled(true);
         LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View customView = inflator.inflate(R.layout.custom_action_bar, null);
-        customView.findViewById(R.id.btnHome_CAb).setOnClickListener(this);
-        customView.findViewById(R.id.btnFaire_CAb).setOnClickListener(this);
+        customView.findViewById(R.id.btnHome_CAb).setVisibility(View.GONE);
+        customView.findViewById(R.id.btnWork_CAb).setOnClickListener(this);
         actionBar.setCustomView(customView);
     }
 
@@ -44,11 +44,7 @@ public final class Home extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.btnHome_CAb:
-                startActivity(new Intent(getBaseContext(), Home.class));
-                break;
-
-            case R.id.btnFaire_CAb:
+            case R.id.btnWork_CAb:
                 startActivity(new Intent(getBaseContext(), Argumentarie.class));
                 break;
         }

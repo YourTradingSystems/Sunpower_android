@@ -2,21 +2,21 @@
 <resources>
 
     <!-- //////////////// screens ////////////////////////////////// -->
-    <color name="background_screen_orange">#FEB822</color>
-    <color name="background_screen_black">#24201D</color>
-    <color name="background_screen_white">#FFFFFF</color>
-    <color name="background_screen_yellow">#FEB822</color>
+    <color name="background_screen_checklist">#FEB822</color>
+    <color name="background_screen_home">#24201D</color>
+    <color name="background_screen_login">#FFFFFF</color>
+    <color name="background_screen_login_left_panel">#FEB822</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
     <!-- /////////////////// text ////////////////////////////////// -->
-    <color name="text_black_color">#000000</color>
-    <color name="text_white_color">#FFFFFF</color>
-    <color name="text_red_color">#FC0001</color>
+    <color name="text_title">#000000</color>
+    <color name="text_home_button">#FFFFFF</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
     <!-- //////////////// buttons ////////////////////////////////// -->
-    <color name="button_yellow_color">#FEB822</color>
-    <color name="button_green_color">#90931E</color>
-    <color name="button_brown_color">#342F29</color>
+    <color name="button_home_eligibility">#FEB822</color>
+    <color name="button_home_argument">#90931E</color>
+    <color name="button_home_administrator">#342F29</color>
+    <color name="button_action_bar">#E4E4E4</color>
     <!-- ////////////////////////////////////////////////////////// -->
 </resources>

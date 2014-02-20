@@ -2,18 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_screen_black">
+    android:background="@color/background_screen_home">
 
     <Button
-        android:id="@+id/btnGestionnaire_HS"
+        android:id="@+id/btnAdministrator_HS"
         style="@style/ButtonBrown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="@string/home_screen_mon_table_text" />
+        android:text="@string/home_screen_my_table_text" />
 
     <Button
-        android:id="@+id/btnCheckList_HS"
+        android:id="@+id/btnEligibility_HS"
         style="@style/ButtonYellow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         style="@style/ButtonGreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/btnCheckList_HS"
+        android:layout_above="@id/btnEligibility_HS"
         android:text="@string/home_screen_presentation_text" />
 
     <CheckBox
@@ -42,7 +42,7 @@
         android:id="@+id/cbCheckList_HS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/btnCheckList_HS"
+        android:layout_alignBottom="@id/btnEligibility_HS"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp"
         android:button="@drawable/custom_home_check_box_yellow"
@@ -52,7 +52,7 @@
         android:id="@+id/cbGestionnaire_HS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/btnGestionnaire_HS"
+        android:layout_alignTop="@id/btnAdministrator_HS"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:button="@drawable/custom_home_check_box_brown"
