@@ -16,6 +16,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="3dp"
+        android:clickable="true"
         android:background="@drawable/background_action_bar_button">
 
         <ImageView
@@ -38,6 +39,7 @@
         android:orientation="horizontal"
         android:layout_alignParentRight="true"
         android:padding="3dp"
+        android:clickable="true"
         android:background="@drawable/background_action_bar_button"
         android:gravity="center">
 

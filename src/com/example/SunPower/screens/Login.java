@@ -21,15 +21,19 @@ public final class Login extends Activity implements View.OnClickListener {
         setContentView(R.layout.screen_login);
 
         findViews();
-        btnConnect_SL.setOnClickListener(this);
+        setListeners();
     }
 
     private final void findViews() {
         btnConnect_SL = (Button)findViewById(R.id.btnConnect_SL);
     }
 
+    private final void setListeners() {
+        btnConnect_SL.setOnClickListener(this);
+    }
+
     @Override
-    public void onClick(View _v) {
+    public final void onClick(View _v) {
         switch (_v.getId()) {
             case R.id.btnConnect_SL:
                 startActivity(new Intent(getBaseContext(), Home.class));

@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.example.SunPower.R;
 
 import static android.view.View.OnClickListener;
-import static com.example.SunPower.global.Constans.RESULT_LOAD_IMAGE;
+import static com.example.SunPower.global.Constans.*;
 
 public final class CheckListEtape13Fragment extends Fragment implements OnClickListener {
 
