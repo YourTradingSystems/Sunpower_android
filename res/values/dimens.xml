@@ -6,7 +6,7 @@
     p(r, l...) - padding (right, left...)
     -->
 
-    <dimen name="text_size_banner">25sp</dimen>
+    <dimen name="ts_banner">25sp</dimen>
     <dimen name="text_size_subtitle">18sp</dimen>
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
@@ -27,8 +27,6 @@
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="width_button_checklist">320dp</dimen>
-    <dimen name="text_size_banner">25sp</dimen>
-    <dimen name="text_size_subtitle">18sp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
