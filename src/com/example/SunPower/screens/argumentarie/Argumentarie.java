@@ -35,9 +35,9 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
         super.onCreate(_savedInstanceState);
         setContentView(R.layout.screen_login);
 
-        //findViews();
+        findViews();
         initActionBar();
-        //ViewWorker.initPager(this, vpPager_SA, cpiIndicatior_SA);
+        ViewWorker.initPager(this, vpPager_SA, cpiIndicatior_SA);
     }
 
     private final void findViews() {

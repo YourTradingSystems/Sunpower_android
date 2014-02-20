@@ -27,7 +27,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:background="@drawable/background_action_bar_button"
-        android:text="@string/action_bar_work_text"
+        android:text="@string/action_bar_faire_text"
         />
 
 </RelativeLayout>
