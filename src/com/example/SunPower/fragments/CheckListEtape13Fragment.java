@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.example.SunPower.R;
 
 import static android.view.View.OnClickListener;
-import static com.example.SunPower.global.Constans.*;
+import static com.example.SunPower.global.Constants.*;
 
 public final class CheckListEtape13Fragment extends Fragment implements OnClickListener {
 
