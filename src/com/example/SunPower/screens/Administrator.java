@@ -9,6 +9,7 @@ import com.example.SunPower.R;
  * Created by Denis on 20.02.14.
  */
 public final class Administrator extends Activity {
+
     @Override
     public void onCreate(Bundle _savedInstanceState) {
         super.onCreate(_savedInstanceState);

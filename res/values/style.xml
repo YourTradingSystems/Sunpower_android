@@ -2,7 +2,7 @@
 <resources>
     <style name="ThemeDarkActionBar" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:windowFullscreen">true</item>
-        </style>
+    </style>
 
     <style name="ThemeNoTitleBar" parent="android:Theme.Black.NoTitleBar.Fullscreen"/>
 
@@ -23,29 +23,51 @@
     </style>
 
     <style name="TextViewBlackTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_banner</item>
         <item name="android:textColor">@color/text_title</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextViewBlackSubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:textColor">@color/text_title</item>
     </style>
-    
-    <style name="ButtonYellow">
-        <item name="android:background">@color/button_home_eligibility</item>
+
+    <style name="EditTextLogin">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EditTextPass">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="ButtonHomeCheckList">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/button_home_check_list</item>
         <item name="android:textColor">@color/text_home_button</item>
         <item name="android:textSize">@dimen/text_size_banner</item>
     </style>
 
-    <style name="ButtonGreen">
+    <style name="ButtonHomeArgumentarie">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_home_argument</item>
         <item name="android:textColor">@color/text_home_button</item>
         <item name="android:textSize">@dimen/text_size_banner</item>
     </style>
 
-    <style name="ButtonBrown">
+    <style name="ButtonHomeAdministrator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_home_administrator</item>
         <item name="android:textColor">@color/text_home_button</item>
         <item name="android:textSize">@dimen/text_size_banner</item>

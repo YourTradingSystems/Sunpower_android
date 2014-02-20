@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,9 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
     private RelativeLayout rlRoot_SA;
     private ViewPager vpPager_SA;
     private CirclePageIndicator cpiIndicatior_SA;
+    private ActionBar ab_SA;
+    private Button btnHome_CAb;
+    private Button btnWork_CAb;
 
     @Override
     public final void onCreate(final Bundle _savedInstanceState) {
@@ -45,19 +49,21 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
     /**
      *  set the action bar options and custom layout
      */
-    public final void initActionBar() {
-        ActionBar actionBar = getActionBar();
-        actionBar.setDisplayShowHomeEnabled(false);
-        actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setDisplayShowCustomEnabled(true);
+    private final void initActionBar() {
+        ab_SA = getActionBar();
+        ab_SA.setDisplayShowHomeEnabled(false);
+        ab_SA.setDisplayShowTitleEnabled(false);
+        ab_SA.setDisplayShowCustomEnabled(true);
 
         LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
         View customView = inflator.inflate(R.layout.custom_action_bar, null);
-        customView.findViewById(R.id.btnHome_CAb).setVisibility(View.GONE);
-        customView.findViewById(R.id.btnWork_CAb).setOnClickListener(this);
 
-        actionBar.setCustomView(customView);
+        btnHome_CAb = (Button)customView.findViewById(R.id.btnHome_CAb);
+        btnHome_CAb.setOnClickListener(this);
+        btnWork_CAb = (Button)customView.findViewById(R.id.btnWork_CAb);
+        btnWork_CAb.setOnClickListener(this);
+
+        ab_SA.setCustomView(customView);
     }
 
     @Override

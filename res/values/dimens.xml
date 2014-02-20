@@ -10,6 +10,7 @@
     <dimen name="text_size_subtitle">18sp</dimen>
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
+    <dimen name="button_width">40sp</dimen>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ts_arg_title">35sp</dimen>
@@ -22,6 +23,7 @@
     <dimen name="ptb_indicator">20dp</dimen>
     <dimen name="radius_indicator">4dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="width_button_checklist">320dp</dimen>
