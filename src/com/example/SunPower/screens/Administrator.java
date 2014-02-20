@@ -11,7 +11,7 @@ import com.example.SunPower.R;
 public final class Administrator extends Activity {
 
     @Override
-    public void onCreate(Bundle _savedInstanceState) {
+    public final void onCreate(Bundle _savedInstanceState) {
         super.onCreate(_savedInstanceState);
         setContentView(R.layout.screen_administrator);
     }

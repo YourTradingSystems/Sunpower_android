@@ -9,50 +9,25 @@
     android:paddingBottom="5dp"
     android:background="@color/bg_screen_home">
 
-    <LinearLayout
-        android:id="@+id/llHome_CAb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="3dp"
-        android:clickable="true"
-        android:background="@drawable/background_action_bar_button">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/custom_radio_button"/>
-
-        <TextView
-            android:id="@+id/btnHome_CAb"
-            style="@style/TextViewBlackTitle"
-            android:paddingRight="10dp"
-            android:text="@string/action_bar_home_text"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llWork_CAb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentRight="true"
-        android:padding="3dp"
-        android:clickable="true"
+    <Button
+        android:id="@+id/btnHome_CAb"
+        style="@style/TextViewBlackTitle"
+        android:drawableLeft="@drawable/custom_radio_button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:background="@drawable/background_action_bar_button"
-        android:gravity="center">
+        android:text="@string/action_bar_home_text"
+        />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/custom_radio_button"/>
+    <Button
+        android:id="@+id/btnWork_CAb"
+        style="@style/TextViewBlackTitle"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/custom_radio_button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/background_action_bar_button"
+        android:text="@string/action_bar_work_text"
+        />
 
-        <TextView
-            android:id="@+id/btnWork_CAb"
-            style="@style/TextViewBlackTitle"
-            android:paddingRight="10dp"
-            android:text="@string/action_bar_work_text"/>
-    </LinearLayout>
 </RelativeLayout>
