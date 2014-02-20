@@ -13,27 +13,21 @@
 
         <activity android:name=".screens.Home"
                   android:screenOrientation="landscape"
-                  android:label="@string/app_name"
                   android:theme="@style/ThemeDarkActionBar">
+        </activity>
+        
+        <activity android:name=".screens.Login"
+                  android:screenOrientation="landscape"
+                  android:theme="@style/ThemeNoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        
-        <activity android:name=".screens.Login"
-                  android:screenOrientation="landscape"
-                  android:label="@string/app_name"
-                  android:theme="@style/ThemeNoTitleBar">
-        </activity>
 
         <activity android:name=".screens.argumentarie.Argumentarie"
                   android:screenOrientation="landscape"
                   android:theme="@style/ThemeDarkActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.ANSWER"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         
     </application>
