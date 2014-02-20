@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/background_screen_home">
+
+    <LinearLayout
+        android:id="@+id/llHome_CAb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="3dp"
+        android:background="@drawable/background_action_bar_button">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/custom_radio_button"/>
+
+        <TextView
+            android:id="@+id/btnHome_CAb"
+            style="@style/TextViewBlackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="@string/action_bar_home_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWork_CAb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:padding="3dp"
+        android:background="@drawable/background_action_bar_button"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/custom_radio_button"/>
+
+        <TextView
+            android:id="@+id/btnWork_CAb"
+            style="@style/TextViewBlackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:text="@string/action_bar_work_text"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -2,8 +2,21 @@
 <resources>
 
     <!-- //////////////// screens ////////////////////////////////// -->
-    <color name="background_screen_orange">#FEB822</color>
-    <color name="white_color">@android:color/white</color>
+    <color name="background_screen_checklist">#FEB822</color>
+    <color name="background_screen_home">#24201D</color>
+    <color name="background_screen_login">#FFFFFF</color>
+    <color name="background_screen_login_left_panel">#FEB822</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
+    <!-- /////////////////// text ////////////////////////////////// -->
+    <color name="text_title">#000000</color>
+    <color name="text_home_button">#FFFFFF</color>
+    <!-- ////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////// buttons ////////////////////////////////// -->
+    <color name="button_home_eligibility">#FEB822</color>
+    <color name="button_home_argument">#90931E</color>
+    <color name="button_home_administrator">#342F29</color>
+    <color name="button_action_bar">#E4E4E4</color>
+    <!-- ////////////////////////////////////////////////////////// -->
 </resources>

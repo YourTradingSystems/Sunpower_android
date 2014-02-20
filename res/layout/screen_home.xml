@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_screen_home">
+
+    <Button
+        android:id="@+id/btnAdministrator_HS"
+        style="@style/ButtonBrown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:text="@string/home_screen_my_table_text" />
+
+    <Button
+        android:id="@+id/btnEligibility_HS"
+        style="@style/ButtonYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:text="@string/home_screen_eligibility_text" />
+
+    <Button
+        android:id="@+id/btnArgumentaire_HS"
+        style="@style/ButtonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnEligibility_HS"
+        android:padding="20dp"
+        android:text="@string/home_screen_presentation_text" />
+
+    <CheckBox
+        android:id="@+id/cbArgumentaire_HS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnArgumentaire_HS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:button="@drawable/custom_home_check_box_green"
+        />
+
+    <CheckBox
+        android:id="@+id/cbCheckList_HS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnEligibility_HS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:button="@drawable/custom_home_check_box_yellow"
+        />
+
+    <CheckBox
+        android:id="@+id/cbGestionnaire_HS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnAdministrator_HS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        android:button="@drawable/custom_home_check_box_brown"
+        />
+</RelativeLayout>
+

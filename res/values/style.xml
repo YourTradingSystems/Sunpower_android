@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="ThemeDarkActionBar" parent="android:Theme.Holo.Light.DarkActionBar"/>
+
+    <style name="ThemeNoTitleBar" parent="android:Theme.Black.NoTitleBar.Fullscreen"/>
+
     <style name="CheckListEtapBanner">
         <item name="android:textSize">@dimen/text_size_banner</item>
         <item name="android:gravity">center</item>
@@ -16,4 +20,32 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="TextViewBlackTitle">
+        <item name="android:textSize">@dimen/text_size_banner</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewBlackSubTitle">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_title</item>
+    </style>
+    
+    <style name="ButtonYellow">
+        <item name="android:background">@color/button_home_eligibility</item>
+        <item name="android:textColor">@color/text_home_button</item>
+        <item name="android:textSize">@dimen/text_size_banner</item>
+    </style>
+
+    <style name="ButtonGreen">
+        <item name="android:background">@color/button_home_argument</item>
+        <item name="android:textColor">@color/text_home_button</item>
+        <item name="android:textSize">@dimen/text_size_banner</item>
+    </style>
+
+    <style name="ButtonBrown">
+        <item name="android:background">@color/button_home_administrator</item>
+        <item name="android:textColor">@color/text_home_button</item>
+        <item name="android:textSize">@dimen/text_size_banner</item>
+    </style>
 </resources>
