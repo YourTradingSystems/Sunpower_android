@@ -4,12 +4,14 @@
     <!-- //////////////// screens ////////////////////////////////// -->
     <color name="background_screen_orange">#FEB822</color>
     <color name="background_screen_black">#24201D</color>
-    <color name="white_color">@android:color/white</color>
+    <color name="background_screen_white">#FFFFFF</color>
+    <color name="background_screen_yellow">#FEB822</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
     <!-- /////////////////// text ////////////////////////////////// -->
     <color name="text_black_color">#000000</color>
     <color name="text_white_color">#FFFFFF</color>
+    <color name="text_red_color">#FC0001</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
     <!-- //////////////// buttons ////////////////////////////////// -->

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="ThemeLight" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    </style>
+
     <style name="tvCheckListEtapBanner">
         <item name="android:textSize">@dimen/text_size_banner</item>
         <item name="android:gravity">center</item>
@@ -19,6 +23,7 @@
     <style name="TextViewBlackTitle">
         <item name="android:textSize">@dimen/text_size_banner</item>
         <item name="android:textColor">@color/text_black_color</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextViewBlackSubTitle">
@@ -28,19 +33,19 @@
     
     <style name="ButtonYellow">
         <item name="android:background">@color/button_yellow_color</item>
-        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textColor">@color/background_screen_white</item>
         <item name="android:textSize">@dimen/text_size_banner</item>
     </style>
 
     <style name="ButtonGreen">
         <item name="android:background">@color/button_green_color</item>
-        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textColor">@color/background_screen_white</item>
         <item name="android:textSize">@dimen/text_size_banner</item>
     </style>
 
     <style name="ButtonBrown">
         <item name="android:background">@color/button_brown_color</item>
-        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textColor">@color/background_screen_white</item>
         <item name="android:textSize">@dimen/text_size_banner</item>
     </style>
 </resources>

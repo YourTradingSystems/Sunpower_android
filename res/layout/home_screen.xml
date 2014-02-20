@@ -27,5 +27,32 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/btnCheckList_HS"
         android:text="@string/home_screen_presentation_text" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnArgumentaire_HS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/homepage_cb_down_btn_green"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btnCheckList_HS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_home_check_box_yellow"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnGestionnaire_HS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/homepage_cb_down_btn_brown"
+        />
 </RelativeLayout>
 

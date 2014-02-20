@@ -1,4 +1,4 @@
-package com.example.SunPower.screens.argumentarie;
+package com.example.SunPower.screens;
 
 import android.app.Activity;
 import android.content.Intent;
