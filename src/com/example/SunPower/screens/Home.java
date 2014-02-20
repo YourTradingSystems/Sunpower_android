@@ -47,7 +47,7 @@ public final class Home extends Activity implements View.OnClickListener {
                 startActivity(new Intent(getBaseContext(), Argumentarie.class));
                 break;
 
-            case R.id.btnEligibility_HS:
+            case R.id.btnCheckList_SH:
                 startActivity(new Intent(getBaseContext(), Checklist.class));
                 break;
         }
