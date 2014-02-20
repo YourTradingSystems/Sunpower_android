@@ -24,14 +24,13 @@ abstract class ViewWorker {
                                           final CirclePageIndicator _cpiIndicatior_SA) {
         final Resources resources = _activity.getResources();
 
-//        final ArgPagerAdapter adapter = ArgPagerAdapter.create(_activity.getSupportFragmentManager());
-//        adapter.setTitles(titles);
-//        adapter.setMessages(messages);
-//        _vpPager_SA.setAdapter(adapter);
+        final CheckListPagerAdapter adapter = CheckListPagerAdapter.create(_activity.getSupportFragmentManager());
+        adapter.setFragments(FragmentPool.getFragments());
+        _vpPager_SA.setAdapter(adapter);
 
         final float radius = resources.getDimension(R.dimen.radius_indicator);
 
-//        _cpiIndicatior_SA.setRadius(radius);
-//        _cpiIndicatior_SA.setViewPager(_vpPager_SA);
+        _cpiIndicatior_SA.setRadius(radius);
+        _cpiIndicatior_SA.setViewPager(_vpPager_SA);
     }
 }

@@ -1,6 +1,5 @@
 package com.example.SunPower.screens.checklist;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -23,6 +22,7 @@ public final class Checklist extends FragmentActivity {
         setContentView(R.layout.screen_checklist);
 
         findViews();
+        FragmentPool.initFragments();
         ViewWorker.initPager(this, vpPager_SC, cpiIndicatior_SC);
     }
 
