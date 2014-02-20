@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/background_screen_checklist"
->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_screen_orange"
+        >
+    <Button
+            android:layout_width="@dimen/width_button_checklist"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartChecklist"
+            android:text="@string/start_checklist"
+            android:layout_alignLeft="@+id/btnLeadChange"
+            android:layout_above="@+id/tvParentProfile"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgUserLogo" android:layout_above="@+id/tvParentProfile"
+            android:layout_alignLeft="@+id/btnLeadChange"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvParentProfile"
+            android:layout_above="@+id/btnLeadChange" android:layout_toRightOf="@+id/imgUserLogo"/>
+    <Button
+            android:layout_width="@dimen/width_button_checklist"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLeadChange"
+            android:layout_centerInParent="true"
+            android:text="@string/lead_change"
+            />
+    <Button
+            android:layout_width="@dimen/width_button_checklist"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNewLead"
+            android:text="@string/new_lead"
+            android:layout_alignLeft="@+id/btnLeadChange"
+            android:layout_below="@+id/btnLeadChange"/>
 
-
-</LinearLayout>
+</RelativeLayout>

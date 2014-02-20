@@ -23,4 +23,11 @@
     <dimen name="radius_indicator">4dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="width_button_checklist">320dp</dimen>
+    <dimen name="text_size_banner">25sp</dimen>
+    <dimen name="text_size_subtitle">18sp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
 </resources>
