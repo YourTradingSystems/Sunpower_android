@@ -2,7 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:gravity="center">
+                android:layout_height="match_parent" android:gravity="center" android:background="@color/bg_arg">
 
     <RelativeLayout
             android:layout_width="match_parent"
@@ -11,12 +11,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Title"
-                android:id="@+id/tvTitle_FAP" android:gravity="center"/>
+                android:id="@+id/tvTitle_FAP" android:gravity="center" style="@style/ArgTitle"/>
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Message"
-                android:id="@+id/tvMessage_FAP" android:gravity="center" android:layout_below="@+id/tvTitle_FAP"/>
+                android:id="@+id/tvMessage_FAP" android:gravity="center" android:layout_below="@+id/tvTitle_FAP"
+                style="@style/ArgMessage"/>
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

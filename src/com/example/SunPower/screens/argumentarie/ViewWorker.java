@@ -25,8 +25,8 @@ public abstract class ViewWorker {
         final String[] messages = resources.getStringArray(R.array.arg_messages);
 
         final ArgPagerAdapter adapter = new ArgPagerAdapter(_activity.getSupportFragmentManager());
-        adapter.setMessages(titles);
-        adapter.setTitles(messages);
+        adapter.setTitles(titles);
+        adapter.setMessages(messages);
         _vpPager_SA.setAdapter(adapter);
     }
 }

@@ -92,7 +92,7 @@ public final class ArgPage extends Fragment implements View.OnClickListener {
      * must be setted before adding fragment to activity
      * @param _mess
      */
-    public final void setMess(final String _mess) {
+    public final void   setMess(final String _mess) {
         mMess = _mess;
     }
 
