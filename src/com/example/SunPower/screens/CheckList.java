@@ -8,11 +8,11 @@ import com.example.SunPower.R;
 /**
  * Created by Denis on 20.02.14.
  */
-public final class Eligibility extends Activity {
+public final class CheckList extends Activity {
 
     @Override
-    public void onCreate(Bundle _savedInstanceState) {
+    public final void onCreate(Bundle _savedInstanceState) {
         super.onCreate(_savedInstanceState);
-        setContentView(R.layout.screen_eligibility);
+        setContentView(R.layout.screen_check_list);
     }
 }

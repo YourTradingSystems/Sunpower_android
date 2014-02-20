@@ -40,78 +40,78 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question2Button"
+                    android:layout_toLeftOf="@+id/btnCheckListEtap13Question2"
                     android:text="@string/fragment_check_list_etap13_question2_text"
                     android:id="@+id/tvCheckListEtap13Question2"
                     android:layout_below="@+id/etCheckListEtap13Question1"
-                    android:layout_alignBottom="@+id/tvCheckListEtap13Question2Button"
-                    android:layout_alignTop="@+id/tvCheckListEtap13Question2Button"
+                    android:layout_alignBottom="@+id/btnCheckListEtap13Question2"
+                    android:layout_alignTop="@+id/btnCheckListEtap13Question2"
                     android:gravity="center"
                     style="@style/CheckListEtapStandard"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="..."
-                    android:id="@+id/tvCheckListEtap13Question2Button"
+                    android:text="C"
+                    android:id="@+id/btnCheckListEtap13Question2"
                     android:layout_below="@+id/etCheckListEtap13Question1"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question3Button"
+                    android:layout_toLeftOf="@+id/btnCheckListEtap13Question3"
                     android:text="@string/fragment_check_list_etap13_question3_text"
                     android:id="@+id/tvCheckListEtap13Question3"
                     android:layout_below="@+id/tvCheckListEtap13Question2"
-                    android:layout_alignBottom="@+id/tvCheckListEtap13Question3Button"
-                    android:layout_alignTop="@+id/tvCheckListEtap13Question3Button"
+                    android:layout_alignBottom="@+id/btnCheckListEtap13Question3"
+                    android:layout_alignTop="@+id/btnCheckListEtap13Question3"
                     android:gravity="center"
                     style="@style/CheckListEtapStandard"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="..."
-                    android:id="@+id/tvCheckListEtap13Question3Button"
-                    android:layout_below="@+id/tvCheckListEtap13Question2Button"/>
+                    android:text="C"
+                    android:id="@+id/btnCheckListEtap13Question3"
+                    android:layout_below="@+id/btnCheckListEtap13Question2"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question4Button"
+                    android:layout_toLeftOf="@+id/btnCheckListEtap13Question4"
                     android:text="@string/fragment_check_list_etap13_question4_text"
                     android:id="@+id/tvCheckListEtap13Question4"
                     android:layout_below="@+id/tvCheckListEtap13Question3"
-                    android:layout_alignBottom="@+id/tvCheckListEtap13Question4Button"
-                    android:layout_alignTop="@+id/tvCheckListEtap13Question4Button"
+                    android:layout_alignBottom="@+id/btnCheckListEtap13Question4"
+                    android:layout_alignTop="@+id/btnCheckListEtap13Question4"
                     android:gravity="center"
                     style="@style/CheckListEtapStandard"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="..."
-                    android:id="@+id/tvCheckListEtap13Question4Button"
-                    android:layout_below="@+id/tvCheckListEtap13Question3Button"/>
+                    android:text="C"
+                    android:id="@+id/btnCheckListEtap13Question4"
+                    android:layout_below="@+id/btnCheckListEtap13Question3"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_toLeftOf="@+id/tvCheckListEtap13Question5Button"
+                    android:layout_toLeftOf="@+id/btnCheckListEtap13Question5"
                     android:text="@string/fragment_check_list_etap13_question5_text"
                     android:id="@+id/tvCheckListEtap13Question5"
                     android:layout_below="@+id/tvCheckListEtap13Question4"
-                    android:layout_alignBottom="@+id/tvCheckListEtap13Question5Button"
-                    android:layout_alignTop="@+id/tvCheckListEtap13Question5Button"
+                    android:layout_alignBottom="@+id/btnCheckListEtap13Question5"
+                    android:layout_alignTop="@+id/btnCheckListEtap13Question5"
                     android:gravity="center"
                     style="@style/CheckListEtapStandard"/>
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="..."
-                    android:id="@+id/tvCheckListEtap13Question5Button"
-                    android:layout_below="@+id/tvCheckListEtap13Question4Button"/>
+                    android:text="C"
+                    android:id="@+id/btnCheckListEtap13Question5"
+                    android:layout_below="@+id/btnCheckListEtap13Question4"/>
 
 </RelativeLayout>
 

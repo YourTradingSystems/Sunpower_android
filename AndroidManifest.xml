@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.SunPower"
-          android:versionCode="1"
-          android:versionName="1.0"
-          android:installLocation="preferExternal">
+    package="com.example.SunPower"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="preferExternal" >
 
     <uses-sdk android:minSdkVersion="15"/>
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    
     <application android:label="@string/app_name"
                  android:icon="@drawable/ic_launcher"
                  android:theme="@style/ThemeDarkActionBar">
@@ -28,6 +31,11 @@
         <activity android:name=".screens.argumentarie.Argumentarie"
                   android:screenOrientation="landscape"
                   android:theme="@style/ThemeDarkActionBar">
+        </activity>
+
+        <activity android:name=".screens.Administrator"
+            android:screenOrientation="landscape"
+            android:theme="@style/ThemeDarkActionBar">
         </activity>
 
         <activity android:name=".screens.checklist.Checklist"

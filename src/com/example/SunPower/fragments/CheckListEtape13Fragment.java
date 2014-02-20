@@ -41,10 +41,10 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
         View view = _inflater.inflate(R.layout.fragment_check_list13, _container, false);
 
         etQuestion1 = (EditText) view.findViewById(R.id.etCheckListEtap13Question1);
-        Button btnQuestion2 = (Button) view.findViewById(R.id.tvCheckListEtap13Question2Button);
-        Button btnQuestion3 = (Button) view.findViewById(R.id.tvCheckListEtap13Question3Button);
-        Button btnQuestion4 = (Button) view.findViewById(R.id.tvCheckListEtap13Question4Button);
-        Button btnQuestion5 = (Button) view.findViewById(R.id.tvCheckListEtap13Question5Button);
+        Button btnQuestion2 = (Button) view.findViewById(R.id.btnCheckListEtap13Question2);
+        Button btnQuestion3 = (Button) view.findViewById(R.id.btnCheckListEtap13Question3);
+        Button btnQuestion4 = (Button) view.findViewById(R.id.btnCheckListEtap13Question4);
+        Button btnQuestion5 = (Button) view.findViewById(R.id.btnCheckListEtap13Question5);
 
         btnQuestion2.setOnClickListener(this);
         btnQuestion3.setOnClickListener(this);
@@ -57,20 +57,20 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.tvCheckListEtap13Question2Button :
+            case R.id.btnCheckListEtap13Question2:
                 buttonClicked = 1;
                 break;
-            case R.id.tvCheckListEtap13Question3Button :
+            case R.id.btnCheckListEtap13Question3:
                 buttonClicked = 2;
                 break;
-            case R.id.tvCheckListEtap13Question4Button :
+            case R.id.btnCheckListEtap13Question4:
                 buttonClicked = 3;
                 break;
-            case R.id.tvCheckListEtap13Question5Button :
+            case R.id.btnCheckListEtap13Question5:
                 buttonClicked = 4;
                 break;
         }
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, RESULT_LOAD_IMAGE);
     }
 
