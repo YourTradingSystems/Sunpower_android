@@ -10,10 +10,13 @@ import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import com.example.SunPower.R;
 
-public final class CheckListEtape5Fragment extends Fragment implements CompoundButton.OnCheckedChangeListener {
+public final class CheckListEtape5Fragment extends Fragment {
 
     private String question1;
     private String question2;
+
+    private RadioButton rbtnQuestion1Var1;
+    private RadioButton rbtnQuestion2Var1;
 
     private CheckListEtape5Fragment() {
     }
@@ -25,35 +28,20 @@ public final class CheckListEtape5Fragment extends Fragment implements CompoundB
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
 
-        final RadioButton rbtnQuestion1Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question1Var1);
-        final RadioButton rbtnQuestion1Var2 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question1Var2);
-        final RadioButton rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question2Var1);
-        final RadioButton rbtnQuestion2Var2 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question2Var2);
+        View view = _inflater.inflate(R.layout.fragment_check_list5, _container, false);
 
-        rbtnQuestion1Var1.setOnCheckedChangeListener(this);
-        rbtnQuestion1Var2.setOnCheckedChangeListener(this);
-        rbtnQuestion2Var1.setOnCheckedChangeListener(this);
-        rbtnQuestion2Var2.setOnCheckedChangeListener(this);
+        rbtnQuestion1Var1 = (RadioButton) view.findViewById(R.id.rbtnEtap5Question1Var1);
+        rbtnQuestion2Var1 = (RadioButton) view.findViewById(R.id.rbtnEtap5Question2Var1);
 
-        return _inflater.inflate(R.layout.fragment_check_list5, _container, false);
+        return view;
     }
 
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        switch (buttonView.getId()) {
-            case R.id.rbtnEtap5Question1Var1 :
-                if (isChecked) question1 = "OUI";
-                break;
-            case R.id.rbtnEtap5Question1Var2 :
-                if (isChecked) question1 = "NON";
-                break;
-            case R.id.rbtnEtap5Question2Var1 :
-                if (isChecked) question2 = "OUI";
-                break;
-            case R.id.rbtnEtap5Question2Var2 :
-                if (isChecked) question2 = "NON";
-                break;
-        }
+    private void saveAllFragment5Data() {
+        if (rbtnQuestion1Var1.isChecked()) question1 = "OUI";
+        else question1 = "NON";
+        if (rbtnQuestion2Var1.isChecked()) question2 = "OUI";
+        else question2 = "NON";
+
     }
 
 }
