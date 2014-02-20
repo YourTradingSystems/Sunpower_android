@@ -1,14 +1,12 @@
 package com.example.SunPower.screens.argumentarie;
 
 import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,24 +24,24 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
 
     private RelativeLayout rlRoot_SA;
     private ViewPager vpPager_SA;
-    private CirclePageIndicator cpiIndicatior_SA;
+    private CirclePageIndicator cpiIndicator_SA;
     private ActionBar ab_SA;
     private Button btnHome_CAb, btnWork_CAb;
 
     @Override
     public final void onCreate(final Bundle _savedInstanceState) {
         super.onCreate(_savedInstanceState);
-        setContentView(R.layout.screen_login);
+        setContentView(R.layout.screen_argumentarie);
 
         findViews();
         initActionBar();
-        ViewWorker.initPager(this, vpPager_SA, cpiIndicatior_SA);
+        ViewWorker.initPager(this, vpPager_SA, cpiIndicator_SA);
     }
 
     private final void findViews() {
         rlRoot_SA           = (RelativeLayout) findViewById(R.id.rlRoot_SA);
         vpPager_SA          = (ViewPager) findViewById(R.id.vpPager_SA);
-        cpiIndicatior_SA    = (CirclePageIndicator) findViewById(R.id.cpiIndicatior_SA);
+        cpiIndicator_SA     = (CirclePageIndicator) findViewById(R.id.cpiIndicator_SA);
     }
 
     /**

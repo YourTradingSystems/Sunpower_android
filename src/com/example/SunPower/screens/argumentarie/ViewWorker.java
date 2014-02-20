@@ -21,7 +21,7 @@ abstract class ViewWorker {
      * @param _vpPager_SA
      */
     protected static final void initPager(final FragmentActivity _activity, final ViewPager _vpPager_SA,
-                                          final CirclePageIndicator _cpiIndicatior_SA) {
+                                          final CirclePageIndicator _cpiIndicator_SA) {
         final Resources resources = _activity.getResources();
 
         final String[] titles = resources.getStringArray(R.array.arg_titles);
@@ -34,7 +34,7 @@ abstract class ViewWorker {
 
         final float radius = resources.getDimension(R.dimen.radius_indicator);
 
-        _cpiIndicatior_SA.setRadius(radius); //todo: finish indicator design
-        _cpiIndicatior_SA.setViewPager(_vpPager_SA);
+        _cpiIndicator_SA.setRadius(radius); //todo: finish indicator design
+        _cpiIndicator_SA.setViewPager(_vpPager_SA);
     }
 }
