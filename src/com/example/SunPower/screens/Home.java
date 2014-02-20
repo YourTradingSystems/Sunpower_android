@@ -17,6 +17,9 @@ public final class Home extends Activity implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen_home);
+        findViewById(R.id.btnAdministrator_HS).setOnClickListener(this);
+        findViewById(R.id.btnArgumentaire_HS).setOnClickListener(this);
+        findViewById(R.id.btnEligibility_HS).setOnClickListener(this);
     }
 
     @Override
@@ -27,12 +30,12 @@ public final class Home extends Activity implements View.OnClickListener {
                 startActivity(new Intent(getBaseContext(), Administrator.class));
                 break;
 
-            case R.id.btnEligibility_HS:
-                startActivity(new Intent(getBaseContext(), Eligibility.class));
-                break;
-
             case R.id.btnArgumentaire_HS:
                 startActivity(new Intent(getBaseContext(), Argumentarie.class));
+                break;
+
+            case R.id.btnEligibility_HS:
+                startActivity(new Intent(getBaseContext(), Eligibility.class));
                 break;
         }
     }
