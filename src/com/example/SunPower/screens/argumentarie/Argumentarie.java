@@ -50,10 +50,13 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
         actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setDisplayShowCustomEnabled(true);
+
         LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
         View customView = inflator.inflate(R.layout.custom_action_bar, null);
         customView.findViewById(R.id.btnHome_CAb).setVisibility(View.GONE);
         customView.findViewById(R.id.btnWork_CAb).setOnClickListener(this);
+
         actionBar.setCustomView(customView);
     }
 

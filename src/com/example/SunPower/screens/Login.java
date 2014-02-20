@@ -15,6 +15,7 @@ public final class Login extends Activity implements View.OnClickListener {
     public final void onCreate(Bundle _savedInstanceState) {
         super.onCreate(_savedInstanceState);
         setContentView(R.layout.screen_login);
+
         findViewById(R.id.btnConnect_LS).setOnClickListener(this);
     }
 
