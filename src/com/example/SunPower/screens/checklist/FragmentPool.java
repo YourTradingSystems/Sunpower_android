@@ -16,12 +16,12 @@ abstract class FragmentPool {
     protected static final void initFragments() {
         mFragments = new ArrayList<Fragment>();
 
-        final CheckListEtape0Fragment etape0 = new CheckListEtape0Fragment();
-        final CheckListEtape1Fragment etape1 = new CheckListEtape1Fragment();
-        final CheckListEtape2Fragment etape2 = new CheckListEtape2Fragment();
+        final CheckListEtape0Fragment etape0 = CheckListEtape0Fragment.create();
+        final CheckListEtape1Fragment etape1 = CheckListEtape1Fragment.create();
+        final CheckListEtape2Fragment etape2 = CheckListEtape2Fragment.create();
         final CheckListEtape5Fragment etape5 = CheckListEtape5Fragment.create();
-        final CheckListEtape11Fragment etape11 = new CheckListEtape11Fragment();
-        final CheckListEtape12Fragment etape12 = new CheckListEtape12Fragment();
+        final CheckListEtape11Fragment etape11 = CheckListEtape11Fragment.create();
+        final CheckListEtape12Fragment etape12 = CheckListEtape12Fragment.create();
         final CheckListEtape13Fragment etape13 = CheckListEtape13Fragment.create();
         final CheckListEtape14Fragment etape14 = CheckListEtape14Fragment.create();
 

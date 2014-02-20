@@ -16,7 +16,7 @@ public final class CheckListEtape2Fragment extends Fragment implements RadioGrou
 
     private CheckListEtape2Fragment(){}
 
-    public final CheckListEtape2Fragment create(){
+    public static CheckListEtape2Fragment create(){
         return new CheckListEtape2Fragment();
     }
 

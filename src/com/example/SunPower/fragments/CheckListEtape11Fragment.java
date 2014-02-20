@@ -25,7 +25,7 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
 
     private CheckListEtape11Fragment(){}
 
-    public final CheckListEtape11Fragment create(){
+    public static CheckListEtape11Fragment create(){
         return new CheckListEtape11Fragment();
     }
 

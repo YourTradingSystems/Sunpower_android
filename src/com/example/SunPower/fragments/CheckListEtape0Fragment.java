@@ -21,7 +21,7 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
 
     private CheckListEtape0Fragment(){}
 
-    public final CheckListEtape0Fragment create(){
+    public static CheckListEtape0Fragment create(){
         return new CheckListEtape0Fragment();
     }
 

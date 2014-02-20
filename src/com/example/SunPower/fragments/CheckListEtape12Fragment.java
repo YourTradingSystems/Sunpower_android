@@ -25,7 +25,7 @@ public final class CheckListEtape12Fragment extends Fragment {
 
     private CheckListEtape12Fragment(){}
 
-    public final CheckListEtape12Fragment create(){
+    public static CheckListEtape12Fragment create(){
         return new CheckListEtape12Fragment();
     }
 
