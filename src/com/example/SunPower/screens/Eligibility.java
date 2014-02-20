@@ -11,8 +11,8 @@ import com.example.SunPower.R;
 public final class Eligibility extends Activity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle _savedInstanceState) {
+        super.onCreate(_savedInstanceState);
         setContentView(R.layout.screen_eligibility);
     }
 }

@@ -14,8 +14,8 @@ import com.example.SunPower.screens.argumentarie.Argumentarie;
 public final class Home extends Activity implements View.OnClickListener {
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public final void onCreate(Bundle _savedInstanceState) {
+        super.onCreate(_savedInstanceState);
         setContentView(R.layout.screen_home);
         findViewById(R.id.btnAdministrator_HS).setOnClickListener(this);
         findViewById(R.id.btnArgumentaire_HS).setOnClickListener(this);
@@ -23,9 +23,8 @@ public final class Home extends Activity implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId())
-        {
+    public final void onClick(View _v) {
+        switch (_v.getId()) {
             case R.id.btnAdministrator_HS:
                 startActivity(new Intent(getBaseContext(), Administrator.class));
                 break;
