@@ -29,7 +29,7 @@ public final class Login extends Activity implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View _v) {
+    public final void onClick(View _v) {
         switch (_v.getId()) {
             case R.id.btnConnect_SL:
                 startActivity(new Intent(getBaseContext(), Home.class));
