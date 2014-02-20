@@ -2,5 +2,5 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="false" android:drawable="@drawable/homepage_cb_down_btn_green" />
-    <item android:state_checked="true" android:drawable="@drawable/homepage_cb_up_btn_brown" />
+    <item android:state_checked="true" android:drawable="@drawable/homepage_cb_up_btn_green" />
 </selector>
