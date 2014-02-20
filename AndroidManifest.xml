@@ -29,6 +29,11 @@
                   android:screenOrientation="landscape"
                   android:theme="@style/ThemeDarkActionBar">
         </activity>
+
+        <activity android:name=".screens.checklist.Checklist"
+                  android:screenOrientation="landscape"
+                  android:theme="@style/ThemeDarkActionBar">
+        </activity>
         
     </application>
 </manifest>
