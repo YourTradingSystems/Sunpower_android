@@ -19,6 +19,7 @@
     <color name="arg_title">@android:color/white</color>
     <color name="arg_message">@android:color/white</color>
     <color name="bg_arg">@color/green_dark_arg</color>
+    <color name="bg_indicator">@android:color/transparent</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <!-- /////////////////// text ////////////////////////////////// -->

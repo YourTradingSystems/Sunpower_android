@@ -12,13 +12,22 @@ import com.example.SunPower.fragments.argumentarie.ArgPage;
  * Date: 19.02.14
  * Time: 17:19
  */
-public final class ArgPagerAdapter extends FragmentPagerAdapter {
+final class ArgPagerAdapter extends FragmentPagerAdapter {
 
     private String[] mTitles;
     private String[] mMessages;
 
-    public ArgPagerAdapter(final FragmentManager _fm) {
+    private ArgPagerAdapter(final FragmentManager _fm) {
         super(_fm);
+    }
+
+    /**
+     * factory method
+     * @param _fm
+     * @return
+     */
+    public static final ArgPagerAdapter create(final FragmentManager _fm) {
+        return new ArgPagerAdapter(_fm);
     }
 
     /**

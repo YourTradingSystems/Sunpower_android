@@ -7,4 +7,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/vpPager_SA"/>
+    <com.viewpagerindicator.CirclePageIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:id="@+id/cpiIndicatior_SA" style="@style/ArgIndicator"/>
 </RelativeLayout>

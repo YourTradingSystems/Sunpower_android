@@ -3,6 +3,7 @@
     <!--
     ts - text size
     m(r, l...) - margin (right, left...)
+    p(r, l...) - padding (right, left...)
     -->
 
     <dimen name="text_size_banner">25sp</dimen>
@@ -16,4 +17,10 @@
     <dimen name="mrl_arg_title">30dp</dimen>
     <dimen name="mrl_arg_message">25dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="ptb_indicator">20dp</dimen>
+    <dimen name="radius_indicator">4dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
 </resources>

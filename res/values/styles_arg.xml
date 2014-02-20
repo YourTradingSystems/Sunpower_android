@@ -15,4 +15,10 @@
         <item name="android:layout_marginLeft">@dimen/mrl_arg_message</item>
     </style>
 
+    <style name="ArgIndicator">
+        <item name="android:paddingBottom">@dimen/ptb_indicator</item>
+        <item name="android:paddingTop">@dimen/ptb_indicator</item>
+        <item name="android:background">@color/bg_indicator</item>
+    </style>
+
 </resources>
