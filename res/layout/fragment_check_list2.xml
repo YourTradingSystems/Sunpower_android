@@ -8,62 +8,43 @@
         >
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap1Banner"
+              android:id="@+id/tvCheckListEtap2Banner"
               android:text="@string/environment"
               android:textSize="@dimen/text_size_banner"
               android:textColor="@color/background_screen_white"
               android:gravity="center"/>
+
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap1subtitle"
-              android:text="@string/environment_more"
+              android:id="@+id/tvCheckListEtap2subtitle"
+              android:text="@string/distance_to_sea"
               android:textSize="@dimen/text_size_subtitle"
               android:textColor="@color/background_screen_white"
               android:gravity="center"/>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+
         <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio_group_left"
-                android:layout_weight="1"
                 android:orientation="vertical">
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/radio_btn_coastal_zone"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/coastal_zone"/>
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/radio_btn_urban"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/urban"/>
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:text="@string/suburbs"
-                         android:button="@drawable/custom_radio_button"
-                         android:id="@+id/radio_btn_suburbs"/>
-        </RadioGroup>
-        <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/radio_group_right"
-                android:orientation="vertical">
-            <RadioButton android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/radio_btn_environment_more"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/environment_more"/>
-            <RadioButton android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:button="@drawable/custom_radio_button"
-                         android:id="@+id/radio_btn_environment"
-                         android:text="@string/environment"/>
 
+            <RadioButton android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radio_btn_more_than_10km"
+                         android:button="@drawable/custom_radio_button"
+                         android:text="@string/more_than_10km"/>
+
+            <RadioButton android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radio_btn_urban_less_than_3km"
+                         android:button="@drawable/custom_radio_button"
+                         android:text="@string/less_than_3km"/>
+
+            <RadioButton android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/between_3km_and_10km"
+                         android:button="@drawable/custom_radio_button"
+                         android:id="@+id/radio_btn_between_3km_and_10km"/>
         </RadioGroup>
-    </LinearLayout>
 
 </LinearLayout>

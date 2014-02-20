@@ -2,25 +2,34 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.SunPower"
           android:versionCode="1"
-          android:versionName="1.0">
+          android:versionName="1.0"
+          android:installLocation="preferExternal">
 
     <uses-sdk android:minSdkVersion="15"/>
 
     <application android:label="@string/app_name"
-                 android:icon="@drawable/ic_launcher">
+                 android:icon="@drawable/ic_launcher"
+                 android:theme="@style/ThemeDarkActionBar">
 
-        <activity android:name="Main"
+        <activity android:name=".screens.Home"
                   android:screenOrientation="landscape"
-                  android:label="@string/app_name">
-
+                  android:label="@string/app_name"
+                  android:theme="@style/ThemeDarkActionBar">
         </activity>
-
-        <activity android:name=".screens.argumentarie.Argumentarie"
-                  android:screenOrientation="landscape">
+        
+        <activity android:name=".screens.Login"
+                  android:screenOrientation="landscape"
+                  android:label="@string/app_name"
+                  android:theme="@style/ThemeNoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-         </activity>
+        </activity>
+
+        <activity android:name=".screens.argumentarie.Argumentarie"
+                  android:screenOrientation="landscape">
+        </activity>
+        
     </application>
 </manifest>

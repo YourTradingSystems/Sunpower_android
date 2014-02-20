@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeDarkActionBar" parent="android:Theme.Holo.Light.DarkActionBar"/>
+
+    <style name="ThemeNoTitleBar" parent="android:Theme.Black.NoTitleBar.Fullscreen"/>
+
+    <style name="tvCheckListEtapBanner">
+        <item name="android:textSize">@dimen/text_size_banner</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tvCheckListEtapSubtitle">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/text_size_subtitle_bottom_margin</item>
+    </style>
+
+    <style name="tvCheckListEtapStandard">
+        <item name="android:textSize">@dimen/text_size_standard</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextViewBlackTitle">
+        <item name="android:textSize">@dimen/text_size_banner</item>
+        <item name="android:textColor">@color/text_black_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewBlackSubTitle">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_black_color</item>
+    </style>
+    
+    <style name="ButtonYellow">
+        <item name="android:background">@color/button_yellow_color</item>
+        <item name="android:textColor">@color/background_screen_white</item>
+        <item name="android:textSize">@dimen/text_size_banner</item>
+    </style>
+
+    <style name="ButtonGreen">
+        <item name="android:background">@color/button_green_color</item>
+        <item name="android:textColor">@color/background_screen_white</item>
+        <item name="android:textSize">@dimen/text_size_banner</item>
+    </style>
+
+    <style name="ButtonBrown">
+        <item name="android:background">@color/button_brown_color</item>
+        <item name="android:textColor">@color/background_screen_white</item>
+        <item name="android:textSize">@dimen/text_size_banner</item>
+    </style>
+</resources>

@@ -2,9 +2,45 @@
 <resources>
     <string name="app_name">SunPower</string>
 
-    <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~ -->
-    <!-- Etap1 -->
-    <string name="fragment_check_list_etap1_banner_text">L#39ENVIRONNEMENT</string>
-    <string name="fragment_check_list_etap1_subtitle_text">Environnement plus particuli?rement d?crit comme :</string>
+    <!-- ~~~~~~~~~~~ LOGIN SCREEN ~~~~~~~~~~~ -->
+    <string name="login_screen_login_text">LOGIN :</string>
+    <string name="login_screen_pass_text">MOT DE PASSE :</string>
+    <string name="login_screen_err_text">LOGIN / MOT DE PASSE ERRON</string>
+    <string name="login_screen_connect_text">CONNEXION</string>
 
+    <!-- ~~~~~~~~~~~ HOME SCREEN ~~~~~~~~~~~ -->
+    <string name="home_screen_mon_table_text">Mon tableau de bord</string>
+    <string name="home_screen_presentation_text">Presentation de l`offre</string>
+    <string name="home_screen_eligibility_text">Éligibilite &amp; rendement</string>
+
+    <!-- ~~~~~~~~~~~ ACTION BAR ~~~~~~~~~~~~ -->
+    <string name="action_bar_home_text">HOME</string>
+    <string name="action_bar_faire_text">FAIRE DÉCOUVRIR</string>
+
+    <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~~ -->
+    <!-- Etap0 -->
+    <string name="lead_change">LEAD CHANGE</string>
+    <string name="new_lead">NEW LEAD</string>
+    <string name="start_checklist">START CHECKLIST</string>
+    <!-- Etap1 -->
+    <string name="environment">ENVIRONMENT</string>
+    <string name="environment_more">Environment more particularly described as</string>
+    <string name="coastal_zone">Coastal zone</string>
+    <string name="urban">Urban</string>
+    <string name="suburbs">Suburbs</string>
+    <string name="open_space">Open space</string>
+    <string name="open_terrain">Open terrain with occasional obstacles</string>
+    <!-- Etap2  -->
+    <string name="distance_to_sea">Distance to sea:</string>
+    <string name="less_than_3km">Less than 3km</string>
+    <string name="between_3km_and_10km">Between 3km and 10km</string>
+    <string name="more_than_10km">More than 10km</string>
+
+    <!-- Etap5 -->
+    <string name="fragment_check_list_etap5_banner_text">VOTRE MAISON</string>
+    <string name="fragment_check_list_etap5_subtitle_text">ETAPE #5</string>
+    <string name="fragment_check_list_etap5_question1_text">Toit complet en zone ombragée plus de 4 heures par jour ?</string>
+    <string name="fragment_check_list_etap5_question2_text">Surface du toit exposé au soleil inférieure à 34m2 ?</string>
+    <string name="fragment_check_list_etap5_question_var1">OUI</string>
+    <string name="fragment_check_list_etap5_question_var2">NON</string>
 </resources>
