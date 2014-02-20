@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,8 +28,8 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
     private ViewPager vpPager_SA;
     private CirclePageIndicator cpiIndicatior_SA;
     private ActionBar ab_SA;
-    private Button btnHome_CAb;
-    private Button btnWork_CAb;
+    private LinearLayout llHome_CAb;
+    private LinearLayout llWork_CAb;
 
     @Override
     public final void onCreate(final Bundle _savedInstanceState) {
@@ -58,10 +59,10 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
         LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View customView = inflator.inflate(R.layout.custom_action_bar, null);
 
-        btnHome_CAb = (Button)customView.findViewById(R.id.btnHome_CAb);
-        btnHome_CAb.setOnClickListener(this);
-        btnWork_CAb = (Button)customView.findViewById(R.id.btnWork_CAb);
-        btnWork_CAb.setOnClickListener(this);
+        llHome_CAb = (LinearLayout)customView.findViewById(R.id.llHome_CAb);
+        llHome_CAb.setOnClickListener(this);
+        llWork_CAb = (LinearLayout)customView.findViewById(R.id.llWork_CAb);
+        llWork_CAb.setOnClickListener(this);
 
         ab_SA.setCustomView(customView);
     }
@@ -70,11 +71,11 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.btnHome_CAb:
+            case R.id.llHome_CAb:
                 startActivity(new Intent(getBaseContext(), Home.class));
                 break;
 
-            case R.id.btnWork_CAb:
+            case R.id.llWork_CAb:
                 startActivity(new Intent(getBaseContext(), Argumentarie.class));
                 break;
         }

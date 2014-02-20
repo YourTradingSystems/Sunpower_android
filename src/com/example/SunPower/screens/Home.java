@@ -24,15 +24,19 @@ public final class Home extends Activity implements View.OnClickListener {
         setContentView(R.layout.screen_home);
 
         findViews();
-        btnAdministrator_SH.setOnClickListener(this);
-        btnArgumentaire_SH.setOnClickListener(this);
-        btnCheckList_SH.setOnClickListener(this);
+        setListeners();
     }
 
     private final void findViews() {
         btnAdministrator_SH = (Button)findViewById(R.id.btnAdministrator_SH);
         btnArgumentaire_SH  = (Button)findViewById(R.id.btnArgumentaire_SH);
         btnCheckList_SH  = (Button)findViewById(R.id.btnCheckList_SH);
+    }
+
+    private final void setListeners() {
+        btnAdministrator_SH.setOnClickListener(this);
+        btnArgumentaire_SH.setOnClickListener(this);
+        btnCheckList_SH.setOnClickListener(this);
     }
 
     @Override
