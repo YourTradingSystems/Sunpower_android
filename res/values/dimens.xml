@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_banner">25sp</dimen>
+    <!--
+    ts - text size
+    m(r, l...) - margin (right, left...)
+    p(r, l...) - padding (right, left...)
+    -->
+
+    <dimen name="ts_banner">25sp</dimen>
     <dimen name="text_size_subtitle">18sp</dimen>
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
@@ -16,6 +22,11 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ptb_indicator">20dp</dimen>
     <dimen name="radius_indicator">4dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="width_button_checklist">320dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

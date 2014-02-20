@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.example.SunPower.R;
 import com.example.SunPower.screens.argumentarie.Argumentarie;
+import com.example.SunPower.screens.checklist.Checklist;
 
 /**
  * Created by Denis on 19.02.14.
@@ -51,7 +52,7 @@ public final class Home extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.btnCheckList_SH:
-                startActivity(new Intent(getBaseContext(), CheckList.class));
+                startActivity(new Intent(getBaseContext(), Checklist.class));
                 break;
         }
     }

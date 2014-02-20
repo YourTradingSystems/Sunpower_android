@@ -15,7 +15,7 @@
 
     <!-- ~~~~~~~~~~~ ACTION BAR ~~~~~~~~~~~~ -->
     <string name="action_bar_home_text">HOME</string>
-    <string name="action_bar_work_text">FAIRE DÉCOUVRIR</string>
+    <string name="action_bar_faire_text">FAIRE DÉCOUVRIR</string>
 
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~~ -->
     <!-- Etap0 -->
@@ -43,6 +43,21 @@
     <string name="fragment_check_list_etap5_question2_text">Surface du toit exposé au soleil inférieure à 34m2 ?</string>
     <string name="fragment_check_list_etap5_question_var1">OUI</string>
     <string name="fragment_check_list_etap5_question_var2">NON</string>
+
+    <!-- Etap11 -->
+    <string name="your_floor_living_area">Your floor living area</string>
+    <string name="value_of_40m"> - of 40m<sup>2</sup> </string>
+    <string name="value_40_60m">  40-60m<sup>2</sup> </string>
+    <string name="value_60_80m">  60-80m<sup>2</sup> </string>
+    <string name="value_of_80m"> + of 80m<sup>2</sup> </string>
+
+    <!-- Etap12  -->
+    <string name="your_income">YOUR INCOME</string>
+    <string name="estimated_annual_income">Estimated annual income with solar supply Solarprime</string>
+    <string name="estimated_annual_production">Estimated annual production</string>
+    <string name="the_area_of_my_roof">The area of ​​my roof:</string>
+    <string name="your_address">Your address: </string>
+    <string name="the_orientation_of_my_roof">The orientation of my roof:</string>
 
     <!-- Etap13 -->
     <string name="fragment_check_list_etap13_banner_text">INFORMATIONS SUPP.</string>
