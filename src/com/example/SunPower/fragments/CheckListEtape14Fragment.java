@@ -41,18 +41,18 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list14, _container, false);
-        findViews(view);
+        findViews();
         setListeners();
         return view;
     }
 
-    private final void findViews(View _view) {
-        btnQuestion1 = (Button) _view.findViewById(R.id.btnCheckListEtap14Question1);
-        btnQuestion2 = (Button) _view.findViewById(R.id.btnCheckListEtap14Question2);
-        btnQuestion3Camera = (Button) _view.findViewById(R.id.btnCheckListEtap14Question3Camera);
-        btnQuestion3Picture = (Button) _view.findViewById(R.id.btnCheckListEtap14Question3Picture);
-        btnQuestion4Camera = (Button) _view.findViewById(R.id.btnCheckListEtap14Question4Camera);
-        btnQuestion4Picture = (Button) _view.findViewById(R.id.btnCheckListEtap14Question4Picture);
+    private final void findViews() {
+        btnQuestion1 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question1);
+        btnQuestion2 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question2);
+        btnQuestion3Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Camera);
+        btnQuestion3Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Picture);
+        btnQuestion4Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Camera);
+        btnQuestion4Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Picture);
     }
 
     private final void setListeners() {
@@ -69,36 +69,40 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
         switch (v.getId()) {
             case R.id.btnCheckListEtap14Question1:
                 buttonClicked = 1; //Button1
-                intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                getPictureFromCamera();
                 break;
             case R.id.btnCheckListEtap14Question2:
                 buttonClicked = 2; //Button2
-                intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                getPictureFromCamera();
                 break;
             case R.id.btnCheckListEtap14Question3Camera:
                 buttonClicked = 31; //Button3 Camera
-                intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                getPictureFromCamera();
                 break;
             case R.id.btnCheckListEtap14Question3Picture:
                 buttonClicked = 32; //Button3 Picture
-                intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                getPictureFromGallery();
                 break;
             case R.id.btnCheckListEtap14Question4Camera:
                 buttonClicked = 41; //Button4 Camera
-                intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                getPictureFromCamera();
                 break;
             case R.id.btnCheckListEtap14Question4Picture:
                 buttonClicked = 42; //Button4 Picture
-                intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                getPictureFromGallery();
                 break;
         }
 
+    }
+
+    private final void getPictureFromCamera() {
+        intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, RESULT_LOAD_IMAGE);
+    }
+
+    private final void getPictureFromGallery() {
+        intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, RESULT_LOAD_IMAGE);
     }
 
     @Override
