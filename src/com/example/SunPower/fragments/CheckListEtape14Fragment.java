@@ -41,18 +41,18 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list14, _container, false);
-        findViews();
+        findViews(view);
         setListeners();
         return view;
     }
 
-    private final void findViews() {
-        btnQuestion1 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question1);
-        btnQuestion2 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question2);
-        btnQuestion3Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Camera);
-        btnQuestion3Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Picture);
-        btnQuestion4Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Camera);
-        btnQuestion4Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Picture);
+    private final void findViews(View _view) {
+        btnQuestion1 = (Button) _view.findViewById(R.id.btnCheckListEtap14Question1);
+        btnQuestion2 = (Button) _view.findViewById(R.id.btnCheckListEtap14Question2);
+        btnQuestion3Camera = (Button) _view.findViewById(R.id.btnCheckListEtap14Question3Camera);
+        btnQuestion3Picture = (Button) _view.findViewById(R.id.btnCheckListEtap14Question3Picture);
+        btnQuestion4Camera = (Button) _view.findViewById(R.id.btnCheckListEtap14Question4Camera);
+        btnQuestion4Picture = (Button) _view.findViewById(R.id.btnCheckListEtap14Question4Picture);
     }
 
     private final void setListeners() {

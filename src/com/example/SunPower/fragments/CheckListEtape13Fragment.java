@@ -42,17 +42,17 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list13, _container, false);
-        findViews();
+        findViews(view);
         setListeners();
         return view;
     }
 
-    private final void findViews() {
-        etQuestion1 = (EditText) getView().findViewById(R.id.etCheckListEtap13Question1);
-        btnQuestion2 = (Button) getView().findViewById(R.id.btnCheckListEtap13Question2);
-        btnQuestion3 = (Button) getView().findViewById(R.id.btnCheckListEtap13Question3);
-        btnQuestion4 = (Button) getView().findViewById(R.id.btnCheckListEtap13Question4);
-        btnQuestion5 = (Button) getView().findViewById(R.id.btnCheckListEtap13Question5);
+    private final void findViews(View _view) {
+        etQuestion1     = (EditText) _view.findViewById(R.id.etCheckListEtap13Question1);
+        btnQuestion2    = (Button) _view.findViewById(R.id.btnCheckListEtap13Question2);
+        btnQuestion3    = (Button) _view.findViewById(R.id.btnCheckListEtap13Question3);
+        btnQuestion4    = (Button) _view.findViewById(R.id.btnCheckListEtap13Question4);
+        btnQuestion5    = (Button) _view.findViewById(R.id.btnCheckListEtap13Question5);
     }
 
     private final void setListeners() {
