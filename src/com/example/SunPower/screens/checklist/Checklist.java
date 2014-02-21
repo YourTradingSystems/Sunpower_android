@@ -20,7 +20,7 @@ import com.viewpagerindicator.CirclePageIndicator;
  * Date: 20.02.14
  * Time: 17:02
  */
-public final class Checklist extends FragmentActivity implements View.OnClickListener{
+public final class Checklist extends FragmentActivity implements View.OnClickListener {
 
     private ViewPager vpPager_SC;
     private CirclePageIndicator cpiIndicator_SC;
@@ -67,8 +67,7 @@ public final class Checklist extends FragmentActivity implements View.OnClickLis
 
     @Override
     public final void onClick(View v) {
-        switch (v.getId())
-        {
+        switch (v.getId()) {
             case R.id.btnHome_CAB:
                 finish();
                 break;

@@ -22,6 +22,7 @@ abstract class FragmentPool {
         final CheckListEtape0Fragment etape0 = CheckListEtape0Fragment.create();
         final CheckListEtape1Fragment etape1 = CheckListEtape1Fragment.create();
         final CheckListEtape2Fragment etape2 = CheckListEtape2Fragment.create();
+        final CheckListEtape4Fragment etape4 = CheckListEtape4Fragment.create();
         final CheckListEtape5Fragment etape5 = CheckListEtape5Fragment.create();
         final CheckListEtape11Fragment etape11 = CheckListEtape11Fragment.create();
         final CheckListEtape12Fragment etape12 = CheckListEtape12Fragment.create();
@@ -31,6 +32,7 @@ abstract class FragmentPool {
         mFragments.add(etape0);
         mFragments.add(etape1);
         mFragments.add(etape2);
+        mFragments.add(etape4);
         mFragments.add(etape5);
         mFragments.add(etape11);
         mFragments.add(etape12);

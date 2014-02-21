@@ -2,6 +2,7 @@
 <resources>
     <!--
     ts - text size
+    pd - padding
     m(r, l...) - margin (right, left...)
     p(r, l...) - padding (right, left...)
     -->
@@ -51,6 +52,9 @@
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="width_button_checklist">320dp</dimen>
+    <dimen name="ts_checklist_answer">15sp</dimen>
+    <dimen name="pdr_checklist_answer">30dp</dimen>
+    <dimen name="pd_checklist_question">10dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

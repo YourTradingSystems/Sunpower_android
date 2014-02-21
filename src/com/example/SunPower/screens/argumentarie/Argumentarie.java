@@ -69,8 +69,7 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
 
     @Override
     public void onClick(View v) {
-        switch (v.getId())
-        {
+        switch (v.getId()) {
             case R.id.btnHome_CAB:
                 finish();
                 break;

@@ -22,6 +22,22 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="CheckListQuestion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/pd_checklist_question</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CheckListAnswerRB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/pdr_checklist_answer</item>
+        <item name="android:textSize">@dimen/ts_checklist_answer</item>
+        <item name="android:button">@drawable/custom_radio_button</item>
+    </style>
+
     <style name="LogSignIn">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

@@ -24,18 +24,13 @@ public final class CheckListEtape5Fragment extends Fragment {
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list5, _container, false);
+        findViews(view);
         return view;
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        findViews();
-    }
-
-    private final void findViews() {
-        rbtnQuestion1Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question1Var1);
-        rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question2Var1);
+    private final void findViews(View _view) {
+        rbtnQuestion1Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap5Question1Var1);
+        rbtnQuestion2Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap5Question2Var1);
     }
 
     private void saveAllFragment5Data() {
