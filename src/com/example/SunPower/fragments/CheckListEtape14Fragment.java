@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.SunPower.R;
 
@@ -18,6 +19,13 @@ import static android.view.View.OnClickListener;
 import static com.example.SunPower.global.Constants.*;
 
 public final class CheckListEtape14Fragment extends Fragment implements OnClickListener {
+
+    private Button btnQuestion1;
+    private Button btnQuestion2;
+    private Button btnQuestion3Camera;
+    private Button btnQuestion3Picture;
+    private Button btnQuestion4Camera;
+    private Button btnQuestion4Picture;
 
     private String question1;
     private String question2;
@@ -32,24 +40,28 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-
         View view = _inflater.inflate(R.layout.fragment_check_list14, _container, false);
+        findViews();
+        setListeners();
+        return view;
+    }
 
-        Button btnQuestion1 = (Button) view.findViewById(R.id.btnCheckListEtap14Question1);
-        Button btnQuestion2 = (Button) view.findViewById(R.id.btnCheckListEtap14Question2);
-        Button btnQuestion3Camera = (Button) view.findViewById(R.id.btnCheckListEtap14Question3Camera);
-        Button btnQuestion3Picture = (Button) view.findViewById(R.id.btnCheckListEtap14Question3Picture);
-        Button btnQuestion4Camera = (Button) view.findViewById(R.id.btnCheckListEtap14Question4Camera);
-        Button btnQuestion4Picture = (Button) view.findViewById(R.id.btnCheckListEtap14Question4Picture);
+    private final void findViews() {
+        btnQuestion1 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question1);
+        btnQuestion2 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question2);
+        btnQuestion3Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Camera);
+        btnQuestion3Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Picture);
+        btnQuestion4Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Camera);
+        btnQuestion4Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Picture);
+    }
 
+    private final void setListeners() {
         btnQuestion1.setOnClickListener(this);
         btnQuestion2.setOnClickListener(this);
         btnQuestion3Camera.setOnClickListener(this);
         btnQuestion3Picture.setOnClickListener(this);
         btnQuestion4Camera.setOnClickListener(this);
         btnQuestion4Picture.setOnClickListener(this);
-
-        return view;
     }
 
     @Override
