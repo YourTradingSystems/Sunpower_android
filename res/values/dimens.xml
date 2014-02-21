@@ -12,6 +12,27 @@
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
     <dimen name="button_width">40sp</dimen>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="pd_log_sign_in">15dp</dimen>
+    <dimen name="mr_log_sign_in">20dp</dimen>
+    <dimen name="mrt_log_edit">10dp</dimen>
+    <dimen name="mrb_log_edit">10dp</dimen>
+    <dimen name="mrr_log_title">20dp</dimen>
+    <dimen name="pd_log_sub_title">5dp</dimen>
+    <dimen name="mr_log_connect_btn">10dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="pd_home_btn">20dp</dimen>
+    <dimen name="mrt_home_cb">-20dp</dimen>
+    <dimen name="mrb_home_cb">-20dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Action Bar ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="pdl_ab_panel_btn">10dp</dimen>
+    <dimen name="pdr_ab_panel_btn">15dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ts_arg_title">35sp</dimen>
     <dimen name="ts_arg_message">22sp</dimen>

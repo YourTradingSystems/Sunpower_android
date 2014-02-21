@@ -7,68 +7,46 @@
 
     <RelativeLayout
         android:id="@+id/rlSignIn_SL"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:padding="15dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/background_login">
+        style="@style/LogSignIn"
+        android:layout_centerInParent="true">
 
         <EditText
             android:id="@+id/etLogin_SL"
-            style="@style/EditTextPass"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            style="@style/LogPassEdit"
             android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/tvLogin_SL"
-            style="@style/TextViewBlackTitle"
+            style="@style/LogTitle"
             android:layout_toLeftOf="@id/etLogin_SL"
             android:layout_alignBaseline="@id/etLogin_SL"
-            android:layout_marginRight="20dp"
             android:text="@string/login_screen_login_text" />
 
         <EditText
             android:id="@+id/etPass_SL"
-            style="@style/EditTextLogin"
+            style="@style/LogLoginEdit"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_below="@id/etLogin_SL" />
 
         <TextView
             android:id="@+id/tvPass_SL"
-            style="@style/TextViewBlackTitle"
+            style="@style/LogTitle"
             android:layout_toLeftOf="@id/etPass_SL"
             android:layout_alignBaseline="@id/etPass_SL"
-            android:layout_marginRight="20dp"
             android:text="@string/login_screen_pass_text" />
 
-        <LinearLayout
-            android:id="@+id/llError_SL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+        <TextView
+            android:id="@+id/tvError_SL"
+            style="@style/LogErrorMsg"
             android:layout_below="@id/etPass_SL"
             android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:padding="5dp">
-
-            <TextView
-                style="@style/TextViewBlackSubTitle"
-                android:drawableLeft="@drawable/login_error"
-                android:text="@string/login_screen_err_text" />
-        </LinearLayout>
+            android:text="@string/login_screen_err_text"/>
 
         <Button
             android:id="@+id/btnConnect_SL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/llError_SL"
+            style="@style/LogConnectBTN"
+            android:layout_below="@id/tvError_SL"
             android:layout_centerHorizontal="true"
-            android:layout_margin="10dp"
             android:text="@string/login_screen_connect_text" />
     </RelativeLayout>
 </RelativeLayout>

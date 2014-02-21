@@ -10,24 +10,22 @@
     android:background="@color/bg_screen_home">
 
     <Button
-        android:id="@+id/btnHome_CAb"
-        style="@style/TextViewBlackTitle"
-        android:drawableLeft="@drawable/custom_radio_button"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:background="@drawable/background_action_bar_button"
+        android:id="@+id/btnHome_CAB"
+        style="@style/ActionBarBTN"
         android:text="@string/action_bar_home_text"
         />
 
     <Button
-        android:id="@+id/btnWork_CAb"
-        style="@style/TextViewBlackTitle"
+        android:id="@+id/btnArgumentarie_CAB"
+        style="@style/ActionBarBTN"
         android:layout_alignParentRight="true"
-        android:drawableLeft="@drawable/custom_radio_button"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:background="@drawable/background_action_bar_button"
-        android:text="@string/action_bar_faire_text"
+        android:text="@string/action_bar_argumentarie_text"
         />
 
+    <Button
+        android:id="@+id/btnChecklist_CAB"
+        style="@style/ActionBarBTN"
+        android:layout_alignParentRight="true"
+        android:text="@string/action_bar_checklist_text"
+        />
 </RelativeLayout>
