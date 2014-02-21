@@ -46,7 +46,7 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
 
     @Override
     public final void onClick(final View _view) {
-        if(_view == btnStartChecklist){
+        if(_view == btnStartChecklist) {
             showCheckListEtap1();
         }
         if(_view == btnLeadChange){

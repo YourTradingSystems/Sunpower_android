@@ -55,6 +55,10 @@
         <attr name="strokeWidth" />
         <!-- View background -->
         <attr name="android:background"/>
+        <!-- Distance between circles -->
+        <attr name="distance" format="integer"/>
+        <!-- Radius of the page circle -->
+        <attr name="pageRadius" format="dimension"/>
     </declare-styleable>
 
     <declare-styleable name="LinePageIndicator">

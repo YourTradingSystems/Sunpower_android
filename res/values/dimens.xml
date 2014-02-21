@@ -37,13 +37,16 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ts_arg_title">35sp</dimen>
     <dimen name="ts_arg_message">22sp</dimen>
-    <dimen name="mrl_arg_title">30dp</dimen>
-    <dimen name="mrl_arg_message">25dp</dimen>
+    <dimen name="mrl_arg_title">40dp</dimen>
+    <dimen name="mrl_arg_message">35dp</dimen>
+    <dimen name="pb_arg_title">20dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ptb_indicator">20dp</dimen>
-    <dimen name="radius_indicator">4dp</dimen>
+    <dimen name="radius_indicator">3dp</dimen>
+    <dimen name="radius_page_indicator">8dp</dimen>
+    <integer name="distance_indicator">10</integer>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

@@ -17,6 +17,7 @@ abstract class ViewWorker {
      * initializes ViewPager with indicator
      * load arrays from resources;
      * create adapter, set arrays to adapter, set adapter to view pager
+     * prepare indicator and set view pager to it
      * @param _activity
      * @param _vpPager_SA
      */
@@ -32,9 +33,27 @@ abstract class ViewWorker {
         adapter.setMessages(messages);
         _vpPager_SA.setAdapter(adapter);
 
-        final float radius = resources.getDimension(R.dimen.radius_indicator);
-
-        _cpiIndicator_SA.setRadius(radius); //todo: finish indicator design
+        prepateIndicator(resources, _cpiIndicator_SA);
         _cpiIndicator_SA.setViewPager(_vpPager_SA);
+    }
+
+    /**
+     * Set various parameters to circle indicator.
+     * @param _resources for sizes, colors etc
+     * @param _cpiIndicator_SA for applying params
+     */
+    private static final void prepateIndicator(final Resources _resources, final CirclePageIndicator _cpiIndicator_SA) {
+        final float radius = _resources.getDimension(R.dimen.radius_indicator);
+        final float pageRadius = _resources.getDimension(R.dimen.radius_page_indicator);
+        final int distance = _resources.getInteger(R.integer.distance_indicator);
+        final int fillColor = _resources.getColor(R.color.selected_indicator);
+        final int pageColor = _resources.getColor(R.color.page_indicator);
+
+        _cpiIndicator_SA.setRadius(radius);
+        _cpiIndicator_SA.setPageRadius(pageRadius);
+        _cpiIndicator_SA.setDistance(distance);
+        _cpiIndicator_SA.setFillColor(fillColor);
+        _cpiIndicator_SA.setPageColor(pageColor);
+        _cpiIndicator_SA.setStrokeWidth(0);
     }
 }
