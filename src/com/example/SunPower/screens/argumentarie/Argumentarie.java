@@ -67,22 +67,11 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
         abPanel.setCustomView(customView);
     }
 
-    /**
-     * clear the activities stack and start new activity
-     * @param _cls
-     */
-    private final void startClearActivity(Class<?> _cls) {
-        Intent intent = new Intent(getBaseContext(), _cls);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-    }
-
     @Override
     public void onClick(View v) {
         switch (v.getId())
         {
             case R.id.btnHome_CAB:
-                startClearActivity(Home.class);
                 finish();
                 break;
 
