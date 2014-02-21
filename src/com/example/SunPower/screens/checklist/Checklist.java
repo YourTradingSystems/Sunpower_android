@@ -28,6 +28,6 @@ public final class Checklist extends FragmentActivity {
 
     private final void findViews() {
         vpPager_SC          = (ViewPager) findViewById(R.id.vpPager_SC);
-        cpiIndicator_SC = (CirclePageIndicator) findViewById(R.id.cpiIndicator_SC);
+        cpiIndicator_SC     = (CirclePageIndicator) findViewById(R.id.cpiIndicator_SC);
     }
 }

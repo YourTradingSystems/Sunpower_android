@@ -3,6 +3,7 @@
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <color name="green_dark_arg">#90931e</color>
+    <color name="main_orange">#FEB822</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- //////////////// screens ////////////////////////////////// -->
@@ -17,6 +18,11 @@
     <color name="arg_message">@android:color/white</color>
     <color name="bg_arg">@color/green_dark_arg</color>
     <color name="bg_indicator">@android:color/transparent</color>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
+    <color name="selected_indicator">@color/main_orange</color>
+    <color name="page_indicator">@android:color/white</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <!-- /////////////////// text ////////////////////////////////// -->

@@ -29,8 +29,10 @@ abstract class ViewWorker {
         _vpPager_SA.setAdapter(adapter);
 
         final float radius = resources.getDimension(R.dimen.radius_indicator);
+        final int distance = resources.getInteger(R.integer.distance_indicator);
 
         _cpiIndicatior_SA.setRadius(radius);
+        _cpiIndicatior_SA.setDistance(distance);
         _cpiIndicatior_SA.setViewPager(_vpPager_SA);
     }
 }

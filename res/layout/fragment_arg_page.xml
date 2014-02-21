@@ -23,6 +23,6 @@
                 android:layout_height="wrap_content"
                 android:text="Img"
                 android:id="@+id/btnImg_FAP" android:layout_centerHorizontal="true"
-                android:layout_below="@+id/tvMessage_FAP"/>
+                android:layout_below="@+id/tvMessage_FAP" android:visibility="invisible"/>
     </RelativeLayout>
 </RelativeLayout>
