@@ -8,9 +8,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/your_income"
-            android:textColor="@color/text_white_color"
+            android:textColor="@color/checklist_main_text"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/ts_banner"
+            android:textSize="@dimen/ts_checklist_banner"
             android:id="@+id/tvYour_Income"
             android:layout_above="@+id/llYourAddress"/>
     <LinearLayout
@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvYourAddress"
                 android:textSize="@dimen/text_size_subtitle"
-                android:textColor="@color/text_white_color"
+                android:textColor="@color/checklist_main_text"
                 android:text="@string/your_address"
                 />
         <TextView
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvValueAddress"
                 android:text="25, avenue du General Michel Bizot"
-                android:textColor="@color/text_green_color"
+                android:textColor="@color/checklist_sub_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
@@ -48,14 +48,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tvTheOrientationOfMyRoof"
                 android:textSize="@dimen/text_size_subtitle"
-                android:textColor="@color/text_white_color"
+                android:textColor="@color/checklist_main_text"
                 android:text="@string/the_orientation_of_my_roof"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvValueOrientation"
                 android:text="Sud-Est"
-                android:textColor="@color/text_green_color"
+                android:textColor="@color/checklist_sub_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
@@ -72,13 +72,13 @@
                 android:id="@+id/tvTheAreaOfMyRoof"
                 android:textSize="@dimen/text_size_subtitle"
                 android:text="@string/the_area_of_my_roof"
-                android:textColor="@color/text_white_color"/>
+                android:textColor="@color/checklist_main_text"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvValueArea"
                 android:text="25m"
-                android:textColor="@color/text_green_color"
+                android:textColor="@color/checklist_sub_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"/>
@@ -88,7 +88,7 @@
             android:id="@+id/tvEstimatedAnnualProduction"
             android:text="@string/estimated_annual_production"
             android:layout_centerInParent="true"
-            android:textColor="@color/text_white_color"
+            android:textColor="@color/checklist_main_text"
             android:textSize="@dimen/text_size_subtitle"
             android:layout_height="wrap_content"/>
     <TextView
@@ -98,7 +98,7 @@
             android:layout_centerHorizontal="true"
             android:text="3 644kWH"
             android:textSize="@dimen/text_size_subtitle"
-            android:textColor="@color/text_green_color"
+            android:textColor="@color/checklist_sub_main_text"
             android:layout_below="@+id/tvEstimatedAnnualProduction"
             android:textStyle="bold"/>
     <TextView
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvEstimatedAnnualIncome"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/text_white_color"
+            android:textColor="@color/checklist_main_text"
             android:textSize="@dimen/text_size_subtitle"
             android:text="@string/estimated_annual_income"
             android:layout_below="@+id/tvValueProduction"/>
@@ -116,7 +116,7 @@
             android:id="@+id/tvValueIncome"
             android:layout_centerHorizontal="true"
             android:text="1100euros"
-            android:textColor="@color/text_green_color"
+            android:textColor="@color/checklist_sub_main_text"
             android:textSize="@dimen/text_size_subtitle"
             android:layout_below="@+id/tvEstimatedAnnualIncome"
             android:textStyle="bold"/>

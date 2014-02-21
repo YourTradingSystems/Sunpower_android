@@ -20,16 +20,17 @@
     <color name="bg_indicator">@android:color/transparent</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
+    <color name="checklist_main_text">@android:color/white</color>
+    <color name="checklist_sub_main_text">#97951e</color>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
     <color name="selected_indicator">@color/main_orange</color>
     <color name="page_indicator">@android:color/white</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     
     <!-- /////////////////// text ////////////////////////////////// -->
-    <color name="text_black_color">#000000</color>
-    <color name="text_white_color">#FFFFFF</color>
-    <color name="text_red_color">#FC0001</color>
-    <color name="text_green_color">#97951e</color>
     <color name="text_title">#000000</color>
     <color name="text_home_button">#FFFFFF</color>
     <!-- ////////////////////////////////////////////////////////// -->
