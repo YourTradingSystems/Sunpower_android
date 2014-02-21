@@ -20,7 +20,7 @@ public final class SunpowerApp extends Application {
 
     /**
      * Custom UncaughtExceptionHandler. Responsible for printing error description
-     * int log file and that delegate handling to default UncaughtExceptionHandler.
+     * int log file and than delegate handling to default UncaughtExceptionHandler.
      */
     private final Thread.UncaughtExceptionHandler mHandler = new Thread.UncaughtExceptionHandler() {
         @Override
