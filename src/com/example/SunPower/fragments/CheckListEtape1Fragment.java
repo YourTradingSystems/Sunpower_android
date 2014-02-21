@@ -17,8 +17,6 @@ public final class CheckListEtape1Fragment extends Fragment implements OnChecked
     private RadioGroup radioGroupLeft;
     private RadioGroup radioGroupRight;
 
-    private CheckListEtape1Fragment(){}
-
     public static CheckListEtape1Fragment create(){
         return new CheckListEtape1Fragment();
     }

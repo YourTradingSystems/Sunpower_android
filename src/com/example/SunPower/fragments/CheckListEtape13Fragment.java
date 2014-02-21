@@ -28,7 +28,7 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     private int buttonClicked;
     private EditText etQuestion1;
 
-    private CheckListEtape13Fragment() {
+    public CheckListEtape13Fragment() {
     }
 
     public static final CheckListEtape13Fragment create() {

@@ -17,9 +17,6 @@ public final class CheckListEtape5Fragment extends Fragment {
     private RadioButton rbtnQuestion1Var1;
     private RadioButton rbtnQuestion2Var1;
 
-    private CheckListEtape5Fragment() {
-    }
-
     public static final CheckListEtape5Fragment create() {
         return new CheckListEtape5Fragment();
     }

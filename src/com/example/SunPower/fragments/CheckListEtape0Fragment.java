@@ -19,8 +19,6 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
     private Button btnLeadChange;
     private Button btnNewLead;
 
-    private CheckListEtape0Fragment(){}
-
     public static CheckListEtape0Fragment create(){
         return new CheckListEtape0Fragment();
     }

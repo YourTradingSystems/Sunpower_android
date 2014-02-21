@@ -13,6 +13,9 @@ import java.util.ArrayList;
 abstract class FragmentPool {
     private static ArrayList<Fragment> mFragments;
 
+    /**
+     * add instances to list for checklist screen
+     */
     protected static final void initFragments() {
         mFragments = new ArrayList<Fragment>();
 

@@ -14,7 +14,7 @@ import com.viewpagerindicator.CirclePageIndicator;
 public final class Checklist extends FragmentActivity {
 
     private ViewPager vpPager_SC;
-    private CirclePageIndicator cpiIndicatior_SC;
+    private CirclePageIndicator cpiIndicator_SC;
 
     @Override
     public final void onCreate(final Bundle _savedInstanceState) {
@@ -23,11 +23,11 @@ public final class Checklist extends FragmentActivity {
 
         findViews();
         FragmentPool.initFragments();
-        ViewWorker.initPager(this, vpPager_SC, cpiIndicatior_SC);
+        ViewWorker.initPager(this, vpPager_SC, cpiIndicator_SC);
     }
 
     private final void findViews() {
         vpPager_SC          = (ViewPager) findViewById(R.id.vpPager_SC);
-        cpiIndicatior_SC    = (CirclePageIndicator) findViewById(R.id.cpiIndicatior_SC);
+        cpiIndicator_SC = (CirclePageIndicator) findViewById(R.id.cpiIndicator_SC);
     }
 }

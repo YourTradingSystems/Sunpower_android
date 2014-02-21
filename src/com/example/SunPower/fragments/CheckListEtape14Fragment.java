@@ -26,9 +26,6 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
     private int buttonClicked;
     Intent intent;
 
-    private CheckListEtape14Fragment() {
-    }
-
     public static final CheckListEtape14Fragment create() {
         return new CheckListEtape14Fragment();
     }

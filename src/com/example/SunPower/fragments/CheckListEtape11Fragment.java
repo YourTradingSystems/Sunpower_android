@@ -23,8 +23,6 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
 
     private int checkedRadioButton = -1;
 
-    private CheckListEtape11Fragment(){}
-
     public static CheckListEtape11Fragment create(){
         return new CheckListEtape11Fragment();
     }
