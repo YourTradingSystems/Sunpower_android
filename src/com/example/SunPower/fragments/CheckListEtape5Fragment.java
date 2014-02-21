@@ -24,8 +24,13 @@ public final class CheckListEtape5Fragment extends Fragment {
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list5, _container, false);
-        findViews();
         return view;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        findViews();
     }
 
     private final void findViews() {
