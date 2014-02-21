@@ -28,12 +28,6 @@ public final class CheckListEtape5Fragment extends Fragment {
         return view;
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        findViews();
-    }
-
     private final void findViews(View _view) {
         rbtnQuestion1Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap5Question1Var1);
         rbtnQuestion2Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap5Question2Var1);
