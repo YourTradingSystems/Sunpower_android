@@ -31,7 +31,7 @@ public final class CheckListEtape2Fragment extends Fragment implements RadioGrou
     }
 
     public final void findView(final View view){
-        radioGroup = (RadioGroup)view.findViewById(R.id.radio_group_left);
+        radioGroup = (RadioGroup)view.findViewById(R.id.rg);
     }
 
     @Override
