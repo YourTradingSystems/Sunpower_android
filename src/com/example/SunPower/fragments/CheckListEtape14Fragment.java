@@ -41,9 +41,14 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list14, _container, false);
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
         findViews();
         setListeners();
-        return view;
     }
 
     private final void findViews() {
