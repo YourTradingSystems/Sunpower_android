@@ -10,5 +10,5 @@
     <com.viewpagerindicator.CirclePageIndicator
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_alignParentBottom="true"
-            android:id="@+id/cpiIndicatior_SC" style="@style/ArgIndicator"/>
+            android:id="@+id/cpiIndicator_SC" style="@style/ArgIndicator"/>
 </RelativeLayout>

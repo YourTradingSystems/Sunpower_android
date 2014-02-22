@@ -6,27 +6,56 @@
     p(r, l...) - padding (right, left...)
     -->
 
-    <dimen name="ts_banner">25sp</dimen>
     <dimen name="text_size_subtitle">18sp</dimen>
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
     <dimen name="button_width">40sp</dimen>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="p_log_sign_in">15dp</dimen>
+    <dimen name="m_log_sign_in">20dp</dimen>
+    <dimen name="mt_log_edit">10dp</dimen>
+    <dimen name="mb_log_edit">10dp</dimen>
+    <dimen name="mr_log_title">20dp</dimen>
+    <dimen name="p_log_sub_title">5dp</dimen>
+    <dimen name="m_log_connect_btn">10dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="p_home_btn">20dp</dimen>
+    <dimen name="mt_home_cb">-20dp</dimen>
+    <dimen name="mb_home_cb">-20dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Action Bar ~~~~~~~~~~~~~~~~~~~~~ -->
+    <dimen name="pl_ab_panel_btn">10dp</dimen>
+    <dimen name="pr_ab_panel_btn">15dp</dimen>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ts_arg_title">35sp</dimen>
     <dimen name="ts_arg_message">22sp</dimen>
-    <dimen name="mrl_arg_title">30dp</dimen>
-    <dimen name="mrl_arg_message">25dp</dimen>
+    <dimen name="mrl_arg_title">40dp</dimen>
+    <dimen name="mrl_arg_message">35dp</dimen>
+    <dimen name="pb_arg_title">20dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="ptb_indicator">20dp</dimen>
-    <dimen name="radius_indicator">4dp</dimen>
+    <dimen name="radius_indicator">3dp</dimen>
+    <dimen name="radius_page_indicator">8dp</dimen>
+    <integer name="distance_indicator">10</integer>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="width_button_checklist">320dp</dimen>
+    <dimen name="ts_checklist_banner">30sp</dimen>
+    <dimen name="p_checklist_banner">10dp</dimen>
+    <dimen name="ts_checklist_answer">20sp</dimen>
+    <dimen name="p_checklist_answer">15dp</dimen>
+    <dimen name="p_checklist_question">10dp</dimen>
+    <dimen name="mt_checklist_question">10dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

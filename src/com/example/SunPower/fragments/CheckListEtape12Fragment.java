@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import com.example.SunPower.R;
 
-;
-
 /**
  * Created by Eduard on 20.02.14.
  */
@@ -21,9 +19,6 @@ public final class CheckListEtape12Fragment extends Fragment {
     private TextView tvValueArea;
     private TextView tvValueProduction;
     private TextView tvValueIncome;
-
-
-    private CheckListEtape12Fragment(){}
 
     public static CheckListEtape12Fragment create(){
         return new CheckListEtape12Fragment();

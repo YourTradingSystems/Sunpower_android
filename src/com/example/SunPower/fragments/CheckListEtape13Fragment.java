@@ -27,8 +27,12 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     private String question5;
     private int buttonClicked;
     private EditText etQuestion1;
+    private Button btnQuestion2;
+    private Button btnQuestion3;
+    private Button btnQuestion4;
+    private Button btnQuestion5;
 
-    private CheckListEtape13Fragment() {
+    public CheckListEtape13Fragment() {
     }
 
     public static final CheckListEtape13Fragment create() {
@@ -37,22 +41,32 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-
         View view = _inflater.inflate(R.layout.fragment_check_list13, _container, false);
+        return view;
+    }
 
-        etQuestion1 = (EditText) view.findViewById(R.id.etCheckListEtap13Question1);
-        Button btnQuestion2 = (Button) view.findViewById(R.id.btnCheckListEtap13Question2);
-        Button btnQuestion3 = (Button) view.findViewById(R.id.btnCheckListEtap13Question3);
-        Button btnQuestion4 = (Button) view.findViewById(R.id.btnCheckListEtap13Question4);
-        Button btnQuestion5 = (Button) view.findViewById(R.id.btnCheckListEtap13Question5);
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        findViews();
+        setListeners();
+    }
 
+    private final void findViews() {
+        etQuestion1     = (EditText) getView().findViewById(R.id.etCheckListEtap13Question1);
+        btnQuestion2    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question2);
+        btnQuestion3    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question3);
+        btnQuestion4    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question4);
+        btnQuestion5    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question5);
+    }
+
+    private final void setListeners() {
         btnQuestion2.setOnClickListener(this);
         btnQuestion3.setOnClickListener(this);
         btnQuestion4.setOnClickListener(this);
         btnQuestion5.setOnClickListener(this);
-
-        return view;
     }
+
 
     @Override
     public void onClick(View v) {

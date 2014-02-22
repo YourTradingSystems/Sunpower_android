@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.example.SunPower.R;
+import com.example.SunPower.screens.checklist.Checklist;
 import com.viewpagerindicator.CirclePageIndicator;
 import com.example.SunPower.screens.Home;
 
@@ -25,8 +26,8 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
     private RelativeLayout rlRoot_SA;
     private ViewPager vpPager_SA;
     private CirclePageIndicator cpiIndicator_SA;
-    private ActionBar ab_SA;
-    private Button btnHome_CAb, btnWork_CAb;
+    private ActionBar abPanel;
+    private Button btnHome_CAB, btnChecklist_CAB;
 
     @Override
     public final void onCreate(final Bundle _savedInstanceState) {
@@ -48,32 +49,34 @@ public final class Argumentarie extends FragmentActivity  implements View.OnClic
      *  set the action bar options and custom layout
      */
     private final void initActionBar() {
-        ab_SA = getActionBar();
-        ab_SA.setDisplayShowHomeEnabled(false);
-        ab_SA.setDisplayShowTitleEnabled(false);
-        ab_SA.setDisplayShowCustomEnabled(true);
+        abPanel = getActionBar();
+        abPanel.setDisplayShowHomeEnabled(false);
+        abPanel.setDisplayShowTitleEnabled(false);
+        abPanel.setDisplayShowCustomEnabled(true);
 
         LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View customView = inflator.inflate(R.layout.custom_action_bar, null);
 
-        btnHome_CAb = (Button)customView.findViewById(R.id.btnHome_CAb);
-        btnHome_CAb.setOnClickListener(this);
-        btnWork_CAb = (Button)customView.findViewById(R.id.btnWork_CAb);
-        btnWork_CAb.setOnClickListener(this);
+        btnHome_CAB = (Button)customView.findViewById(R.id.btnHome_CAB);
+        btnHome_CAB.setOnClickListener(this);
 
-        ab_SA.setCustomView(customView);
+        customView.findViewById(R.id.btnArgumentarie_CAB).setVisibility(View.GONE);
+        btnChecklist_CAB = (Button)customView.findViewById(R.id.btnChecklist_CAB);
+        btnChecklist_CAB.setOnClickListener(this);
+
+        abPanel.setCustomView(customView);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId())
-        {
-            case R.id.btnHome_CAb:
-                startActivity(new Intent(getBaseContext(), Home.class));
+        switch (v.getId()) {
+            case R.id.btnHome_CAB:
+                finish();
                 break;
 
-            case R.id.btnWork_CAb:
-                startActivity(new Intent(getBaseContext(), Argumentarie.class));
+            case R.id.btnChecklist_CAB:
+                startActivity(new Intent(getBaseContext(), Checklist.class));
+                finish();
                 break;
         }
     }

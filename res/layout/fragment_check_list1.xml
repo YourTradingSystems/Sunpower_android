@@ -9,7 +9,7 @@
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap1Banner"
               android:text="@string/environment"
-              android:textSize="@dimen/ts_banner"
+              android:textSize="@dimen/ts_checklist_banner"
               android:textColor="@color/bg_screen_login"
               android:gravity="center"
               android:layout_above="@+id/tvCheckListEtap1subtitle"/>

@@ -7,8 +7,12 @@
     <style name="ThemeNoTitleBar" parent="android:Theme.Black.NoTitleBar.Fullscreen"/>
 
     <style name="CheckListEtapBanner">
-        <item name="android:textSize">@dimen/ts_banner</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_checklist_banner</item>
+        <item name="android:typeface">monospace</item>
     </style>
 
     <style name="CheckListEtapSubtitle">
@@ -22,55 +26,154 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="TextViewBlackTitle">
+    <style name="CheckListQuestion">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/ts_banner</item>
-        <item name="android:textColor">@color/text_title</item>
+        <item name="android:padding">@dimen/p_checklist_question</item>
+        <item name="android:layout_marginTop">@dimen/mt_checklist_question</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextViewBlackSubTitle">
+    <style name="CheckListRightAnswerRB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_answer</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:padding">@dimen/p_checklist_answer</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/custom_radio_button</item>
+    </style>
+
+    <style name="CheckListLeftAnswerRB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_answer</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:padding">@dimen/p_checklist_answer</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/custom_radio_button</item>
+    </style>
+
+    <style name="LogSignIn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_log_sign_in</item>
+        <item name="android:layout_margin">@dimen/m_log_sign_in</item>
+        <item name="android:background">@drawable/background_login</item>
+    </style>
+
+    <style name="LogTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">@dimen/mr_log_title</item>
+    </style>
+
+    <style name="LogSubTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:textColor">@color/text_title</item>
         <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_log_sub_title</item>
     </style>
 
-    <style name="EditTextLogin">
+    <style name="LogLoginEdit">
         <item name="android:layout_width">300dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">text</item>
+        <item name="android:layout_marginTop">@dimen/mt_log_edit</item>
+        <item name="android:layout_marginBottom">@dimen/mb_log_edit</item>
     </style>
 
-    <style name="EditTextPass">
+    <style name="LogPassEdit">
         <item name="android:layout_width">300dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">textPassword</item>
+        <item name="android:layout_marginTop">@dimen/mt_log_edit</item>
+        <item name="android:layout_marginBottom">@dimen/mb_log_edit</item>
     </style>
 
-    <style name="ButtonHomeCheckList">
+    <style name="LogErrorMsg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_log_sub_title</item>
+        <item name="android:drawableLeft">@drawable/login_error</item>
+    </style>
+
+    <style name="LogConnectBTN">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:layout_margin">@dimen/m_log_connect_btn</item>
+    </style>
+
+    <style name="HomeCheckListBTN">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_home_check_list</item>
         <item name="android:textColor">@color/text_home_button</item>
-        <item name="android:textSize">@dimen/ts_banner</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:padding">@dimen/p_home_btn</item>
     </style>
 
-    <style name="ButtonHomeArgumentarie">
+    <style name="HomeArgumentarieBTN">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_home_argument</item>
         <item name="android:textColor">@color/text_home_button</item>
-        <item name="android:textSize">@dimen/ts_banner</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:padding">@dimen/p_home_btn</item>
     </style>
 
-    <style name="ButtonHomeAdministrator">
+    <style name="HomeAdministratorBTN">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_home_administrator</item>
         <item name="android:textColor">@color/text_home_button</item>
-        <item name="android:textSize">@dimen/ts_banner</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:padding">@dimen/p_home_btn</item>
+    </style>
+
+    <style name="HomeCheckListCB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/mt_home_cb</item>
+        <item name="android:button">@drawable/custom_home_check_box_yellow</item>
+    </style>
+
+    <style name="HomeArgumentarieCB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/mt_home_cb</item>
+        <item name="android:button">@drawable/custom_home_check_box_green</item>
+    </style>
+
+    <style name="HomeAdministratorCB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/mt_home_cb</item>
+        <item name="android:button">@drawable/custom_home_check_box_brown</item>
+    </style>
+
+    <style name="ActionBarBTN">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/pl_ab_panel_btn</item>
+        <item name="android:paddingRight">@dimen/pr_ab_panel_btn</item>
+        <item name="android:background">@drawable/background_action_bar_button</item>
+        <item name="android:drawableLeft">@drawable/custom_radio_button</item>
     </style>
 </resources>

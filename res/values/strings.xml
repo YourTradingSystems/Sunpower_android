@@ -15,7 +15,8 @@
 
     <!-- ~~~~~~~~~~~ ACTION BAR ~~~~~~~~~~~~ -->
     <string name="action_bar_home_text">HOME</string>
-    <string name="action_bar_faire_text">FAIRE DÉCOUVRIR</string>
+    <string name="action_bar_argumentarie_text">FAIRE DÉCOUVRIR</string>
+    <string name="action_bar_checklist_text">REVENU SOLAIRE</string>
 
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~~ -->
     <!-- Etap0 -->
@@ -35,6 +36,18 @@
     <string name="less_than_3km">Less than 3km</string>
     <string name="between_3km_and_10km">Between 3km and 10km</string>
     <string name="more_than_10km">More than 10km</string>
+
+    <!-- Etap4 -->
+    <string name="fragment_check_list_etap4_banner_text">VOTRE MAISON</string>
+    <string name="fragment_check_list_etap4_subtitle_text">ETAPE #4</string>
+    <string name="fragment_check_list_etap4_question1_text">Simple toit ?</string>
+    <string name="fragment_check_list_etap4_question2_text">Azimut ?</string>
+    <string name="fragment_check_list_etap4_question3_text">Orienté nord-est / nord / nord-ouest ?</string>
+    <string name="fragment_check_list_etap4_question4_text">Simple pente ?</string>
+    <string name="fragment_check_list_etap4_question5_text">Pente de toit supérieure à 45° ?</string>
+    <string name="fragment_check_list_etap4_question6_text">Pente de toit inférieure à 10° ?</string>
+    <string name="fragment_check_list_etap4_answer1_text">OUI</string>
+    <string name="fragment_check_list_etap4_answer2_text">NON</string>
 
     <!-- Etap5 -->
     <string name="fragment_check_list_etap5_banner_text">VOTRE MAISON</string>

@@ -14,8 +14,6 @@ import com.example.SunPower.R;
 public final class CheckListEtape2Fragment extends Fragment implements RadioGroup.OnCheckedChangeListener {
     private RadioGroup radioGroup;
 
-    private CheckListEtape2Fragment(){}
-
     public static CheckListEtape2Fragment create(){
         return new CheckListEtape2Fragment();
     }
