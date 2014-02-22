@@ -33,18 +33,14 @@ public final class CheckListEtape12Fragment extends Fragment {
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list12, _container, false);
-        findView(view);
         return view;
     }
 
-    public final void findView(final View _view){
-        if (_view != null){
-            tvValueAddress = (TextView)_view.findViewById(R.id.tvValueAddress);
-            tvValueOrientation = (TextView)_view.findViewById(R.id.tvValueOrientation);
-            tvValueArea = (TextView)_view.findViewById(R.id.tvValueArea);
-            tvValueProduction = (TextView)_view.findViewById(R.id.tvValueProduction);
-            tvValueIncome = (TextView)_view.findViewById(R.id.tvValueIncome);
-        }
+    private void findViews(){
+        tvValueAddress = (TextView)getView().findViewById(R.id.tvValueAddress);
+        tvValueOrientation = (TextView)getView().findViewById(R.id.tvValueOrientation);
+        tvValueArea = (TextView)getView().findViewById(R.id.tvValueArea);
+        tvValueProduction = (TextView)getView().findViewById(R.id.tvValueProduction);
     }
 
 
@@ -66,6 +62,13 @@ public final class CheckListEtape12Fragment extends Fragment {
 
     public void setTvValueIncome(final String _value) {
         tvValueIncome.setText(_value);
+    }
+
+
+    @Override
+    public final void onActivityCreated(final Bundle _savedInstanceState) {
+        super.onActivityCreated(_savedInstanceState);
+        findViews();
     }
 
 

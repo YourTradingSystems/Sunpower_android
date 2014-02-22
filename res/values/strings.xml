@@ -44,6 +44,21 @@
     <string name="fragment_check_list_etap5_question_var1">OUI</string>
     <string name="fragment_check_list_etap5_question_var2">NON</string>
 
+
+    <!-- Etap10 -->
+    <string name="orientation">Orientation</string>
+    <string name="du_toit">du toit</string>
+    <string-array name="cardinal">
+        <item>S</item>
+        <item>SE</item>
+        <item>E</item>
+        <item>NE</item>
+        <item>N</item>
+        <item>NO</item>
+        <item>O</item>
+        <item>SO</item>
+    </string-array>
+
     <!-- Etap11 -->
     <string name="your_floor_living_area">Your floor living area</string>
     <string name="value_of_40m"> - of 40m<sup>2</sup> </string>
