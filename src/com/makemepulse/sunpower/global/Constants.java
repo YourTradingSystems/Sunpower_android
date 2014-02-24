@@ -12,5 +12,5 @@ public abstract class Constants {
     /**
      * for checklist
      */
-    public static final int yo = 0;
+    public static final int yoba = 0;
 }
