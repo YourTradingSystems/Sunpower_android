@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_screen_checklist"
+>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_income"
+            android:textColor="@color/text_home_button"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/ts_checklist_banner"
+            android:id="@+id/tvYour_Income"
+            android:layout_marginBottom="20dp"/>
+
+    <com.example.SunPower.fragments.checklist10.CustomMovementSun
+            android:id="@+id/customMovementSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+</RelativeLayout>

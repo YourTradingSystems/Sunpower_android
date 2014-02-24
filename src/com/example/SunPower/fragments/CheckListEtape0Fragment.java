@@ -19,26 +19,25 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
     private Button btnLeadChange;
     private Button btnNewLead;
 
+    private CheckListEtape0Fragment(){}
+
     public static CheckListEtape0Fragment create(){
         return new CheckListEtape0Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list0, _container, false);
-        findView(view);
-        setBtnOnClickListener();
-        return view;
+        return  _inflater.inflate(R.layout.fragment_check_list0, _container, false);
     }
 
-    public final void findView(final View _view){
-        btnStartChecklist = (Button)_view.findViewById(R.id.btnStartChecklist);
-        tvParentProfile = (TextView)_view.findViewById(R.id.tvParentProfile);
-        btnLeadChange = (Button)_view.findViewById(R.id.btnLeadChange);
-        btnNewLead = (Button)_view.findViewById(R.id.btnNewLead);
+    private void findViews(){
+        btnStartChecklist = (Button)getView().findViewById(R.id.btnStartChecklist);
+        tvParentProfile = (TextView)getView().findViewById(R.id.tvParentProfile);
+        btnLeadChange = (Button)getView().findViewById(R.id.btnLeadChange);
+        btnNewLead = (Button)getView().findViewById(R.id.btnNewLead);
     }
 
-    public final void setBtnOnClickListener(){
+    private void setBtnOnClickListener(){
         btnStartChecklist.setOnClickListener(this);
         btnLeadChange.setOnClickListener(this);
         btnNewLead.setOnClickListener(this);
@@ -46,18 +45,20 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
 
     @Override
     public final void onClick(final View _view) {
-        if(_view == btnStartChecklist) {
+/*        if(_view == btnStartChecklist){
             showCheckListEtap1();
-        }
-        if(_view == btnLeadChange){
+        }else if(_view == btnLeadChange){
             //showCheckListEtap1();
-        }
-        if(_view == btnNewLead){
+        }else if(_view == btnNewLead){
             showCheckListEtap1();
-        }
+        }*/
     }
 
-    public final void showCheckListEtap1(){
+    @Override
+    public final void onActivityCreated(final Bundle _savedInstanceState) {
+        super.onActivityCreated(_savedInstanceState);
+        findViews();
+        setBtnOnClickListener();
     }
 }
 

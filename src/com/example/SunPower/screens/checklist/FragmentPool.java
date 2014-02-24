@@ -2,6 +2,7 @@ package com.example.SunPower.screens.checklist;
 
 import android.support.v4.app.Fragment;
 import com.example.SunPower.fragments.*;
+import com.example.SunPower.fragments.checklist10.CheckListEtape10Fragment;
 
 import java.util.ArrayList;
 
@@ -24,6 +25,7 @@ abstract class FragmentPool {
         final CheckListEtape2Fragment etape2 = CheckListEtape2Fragment.create();
         final CheckListEtape4Fragment etape4 = CheckListEtape4Fragment.create();
         final CheckListEtape5Fragment etape5 = CheckListEtape5Fragment.create();
+        final CheckListEtape10Fragment etape10 = CheckListEtape10Fragment.create();
         final CheckListEtape11Fragment etape11 = CheckListEtape11Fragment.create();
         final CheckListEtape12Fragment etape12 = CheckListEtape12Fragment.create();
         final CheckListEtape13Fragment etape13 = CheckListEtape13Fragment.create();
@@ -34,6 +36,7 @@ abstract class FragmentPool {
         mFragments.add(etape2);
         mFragments.add(etape4);
         mFragments.add(etape5);
+        mFragments.add(etape10);
         mFragments.add(etape11);
         mFragments.add(etape12);
         mFragments.add(etape13);

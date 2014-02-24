@@ -20,18 +20,15 @@ public final class CheckListEtape2Fragment extends Fragment implements RadioGrou
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list2, _container, false);
-        findView(view);
-        addCheckedChangeListener();
-        return view;
+        return  _inflater.inflate(R.layout.fragment_check_list2, _container, false);
     }
 
     public final void addCheckedChangeListener(){
         radioGroup.setOnCheckedChangeListener(this);
     }
 
-    public final void findView(final View view){
-        radioGroup = (RadioGroup)view.findViewById(R.id.rg);
+    private void findViews(){
+        radioGroup = (RadioGroup)getView().findViewById(R.id.rg);
     }
 
     @Override
@@ -42,5 +39,12 @@ public final class CheckListEtape2Fragment extends Fragment implements RadioGrou
 
     public final int getChecked(){
         return -1;
+    }
+
+    @Override
+    public final void onActivityCreated(final Bundle _savedInstanceState) {
+        super.onActivityCreated(_savedInstanceState);
+        findViews();
+        addCheckedChangeListener();
     }
 }

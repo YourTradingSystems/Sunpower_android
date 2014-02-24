@@ -30,18 +30,15 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list11, _container, false);
-        findView(view);
-        setCheckedChangeListener();
-        return view;
+        return _inflater.inflate(R.layout.fragment_check_list11, _container, false);
     }
 
 
-    protected final void findView(final View _view){
-        radioGroup = (RadioGroup)_view.findViewById(R.id.rgEtap11);
+    private void findViews(){
+        radioGroup = (RadioGroup)getView().findViewById(R.id.rgEtap11);
     }
 
-    protected final void setCheckedChangeListener(){
+    private void setCheckedChangeListener(){
         radioGroup.setOnCheckedChangeListener(this);
     }
 
@@ -50,12 +47,18 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         int radioButtonID = radioGroup.getCheckedRadioButtonId();
         View radioButton = radioGroup.findViewById(radioButtonID);
-        int idx = radioGroup.indexOfChild(radioButton);
 
-        checkedRadioButton = idx;
+        checkedRadioButton = radioGroup.indexOfChild(radioButton);
     }
 
     public int getCheckedRadioButton() {
         return checkedRadioButton;
+    }
+
+    @Override
+    public final void onActivityCreated(final Bundle _savedInstanceState) {
+        super.onActivityCreated(_savedInstanceState);
+        findViews();
+        setCheckedChangeListener();
     }
 }
