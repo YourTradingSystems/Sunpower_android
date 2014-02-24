@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/bg_screen_checklist">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvCheckListEtap15Banner"
+              android:text="@string/fragment_check_list_etap15_banner_text"
+              android:layout_alignParentTop="true"
+              style="@style/CheckListEtapBanner"/>
+    <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/tvCheckListEtap15Banner">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/fragment_check_list_etap15_button1_text"
+                    android:id="@+id/btnCheckListEtap15Up"
+                    android:layout_alignParentTop="true"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/btnCheckListEtap15Down"
+                    android:text="@string/fragment_check_list_etap15_button2_text"
+                    android:layout_below="@id/btnCheckListEtap15Up"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/btnCheckListEtap15Refresh"
+                    android:text="@string/fragment_check_list_etap15_button3_text"
+                    android:layout_below="@id/btnCheckListEtap15Down"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -104,4 +104,10 @@
     <string name="fragment_check_list_etap14_question3_text">- Mandat administratif</string>
     <string name="fragment_check_list_etap14_question4_text">- Copie d’une facture EDF ou autre fournisseur (N°PDL)</string>
 
+    <!-- Etap15 -->
+    <string name="fragment_check_list_etap15_banner_text">Le dossier de Mr.Dupont est rempli à 100%, n'oubliez pas de remplir les informations complémentaires.</string>
+    <string name="fragment_check_list_etap15_button1_text">INFOS COMPLÉMENTAIRES</string>
+    <string name="fragment_check_list_etap15_button2_text">ENVOYER BROCHURE PAR EMAIL</string>
+    <string name="fragment_check_list_etap15_button3_text">SYNCHRONISER \n dernière synchro le 20/01/2014</string>
+
 </resources>
