@@ -8,4 +8,9 @@ package com.example.SunPower.global;
  */
 public abstract class Constants {
     public static final int RESULT_LOAD_IMAGE = 1;
+
+    /**
+     * for checklist
+     */
+    public static final int yo = 0;
 }

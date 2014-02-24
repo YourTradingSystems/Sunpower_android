@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.SunPower.R;
-import com.example.SunPower.screens.Home;
 import com.example.SunPower.screens.argumentarie.Argumentarie;
 import com.viewpagerindicator.CirclePageIndicator;
 
@@ -20,12 +19,13 @@ import com.viewpagerindicator.CirclePageIndicator;
  * Date: 20.02.14
  * Time: 17:02
  */
-public final class Checklist extends FragmentActivity implements View.OnClickListener {
+public final class Checklist extends FragmentActivity implements View.OnClickListener, ViewPager.OnPageChangeListener {
 
     private ViewPager vpPager_SC;
     private CirclePageIndicator cpiIndicator_SC;
     private ActionBar abPanel;
     private Button btnHome_CAB, btnArgumentarie_CAB;
+    private NavigationView nvNavigation_SC;
 
     @Override
     public final void onCreate(final Bundle _savedInstanceState) {
@@ -33,14 +33,21 @@ public final class Checklist extends FragmentActivity implements View.OnClickLis
         setContentView(R.layout.screen_checklist);
 
         findViews();
+        setListeners();
         initActionBar();
         FragmentPool.initFragments();
         ViewWorker.initPager(this, vpPager_SC, cpiIndicator_SC);
+        initNavigation(vpPager_SC);
     }
 
     private final void findViews() {
         vpPager_SC          = (ViewPager) findViewById(R.id.vpPager_SC);
         cpiIndicator_SC     = (CirclePageIndicator) findViewById(R.id.cpiIndicator_SC);
+        nvNavigation_SC     = (NavigationView) findViewById(R.id.nvNavigation_SC);
+    }
+
+    private final void setListeners() {
+        cpiIndicator_SC.setOnPageChangeListener(this);
     }
 
     /**
@@ -78,4 +85,21 @@ public final class Checklist extends FragmentActivity implements View.OnClickLis
                 break;
         }
     }
+
+    private final void initNavigation(final ViewPager _vpPager_SA) {
+        nvNavigation_SC.setCount(FragmentPool.getFragments().size());
+    }
+
+    //region OnPageChangeListener
+    @Override
+    public final void onPageScrolled(final int _i, final float _v, final int _i2) {
+        nvNavigation_SC.setPosition(_i);
+    }
+
+    @Override
+    public final void onPageSelected(final int _i) {}
+
+    @Override
+    public final void onPageScrollStateChanged(final int _i) {}
+    //endregion
 }
