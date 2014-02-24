@@ -2,36 +2,34 @@
 <resources>
     <!--
     ts - text size
-    pd - padding
     m(r, l...) - margin (right, left...)
     p(r, l...) - padding (right, left...)
     -->
 
-    <dimen name="ts_banner">25sp</dimen>
     <dimen name="text_size_subtitle">18sp</dimen>
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
     <dimen name="button_width">40sp</dimen>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
-    <dimen name="pd_log_sign_in">15dp</dimen>
-    <dimen name="mr_log_sign_in">20dp</dimen>
-    <dimen name="mrt_log_edit">10dp</dimen>
-    <dimen name="mrb_log_edit">10dp</dimen>
-    <dimen name="mrr_log_title">20dp</dimen>
-    <dimen name="pd_log_sub_title">5dp</dimen>
-    <dimen name="mr_log_connect_btn">10dp</dimen>
+    <dimen name="p_log_sign_in">15dp</dimen>
+    <dimen name="m_log_sign_in">20dp</dimen>
+    <dimen name="mt_log_edit">10dp</dimen>
+    <dimen name="mb_log_edit">10dp</dimen>
+    <dimen name="mr_log_title">20dp</dimen>
+    <dimen name="p_log_sub_title">5dp</dimen>
+    <dimen name="m_log_connect_btn">10dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~ -->
-    <dimen name="pd_home_btn">20dp</dimen>
-    <dimen name="mrt_home_cb">-20dp</dimen>
-    <dimen name="mrb_home_cb">-20dp</dimen>
+    <dimen name="p_home_btn">20dp</dimen>
+    <dimen name="mt_home_cb">-20dp</dimen>
+    <dimen name="mb_home_cb">-20dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Action Bar ~~~~~~~~~~~~~~~~~~~~~ -->
-    <dimen name="pdl_ab_panel_btn">10dp</dimen>
-    <dimen name="pdr_ab_panel_btn">15dp</dimen>
+    <dimen name="pl_ab_panel_btn">10dp</dimen>
+    <dimen name="pr_ab_panel_btn">15dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
@@ -52,9 +50,12 @@
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="width_button_checklist">320dp</dimen>
-    <dimen name="ts_checklist_answer">15sp</dimen>
-    <dimen name="pdr_checklist_answer">30dp</dimen>
-    <dimen name="pd_checklist_question">10dp</dimen>
+    <dimen name="ts_checklist_banner">30sp</dimen>
+    <dimen name="p_checklist_banner">10dp</dimen>
+    <dimen name="ts_checklist_answer">20sp</dimen>
+    <dimen name="p_checklist_answer">15dp</dimen>
+    <dimen name="p_checklist_question">10dp</dimen>
+    <dimen name="mt_checklist_question">10dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
