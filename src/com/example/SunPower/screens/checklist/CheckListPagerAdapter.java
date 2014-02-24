@@ -21,15 +21,15 @@ final class CheckListPagerAdapter extends FragmentPagerAdapter {
 
     /**
      * factory method
-     * @param _fm
-     * @return
+     * @param _fm FragmentManager for default constructor
+     * @return new instance
      */
     public static final CheckListPagerAdapter create(final FragmentManager _fm) {
         return new CheckListPagerAdapter(_fm);
     }
 
-    public final void setFragments(final ArrayList<Fragment> _fragmnets) {
-        mFragments = _fragmnets;
+    public final void setFragments(final ArrayList<Fragment> _fragments) {
+        mFragments = _fragments;
     }
 
     @Override
@@ -39,8 +39,8 @@ final class CheckListPagerAdapter extends FragmentPagerAdapter {
     }
 
     /**
-     * if arrays are not equals in size that there is no pages
-     * @return
+     * if arrays are not equals in size than there is no pages
+     * @return count of pages
      */
     @Override
     public final int getCount() {
