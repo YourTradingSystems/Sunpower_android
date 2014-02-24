@@ -10,9 +10,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/your_income"
-            android:textColor="@color/text_white_color"
+            android:textColor="@color/text_home_button"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/ts_banner"
+            android:textSize="@dimen/ts_checklist_banner"
             android:id="@+id/tvYour_Income"
             android:layout_marginBottom="20dp"/>
 

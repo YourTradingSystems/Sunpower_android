@@ -65,7 +65,6 @@ public final class CustomMovementSun extends View {
 
     @Override
     protected final void onDraw(final Canvas _canvas) {
-        Log.i("onTouchEvent", "   DRAW");
         drawCircle(_canvas); // draw Circle
         drawToggle(_canvas, mAngle); // draw Toggle
         drawTextInCenterCircle(_canvas); // Draw text in center circle
@@ -129,22 +128,24 @@ public final class CustomMovementSun extends View {
             case MotionEvent.ACTION_MOVE:
                 mAngle = (int) java.lang.Math.atan2(y, x);
                 int a = sideLength(x, y, getWidth()/2, getHeight()/2 + mPointerRadius);
-                int c = mPointerRadius;
-                int b = mPointerRadius;
-                if (a != 0){
-                    double k1 = Math.acos(((a*a)+(b*b)-(c*c))/(2.*a*b));
+                int c = sideLength(x, y, getWidth()/2, getHeight()/2);
+                int b = sideLength(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2) + mPointerRadius;
+                if ( a < b + c && b < a + c && c < a + b ){
+                    /*double k1 = Math.acos(((a*a)+(b*b)-(c*c))/(2.*a*b));
                     a = (int)((k1*180)/Math.PI);
                     double k2 = Math.acos(((a*a)+(c*c)-(b*b))/(2.*a*c));
                     b = (int)((k2*180)/Math.PI);
                     double k3 = Math.acos(((c*c)+(b*b)-(a*a))/(2.*c*b));
                     c = (int)((k3*180)/Math.PI);
-                    mAngle = a;
-                    /*
-                    int al = (int)((Math.acos((b*b+c*c-a*a)/(2*b*c)) * 180) / Math.PI);
-                    int be = (int)((Math.acos((-b*b+c*c+a*a)/(2*a*c)) * 180) / Math.PI);
-                    int ga = (int)((Math.acos((b*b-c*c+a*a)/(2*b*a)) * 180) / Math.PI);
-                    */
-                    Log.i("triangle", "   a = " + a + "   b = " + b + "    c = " + c);
+                    mAngle = a;*/
+                    Log.i("Angle", "   a = " + a + "   b = " + b + "    c = " + c);
+                    double k1 = ( 180 * Math.acos( ( b * b + c * c - a * a ) / ( 2 * b * c ) ) / Math.PI );
+                    double k2 = ( 180 * Math.acos( ( a * a + c * c - b * b ) / ( 2 * a * c ) ) / Math.PI );
+                    double k3 = ( 180 * Math.acos( ( a * a + b * b - c * c ) / ( 2 * a * b ) ) / Math.PI );
+                    Log.i("Angle", "   k1 = " + k1 + "   k2 = " + k2 + "   k3 = " + k3);
+
+                    mAngle = c;
+
                 }
                 invalidate();
                 break;
@@ -166,6 +167,9 @@ public final class CustomMovementSun extends View {
 
     private void drawTriangle(final Canvas _canvas){
         _canvas.drawLine(getWidth()/2, getHeight()/2, aa, bb, mCircletPaint);
+        _canvas.drawLine(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2 + mPointerRadius, mCircletPaint);
+        _canvas.drawLine(getWidth()/2, getHeight()/2 + mPointerRadius, aa, bb, mCircletPaint);
+
     }
 
 
