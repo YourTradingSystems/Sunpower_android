@@ -7,6 +7,9 @@
 
     <uses-sdk android:minSdkVersion="15"/>
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
     
@@ -17,8 +20,7 @@
 
         <activity android:name=".screens.Home"
                   android:screenOrientation="landscape"
-                  android:theme="@style/ThemeDarkActionBar">
-        </activity>
+                  android:theme="@style/ThemeDarkActionBar"/>
         
         <activity android:name=".screens.Login"
                   android:screenOrientation="landscape"
@@ -31,18 +33,15 @@
 
         <activity android:name=".screens.argumentarie.Argumentarie"
                   android:screenOrientation="landscape"
-                  android:theme="@style/ThemeDarkActionBar">
-        </activity>
+                  android:theme="@style/ThemeDarkActionBar"/>
 
         <activity android:name=".screens.Administrator"
             android:screenOrientation="landscape"
-            android:theme="@style/ThemeDarkActionBar">
-        </activity>
+            android:theme="@style/ThemeDarkActionBar"/>
 
         <activity android:name=".screens.checklist.Checklist"
                   android:screenOrientation="landscape"
-                  android:theme="@style/ThemeDarkActionBar">
-        </activity>
+                  android:theme="@style/ThemeDarkActionBar"/>
         
     </application>
 </manifest>
