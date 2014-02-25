@@ -5,43 +5,44 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import com.example.SunPower.R;
 
 /**
  * Created by Eduard on 21.02.14.
  */
+
 public final class CustomMovementSun extends View {
 
+    private static final int EPS = 23;
     private int mPointerRadius;
     private Paint paintToggle;
-    private float[] pointerPosition;
     private Paint mCircletPaint;
     private Paint mCircletTogglePaint;
     private Paint textPaint;
     private int mAngle;
-    float aa = 0;
-    float bb = 0;
+    private int mCircletPulmonary;
 
     public CustomMovementSun(final Context _context) {
         super(_context);
-        init(null);
+        init();
     }
 
     public CustomMovementSun(final Context _context, final AttributeSet _attrs) {
         super(_context, _attrs);
-        init(_attrs);
+        init();
     }
 
     public CustomMovementSun(final Context _context, final AttributeSet _attrs, final int _defStyle) {
         super(_context, _attrs, _defStyle);
-        init(_attrs);
+        init();
     }
 
-    private void init(final AttributeSet _attrs) {
-        mPointerRadius = 120;
+    private void init() {
+        mPointerRadius = 0;
+        mCircletPulmonary = 0;
         mAngle = 180;
 
         mCircletPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -54,10 +55,26 @@ public final class CustomMovementSun extends View {
         mCircletTogglePaint.setStyle(Paint.Style.STROKE);
         mCircletTogglePaint.setStrokeWidth(2);
 
+        paintToggle = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paintToggle.setColor(getContext().getResources().getColor(R.color.bg_screen_checklist));
+        paintToggle.setStyle(Paint.Style.STROKE);
+        paintToggle.setStyle(Paint.Style.FILL);
+
         textPaint = new Paint();
         textPaint.setTextSize(25);
         textPaint.setColor(Color.WHITE);
         textPaint.setTextAlign(Paint.Align.CENTER);
+        final ViewTreeObserver obs = this.getViewTreeObserver();
+        if (obs != null)
+            obs.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+            @Override
+            public boolean onPreDraw () {
+                mPointerRadius = getHeight() / 3;
+                mCircletPulmonary = mPointerRadius / 4;
+                return true;
+
+            }
+        });
 
     }
 
@@ -68,8 +85,7 @@ public final class CustomMovementSun extends View {
         drawCircle(_canvas); // draw Circle
         drawToggle(_canvas, mAngle); // draw Toggle
         drawTextInCenterCircle(_canvas); // Draw text in center circle
-        drawTextInCircle(_canvas, mPointerRadius + 35);
-        drawTriangle(_canvas);
+        drawTextInCircle(_canvas, mPointerRadius + mCircletPulmonary + 20);
 
     }
 
@@ -97,7 +113,8 @@ public final class CustomMovementSun extends View {
     private void drawToggle(final Canvas _canvas, final int _angle){
         int x = (int) (getWidth()/2 + mPointerRadius * Math.sin(Math.PI * _angle / 180));
         int y = (int) (getHeight()/2 + mPointerRadius * Math.cos(Math.PI * _angle / 180));
-        _canvas.drawCircle(x, y, 25, mCircletTogglePaint);
+        _canvas.drawCircle(x, y, mCircletPulmonary, paintToggle);
+        _canvas.drawCircle(x, y, mCircletPulmonary + 1, mCircletTogglePaint);
     }
 
     private void drawTextInCircle(final Canvas _canvas, final int _radius){
@@ -117,61 +134,57 @@ public final class CustomMovementSun extends View {
     public final boolean onTouchEvent(final MotionEvent _event) {
         int x = (int)_event.getX();
         int y = (int)_event.getY();
-
-        aa = x;
-        bb = y;
-
         switch (_event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i("onTouchEvent", "   DOWN");
                 break;
             case MotionEvent.ACTION_MOVE:
-                mAngle = (int) java.lang.Math.atan2(y, x);
-                int a = sideLength(x, y, getWidth()/2, getHeight()/2 + mPointerRadius);
-                int c = sideLength(x, y, getWidth()/2, getHeight()/2);
-                int b = sideLength(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2) + mPointerRadius;
-                if ( a < b + c && b < a + c && c < a + b ){
-                    /*double k1 = Math.acos(((a*a)+(b*b)-(c*c))/(2.*a*b));
-                    a = (int)((k1*180)/Math.PI);
-                    double k2 = Math.acos(((a*a)+(c*c)-(b*b))/(2.*a*c));
-                    b = (int)((k2*180)/Math.PI);
-                    double k3 = Math.acos(((c*c)+(b*b)-(a*a))/(2.*c*b));
-                    c = (int)((k3*180)/Math.PI);
-                    mAngle = a;*/
-                    Log.i("Angle", "   a = " + a + "   b = " + b + "    c = " + c);
-                    double k1 = ( 180 * Math.acos( ( b * b + c * c - a * a ) / ( 2 * b * c ) ) / Math.PI );
-                    double k2 = ( 180 * Math.acos( ( a * a + c * c - b * b ) / ( 2 * a * c ) ) / Math.PI );
-                    double k3 = ( 180 * Math.acos( ( a * a + b * b - c * c ) / ( 2 * a * b ) ) / Math.PI );
-                    Log.i("Angle", "   k1 = " + k1 + "   k2 = " + k2 + "   k3 = " + k3);
-
-                    mAngle = c;
-
-                }
-                invalidate();
+                calcAndRedraw(x, y);
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i("onTouchEvent", "   UP");
+                correction();
                 break;
         }
-        Log.i("onTouchEvent", "    x = " + x + "    y = " + y);
-
 
         return true;
     }
 
 
-    private int sideLength(final int _x1, final int _y1, final int _x2, final int _y2){
-        return (int)Math.sqrt(Math.pow((_x2 - _x1), 2) + Math.pow((_y2 - _y1), 2));
+    private double sideLength(final int _x1, final int _y1, final int _x2, final int _y2){
+        return Math.sqrt(Math.pow((_x2 - _x1), 2) + Math.pow((_y2 - _y1), 2));
     }
 
 
-    private void drawTriangle(final Canvas _canvas){
-        _canvas.drawLine(getWidth()/2, getHeight()/2, aa, bb, mCircletPaint);
-        _canvas.drawLine(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2 + mPointerRadius, mCircletPaint);
-        _canvas.drawLine(getWidth()/2, getHeight()/2 + mPointerRadius, aa, bb, mCircletPaint);
-
+    private void calcAndRedraw(final int _x, final int _y){
+        double a = sideLength(_x, _y, getWidth()/2, getHeight()/2 + mPointerRadius);
+        double c = sideLength(_x, _y, getWidth()/2, getHeight()/2);
+        double b = sideLength(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2) + mPointerRadius;
+        if ( a < b + c && b < a + c && c < a + b && a != 0 && b != 0 && c != 0 ){
+            double k3 = Math.acos(((c * c) + (b * b)-(a * a)) / (2.0 * c * b));
+            c = (int)(( k3 * 180) / Math.PI);
+            if (_x < getWidth()/2)
+                c = 2 * 180 - c;
+            mAngle = (int) c;
+            invalidate();
+        }
     }
 
+
+    private void correction(){
+        int angle = mAngle;
+        int part = mAngle / 45;
+        mAngle = part * 45;
+        if(Math.abs(angle - mAngle) > EPS){
+            mAngle += 45;
+        }
+        invalidate();
+    }
+
+    public final int getCompassDegree(){
+        int res = mAngle / 45;
+        if(res == 8)
+            res = 0;
+        return res;
+    }
 
 
 }
