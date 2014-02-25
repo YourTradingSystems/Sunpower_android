@@ -62,6 +62,7 @@
     <dimen name="m_checklist_btn">5dp</dimen>
     <dimen name="pr_checklist_spinner">40dp</dimen>
     <dimen name="pltb_checklist_spinner">15dp</dimen>
+    <dimen name="popup_padding">2dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

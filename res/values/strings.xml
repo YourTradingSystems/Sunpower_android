@@ -37,6 +37,16 @@
     <string name="between_3km_and_10km">Between 3km and 10km</string>
     <string name="more_than_10km">More than 10km</string>
 
+    <!-- Etap3 -->
+    <string name="fragment_check_list_etap3_banner_text">L\'ENVIRONNEMENT</string>
+    <string name="fragment_check_list_etap3_subtitle_text">ETAPE #3</string>
+    <string name="fragment_check_list_etap3_question1_text">Le site est-il en zone classée ABF ?</string>
+    <string name="fragment_check_list_etap3_question2_text">Y a-t-il des arbres gênants ?</string>
+    <string name="fragment_check_list_etap3_question3_text">Si oui, est-ce que le propriétaire peut les couper ou élaguer ?</string>
+    <string name="fragment_check_list_etap3_question_var1">OUI</string>
+    <string name="fragment_check_list_etap3_question_var2">NON</string>
+    <string name="fragment_check_list_etap3_popup_text">LEAD NON ELIGIBLE</string>
+
     <!-- Etap4 -->
     <string name="fragment_check_list_etap4_banner_text">VOTRE MAISON</string>
     <string name="fragment_check_list_etap4_subtitle_text">ETAPE #4</string>
