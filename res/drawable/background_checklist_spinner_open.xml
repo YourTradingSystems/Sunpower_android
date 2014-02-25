@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_screen_checklist" />
+            <corners android:radius="90dp" />
+            <stroke
+                android:color="@color/checklist_main_text"
+                android:width="3dp" />
+        </shape>
+    </item>
+
+    <item android:right="10dp">
+        <bitmap
+            android:src="@drawable/custom_spinner_btn_open"
+            android:gravity="right" />
+    </item>
+</layer-list>

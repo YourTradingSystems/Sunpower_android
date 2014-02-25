@@ -39,6 +39,7 @@
     <color name="button_home_check_list">#FEB822</color>
     <color name="button_home_argument">#90931E</color>
     <color name="button_home_administrator">#342F29</color>
+    <color name="button_checklist">@android:color/white</color>
     <color name="button_action_bar">#E4E4E4</color>
     <!-- ////////////////////////////////////////////////////////// -->
 </resources>

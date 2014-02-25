@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 import com.makemepulse.sunpower.R;
 import com.makemepulse.sunpower.screens.argumentarie.Argumentarie;
@@ -15,9 +16,7 @@ import com.makemepulse.sunpower.screens.checklist.Checklist;
  */
 public final class Home extends Activity implements View.OnClickListener {
 
-    private Button btnAdministrator_SH;
-    private Button btnArgumentaire_SH;
-    private Button btnCheckList_SH;
+    private Button btnAdministrator_SH, btnArgumentaire_SH, btnCheckList_SH;
 
     @Override
     public final void onCreate(Bundle _savedInstanceState) {

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CheckListEtapBanner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_checklist_banner</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="CheckListEtapSubtitle">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/text_size_subtitle_bottom_margin</item>
+    </style>
+
+    <style name="CheckListEtapStandard">
+        <item name="android:textSize">@dimen/text_size_standard</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CheckListQuestion">
+        <item name="android:layout_width">@dimen/w_checklist_question</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/p_checklist_question</item>
+        <item name="android:layout_marginTop">@dimen/mt_checklist_question</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CheckListRightAnswerRB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_answer</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:padding">@dimen/p_checklist_answer</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/custom_radio_button</item>
+    </style>
+
+    <style name="CheckListLeftAnswerRB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ts_checklist_answer</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:padding">@dimen/p_checklist_answer</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/custom_radio_button</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="CheckListTestsContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">@dimen/pr_checklist_tests_container</item>
+    </style>
+
+    <style name="CheckListResizableBTN">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/button_checklist</item>
+    </style>
+
+    <style name="CheckListBTN">
+        <item name="android:layout_width">@dimen/width_button_checklist</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/button_checklist</item>
+        <item name="android:textColor">@color/bg_screen_checklist</item>
+        <item name="android:layout_margin">@dimen/m_checklist_btn</item>
+    </style>
+
+    <style name="SpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/checklist_main_text</item>
+    </style>
+
+    <style name="CheckListSpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
+        <item name="android:paddingRight">@dimen/pr_checklist_spinner</item>
+        <item name="android:paddingTop">@dimen/pltb_checklist_spinner</item>
+        <item name="android:paddingBottom">@dimen/pltb_checklist_spinner</item>
+        <item name="android:paddingLeft">@dimen/pltb_checklist_spinner</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@drawable/background_checklist_spinner</item>
+        <!-- <item name="android:popupBackground">@drawable/background_checklist_spinner_close</item> !-->
+    </style>
+</resources>
