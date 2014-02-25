@@ -1,0 +1,12 @@
+#in project
+/.idea
+/gen
+/out
+*.iml
+
+#in library
+/libs/view_pager_indicator_lib/gen
+/libs/view_pager_indicator_lib/library.iml
+/libs/view_pager_indicator_lib/pom.xml
+/libs/view_pager_indicator_lib/project.properties
+/libs/view_pager_indicator_lib/view_pager_indicator_lib.iml

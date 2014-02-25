@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/cpiIndicator_SC"
             style="@style/ArgIndicator" android:layout_above="@+id/nvNavigation_SC"/>
-    <com.example.SunPower.screens.checklist.NavigationView
+    <com.makemepulse.sunpower.screens.checklist.NavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true" android:id="@+id/nvNavigation_SC"/>

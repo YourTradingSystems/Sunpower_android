@@ -10,6 +10,7 @@
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
     <dimen name="button_width">40sp</dimen>
+    <dimen name="drawable_margin">5sp</dimen>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="p_log_sign_in">15dp</dimen>
