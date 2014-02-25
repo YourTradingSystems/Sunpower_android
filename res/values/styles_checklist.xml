@@ -103,8 +103,11 @@
     <style name="CheckListEtap3PopUp">
         <item name="android:background">@drawable/popup_background</item>
         <item name="android:paddingLeft">@dimen/popup_padding</item>
+        <item name="android:paddingRight">@dimen/drawable_margin</item>
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_alignParentRight">true</item>
+        <item name="android:drawable">@dimen/popup_padding</item>
+        <item name="android:layout_centerInParent">true</item>
     </style>
 
 
