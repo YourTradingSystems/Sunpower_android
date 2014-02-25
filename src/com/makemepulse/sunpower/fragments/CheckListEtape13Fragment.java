@@ -15,8 +15,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 import com.makemepulse.sunpower.R;
 
-import static android.view.View.OnClickListener;
+
 import static com.makemepulse.sunpower.global.Constants.*;
+import static android.view.View.OnClickListener;
 
 public final class CheckListEtape13Fragment extends Fragment implements OnClickListener {
 
