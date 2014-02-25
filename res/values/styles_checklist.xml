@@ -92,4 +92,12 @@
         <item name="android:background">@drawable/background_checklist_spinner</item>
         <!-- <item name="android:popupBackground">@drawable/background_checklist_spinner_close</item> !-->
     </style>
+
+    <style name="CheckListEtap3PopUp">
+        <item name="android:background">@drawable/popup_background</item>
+        <item name="android:paddingLeft">@dimen/popup_padding</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
 </resources>
