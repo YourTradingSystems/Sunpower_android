@@ -1,4 +1,4 @@
-package com.example.SunPower.global;
+package com.makemepulse.sunpower.global;
 
 /**
  * contains global constants
@@ -12,7 +12,7 @@ public abstract class Constants {
     /**
      * for checklist
      */
-    public static final int yo = 0;
+    public static final int yoba = 0;
 
     /**
      * returns Compass Degree
@@ -25,5 +25,4 @@ public abstract class Constants {
     public static final int COMPASS_PARTY_No = 5;
     public static final int COMPASS_PARTY_O = 6;
     public static final int COMPASS_PARTY_So = 7;
-    public static final int yoba = 0;
 }
