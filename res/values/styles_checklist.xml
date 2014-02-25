@@ -33,6 +33,13 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="CheckListSubAnswer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/checklist_sub_main_text</item>
+    </style>
+
     <style name="CheckListRightAnswerRB">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

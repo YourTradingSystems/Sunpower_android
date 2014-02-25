@@ -97,6 +97,16 @@
     <string name="fragment_check_list_etap7_answer1_text">OUI</string>
     <string name="fragment_check_list_etap7_answer2_text">NON</string>
 
+    <!-- Etap8 -->
+    <string name="fragment_check_list_etap8_banner_text">VOUS</string>
+    <string name="fragment_check_list_etap8_question1_text">Type de courant de consommation ?</string>
+    <string name="fragment_check_list_etap8_question2_text">Estimation de la consommation électrique annuelle en kWH :</string>
+    <string name="fragment_check_list_etap8_question3_text">Estimation de la facture d’électricité annuelle en EUR :</string>
+    <string name="fragment_check_list_etap8_answer1_text">Monophasé</string>
+    <string name="fragment_check_list_etap8_answer2_text">Triphasé</string>
+    <string name="fragment_check_list_etap8_answer3_text">3644 kWH / an</string>
+    <string name="fragment_check_list_etap8_answer4_text">700€ / an</string>
+
     <!-- Etap10 -->
     <string name="orientation">Orientation</string>
     <string name="du_toit">du toit</string>
