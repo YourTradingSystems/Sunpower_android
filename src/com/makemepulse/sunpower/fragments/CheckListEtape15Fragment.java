@@ -36,9 +36,9 @@ public final class CheckListEtape15Fragment extends Fragment implements OnClickL
     }
 
     private final void findViews() {
-        btnTop = (Button) getView().findViewById(R.id.btnCheckListEtap15Up);
-        btnBottom = (Button) getView().findViewById(R.id.btnCheckListEtap15Down);
-        btnRefresh = (Button) getView().findViewById(R.id.btnCheckListEtap15Refresh);
+        btnTop = (Button) getView().findViewById(R.id.btnTop_FCL15);
+        btnBottom = (Button) getView().findViewById(R.id.btnMiddle_FCL15);
+        btnRefresh = (Button) getView().findViewById(R.id.btnRefresh_FCL15);
     }
 
     private final void setListeners() {
@@ -50,13 +50,13 @@ public final class CheckListEtape15Fragment extends Fragment implements OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnCheckListEtap15Up:
+            case R.id.btnTop_FCL15:
 
                 break;
-            case R.id.btnCheckListEtap15Down:
+            case R.id.btnMiddle_FCL15:
 
                 break;
-            case R.id.btnCheckListEtap15Refresh:
+            case R.id.btnRefresh_FCL15:
 
                 break;
         }
