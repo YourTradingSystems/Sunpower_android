@@ -20,38 +20,51 @@
               android:textSize="@dimen/text_size_subtitle"
               android:textColor="@color/bg_screen_login"
               android:gravity="center"
-              android:layout_above="@+id/rg"/>
+              android:layout_above="@+id/tblLayout_FCL1"/>
 
-    <TableLayout
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:orientation="horizontal"
             android:id="@+id/tblLayout_FCL1">
-        <TableRow>
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:layout_weight="1"
-                         android:id="@+id/radioBtnUrbanLessThan3km_FCL2"
-                         style="@style/CheckListLeftAnswerRB"
-                         android:checked="true"
-                         android:text="@string/less_than_3km"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:layout_weight="1"
-                         android:text="@string/between_3km_and_10km"
-                         style="@style/CheckListRightAnswerRB"
-                         android:id="@+id/radioBtnBetween3kmAnd10km_FCL2"/>
-        </TableRow>
-        <TableRow>
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/radioBtnMoreThan10km_FCL2"
-                         style="@style/CheckListLeftAnswerRB"
-                         android:text="@string/more_than_10km"/>
-        </TableRow>
+        <RadioButton
+                     android:id="@+id/radioBtnUrbanLessThan3km_FCL2"
+                     style="@style/CheckListLeftAnswerRB"
+                     android:checked="true"
+                     android:layout_gravity="right"
+                     android:text="@string/less_than_3km"/>
+
+        <RadioButton
+                     android:layout_gravity="right"
+                     android:id="@+id/radioBtnMoreThan10km_FCL2"
+                     style="@style/CheckListLeftAnswerRB"
+                     android:text="@string/more_than_10km"/>
 
 
-    </TableLayout>
+        </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <RadioButton android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/between_3km_and_10km"
+                     style="@style/CheckListRightAnswerRB"
+                     android:id="@+id/radioBtnBetween3kmAnd10km_FCL2"/>
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
 
 </RelativeLayout>
