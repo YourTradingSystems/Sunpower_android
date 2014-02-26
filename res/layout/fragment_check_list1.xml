@@ -28,29 +28,30 @@
             android:id="@+id/ll"
             android:orientation="horizontal">
         <RadioGroup
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/rg"
                 android:layout_weight="1"
                 android:orientation="vertical">
             <RadioButton android:layout_width="match_parent"
                          android:layout_height="wrap_content"
+                         style="@style/CheckListLeftAnswerRB"
+                         android:lines="1"
                          android:id="@+id/radio_btn_coastal_zone"
-                         android:button="@drawable/custom_radio_button"
                          android:text="@string/coastal_zone"/>
             <RadioButton android:layout_width="match_parent"
                          android:layout_height="wrap_content"
                          android:id="@+id/radio_btn_urban"
-                         android:button="@drawable/custom_radio_button"
+                         style="@style/CheckListLeftAnswerRB"
                          android:text="@string/urban"/>
             <RadioButton android:layout_width="match_parent"
                          android:layout_height="wrap_content"
                          android:text="@string/suburbs"
-                         android:button="@drawable/custom_radio_button"
+                         style="@style/CheckListLeftAnswerRB"
                          android:id="@+id/radio_btn_suburbs"/>
         </RadioGroup>
         <RadioGroup
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/radio_group_right"
@@ -58,13 +59,14 @@
             <RadioButton android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:id="@+id/radio_btn_environment_more"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/environment_more"/>
+                         style="@style/CheckListRightAnswerRB"
+                         android:text="@string/open_space"/>
             <RadioButton android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:button="@drawable/custom_radio_button"
+                         style="@style/CheckListRightAnswerRB"
+                         android:lines="2"
                          android:id="@+id/radio_btn_environment"
-                         android:text="@string/environment"/>
+                         android:text="@string/open_terrain"/>
 
         </RadioGroup>
     </LinearLayout>
