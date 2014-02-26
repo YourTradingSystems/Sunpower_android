@@ -10,7 +10,6 @@
             android:layout_height="wrap_content"
             android:text="@string/fragment_check_list_etap3_popup_text"
             android:id="@+id/tvCheckListEtap3PopUp"
-            android:drawableLeft="@drawable/popup_info"
             style="@style/CheckListEtap3PopUp"/>
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"

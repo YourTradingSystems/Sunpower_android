@@ -6,10 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.RadioButton;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 
 import com.makemepulse.sunpower.R;
 
@@ -19,10 +17,10 @@ public final class CheckListEtape6Fragment extends Fragment {
     private String question2;
     private int question3;
 
-    private RadioButton rbtnQuestion1Var1;
-    private RadioButton rbtnQuestion2Var1;
-    private RadioButton rbtnQuestion3Var1;
-    private Spinner sAnswer;
+    private RadioButton rbtnRoof_FCL6;
+    private RadioButton rbtnPresence_FCL6;
+    private RadioButton rbtnStructuralConcrete_FCL6;
+    private Spinner sYear_FCL6;
 
     public static final CheckListEtape6Fragment create() {
         return new CheckListEtape6Fragment();
@@ -36,18 +34,18 @@ public final class CheckListEtape6Fragment extends Fragment {
     }
 
     private final void findViews(View _view) {
-        rbtnQuestion1Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap6Question1Var1);
-        rbtnQuestion2Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap6Question2Var1);
-        rbtnQuestion3Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap6Question3Var1);
-        sAnswer = (Spinner) _view.findViewById(R.id.sEtap6Answer3);
+        rbtnRoof_FCL6 = (RadioButton) _view.findViewById(R.id.rbtnRoofVar1_FCL6);
+        rbtnPresence_FCL6 = (RadioButton) _view.findViewById(R.id.rbtnPresenceVar1_FCL6);
+        rbtnStructuralConcrete_FCL6 = (RadioButton) _view.findViewById(R.id.rbtnStructuralConcreteVar1_FCL6);
+        sYear_FCL6 = (Spinner) _view.findViewById(R.id.sYear_FCL6);
     }
 
     private void saveAllFragment6Data() {
-        if (rbtnQuestion1Var1.isChecked()) question1 = "OUI";
+        if (rbtnRoof_FCL6.isChecked()) question1 = "OUI";
         else question1 = "NON";
-        if (rbtnQuestion2Var1.isChecked()) question2 = "OUI";
+        if (rbtnPresence_FCL6.isChecked()) question2 = "OUI";
         else question2 = "NON";
-        question3 = sAnswer.getSelectedItemPosition();
+        question3 = sYear_FCL6.getSelectedItemPosition();
     }
 
 }
