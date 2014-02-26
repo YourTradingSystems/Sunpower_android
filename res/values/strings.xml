@@ -3,10 +3,10 @@
     <string name="app_name">SunPower</string>
 
     <!-- ~~~~~~~~~~~ LOGIN SCREEN ~~~~~~~~~~~ -->
-    <string name="login_screen_login_text">Login</string>
-    <string name="login_screen_pass_text">Mot de passe</string>
+    <string name="login">Login</string>
+    <string name="password">Mot de passe</string>
     <string name="login_screen_err_text">LOGIN / MOT DE PASSE ERRON</string>
-    <string name="login_screen_connect_text">Connexion</string>
+    <string name="login_screen_connect_text">CONNEXION</string>
 
     <!-- ~~~~~~~~~~~ HOME SCREEN ~~~~~~~~~~~ -->
     <string name="home_screen_my_table_text">Mon tableau de bord</string>

@@ -19,29 +19,16 @@
                  android:theme="@style/ThemeDarkActionBar">
 
         <activity android:name=".screens.home.Home"
-                  android:screenOrientation="landscape"
+                  android:screenOrientation="sensorLandscape"
                   android:theme="@style/ThemeDarkActionBar"/>
         
         <activity android:name=".screens.Login"
-                  android:screenOrientation="landscape"
+                  android:screenOrientation="sensorLandscape"
                   android:theme="@style/ThemeNoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".screens.argumentarie.Argumentarie"
-                  android:screenOrientation="landscape"
-                  android:theme="@style/ThemeDarkActionBar"/>
-
-        <activity android:name=".screens.Administrator"
-            android:screenOrientation="landscape"
-            android:theme="@style/ThemeDarkActionBar"/>
-
-        <activity android:name=".screens.checklist.Checklist"
-                  android:screenOrientation="landscape"
-                  android:theme="@style/ThemeDarkActionBar"/>
-        
     </application>
 </manifest>

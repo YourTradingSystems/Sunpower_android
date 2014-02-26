@@ -3,73 +3,80 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/bg_screen_checklist"
         >
     <TextView
-        android:id="@+id/tvCheckListEtap1Banner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/CheckListEtapBanner"
-        android:text="@string/environment"
-        android:layout_above="@+id/tvCheckListEtap1subtitle"
-        android:gravity="center" />
+              android:id="@+id/tvBanner_FC1"
+              style="@style/CheckListEtapBanner"
+              android:text="@string/environment"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:layout_above="@+id/tvSubtitle_FCL1"/>
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap1subtitle"
+              android:id="@+id/tvSubtitle_FCL1"
               android:text="@string/environment_more"
               android:textSize="@dimen/text_size_subtitle"
               android:textColor="@color/bg_screen_home"
               android:gravity="center"
-              android:layout_above="@+id/tblLayout"/>
-    <TableLayout
-            android:layout_width="400dp"
+              android:layout_above="@+id/lLayout_FCL1"/>
+
+    <LinearLayout
+            android:id="@+id/lLayout_FCL1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:id="@+id/tblLayout">
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
             <RadioButton
-                    android:id="@+id/radio_btn_coastal_zone"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/radio_btn_coastal_zone_FCL1"
                     style="@style/CheckListLeftAnswerRB"
                     android:text="@string/coastal_zone"
-                    android:layout_gravity="right"/>
-            <RadioButton
-                    android:id="@+id/radio_btn_open_space"
-                    style="@style/CheckListRightAnswerRB"
-                    android:text="@string/open_space"/>
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RadioButton
-                    android:id="@+id/radio_btn_urban"
-                    style="@style/CheckListLeftAnswerRB"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="@string/urban"
                     android:layout_gravity="right"/>
-            <RadioButton
-                    android:id="@+id/radio_btn_open_terrain"
-                    style="@style/CheckListRightAnswerRB"
-                    android:text="@string/open_terrain"
-                    android:layout_gravity="center_vertical"
-                    android:layout_width="wrap_content"/>
-
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
             <RadioButton
                     android:text="@string/suburbs"
                     style="@style/CheckListLeftAnswerRB"
-                    android:id="@+id/radio_btn_suburbs"
-                    android:layout_width="match_parent"
+                    android:lines="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/radio_btn_suburbs_FCL1"
                     android:layout_gravity="right"/>
-        </TableRow>
+            <RadioButton
+                    android:id="@+id/radio_btn_urban_FCL1"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:text="@string/urban"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"/>
 
-    </TableLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <RadioButton
+                    android:id="@+id/radio_btn_open_space_FCL1"
+                    style="@style/CheckListRightAnswerRB"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/open_space"/>
+            <RadioButton
+                    android:id="@+id/radio_btn_open_terrain_FCL1"
+                    style="@style/CheckListRightAnswerRB"
+                    android:text="@string/open_terrain"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

@@ -1,32 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="LoginET">
-        <item name="android:inputType">text</item>
-        <item name="android:layout_margin">@dimen/m_login_edit</item>
-        <item name="android:padding">@dimen/p_login_edit</item>
-        <item name="android:textSize">@dimen/ts_login_edit</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/login_main_text</item>
-        <item name="android:background">@drawable/background_login_edit_text</item>
+    <style name="LogSignIn">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_log_sign_in</item>
+        <item name="android:layout_margin">@dimen/m_log_sign_in</item>
+        <item name="android:background">@drawable/background_login</item>
     </style>
 
-    <style name="LoginPassET">
-        <item name="android:inputType">textPassword</item>
-        <item name="android:layout_margin">@dimen/m_login_edit</item>
-        <item name="android:padding">@dimen/p_login_edit</item>
-        <item name="android:textSize">@dimen/ts_login_edit</item>
+    <style name="LogTitle">
+        <item name="android:textSize">@dimen/ts_checklist_banner</item>
+        <item name="android:textColor">@color/text_title</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/login_main_text</item>
-        <item name="android:background">@drawable/background_login_edit_text</item>
+        <item name="android:layout_marginRight">@dimen/mr_log_title</item>
     </style>
 
-    <style name="LoginConnectBTN">
-        <item name="android:layout_margin">@dimen/m_login_connect_btn</item>
-        <item name="android:padding">@dimen/p_login_connect_btn</item>
-        <item name="android:textSize">@dimen/ts_login_connect_btn</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/login_sub_main_text</item>
-        <item name="android:background">@color/button_login_connection</item>
+    <style name="LogSubTitle">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/p_log_sub_title</item>
+    </style>
+
+    <style name="LoginTextFields">
+        <item name="android:background">@drawable/bg_login_text_field</item>
+        <item name="android:layout_marginBottom">@dimen/mb_log_edit</item>
+        <item name="android:textSize">@dimen/text_size_login_text_fields</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingTop">@dimen/ptb_login_text</item>
+        <item name="android:paddingBottom">@dimen/ptb_login_text</item>
+        <item name="android:textColor">@color/text_login_text_field</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="LogErrorMsg">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_login_error</item>
+        <item name="android:padding">@dimen/p_log_sub_title</item>
+        <item name="android:background">@drawable/bg_login_error</item>
+    </style>
+
+    <style name="LogConnectBTN">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:paddingTop">@dimen/ptb_login_text</item>
+        <item name="android:paddingBottom">@dimen/ptb_login_text</item>
+        <item name="android:background">@drawable/selector_btn_login</item>
     </style>
 </resources>

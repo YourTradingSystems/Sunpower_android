@@ -14,49 +14,49 @@ import com.makemepulse.sunpower.R;
 
 public final class CheckListEtape12Fragment extends Fragment {
 
-    private TextView tvValueAddress;
-    private TextView tvValueOrientation;
-    private TextView tvValueArea;
-    private TextView tvValueProduction;
-    private TextView tvValueIncome;
+    private TextView tvValueAddress_FCL12;
+    private TextView tvValueOrientation_FCL12;
+    private TextView tvValueArea_FCL12;
+    private TextView tvValueProduction_FCL12;
+    private TextView tvValueIncome_FC12;
 
-    public static CheckListEtape12Fragment create(){
+    public static CheckListEtape12Fragment create() {
         return new CheckListEtape12Fragment();
     }
 
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list12, _container, false);
-        return view;
+        return  _inflater.inflate(R.layout.fragment_check_list12, _container, false);
     }
 
-    private void findViews(){
-        tvValueAddress = (TextView)getView().findViewById(R.id.tvValueAddress);
-        tvValueOrientation = (TextView)getView().findViewById(R.id.tvValueOrientation);
-        tvValueArea = (TextView)getView().findViewById(R.id.tvValueArea);
-        tvValueProduction = (TextView)getView().findViewById(R.id.tvValueProduction);
+    private final void findViews() {
+        tvValueAddress_FCL12 = (TextView)getView().findViewById(R.id.tvValueAddress_FCL12);
+        tvValueOrientation_FCL12 = (TextView)getView().findViewById(R.id.tvValueOrientation_FCL12);
+        tvValueArea_FCL12 = (TextView)getView().findViewById(R.id.tvValueArea_FCL12);
+        tvValueProduction_FCL12 = (TextView)getView().findViewById(R.id.tvValueProduction_FCL12);
+        tvValueIncome_FC12 = (TextView)getView().findViewById(R.id.tvValueIncome_FCL12);
     }
 
 
-    public void setTvValueAddress(final String _value) {
-        tvValueAddress.setText(_value);
+    public final void setTvValueAddress(final String _value) {
+        tvValueAddress_FCL12.setText(_value);
     }
 
-    public void setTvValueOrientation(final String _value) {
-        tvValueOrientation.setText(_value);
+    public final void setTvValueOrientation(final String _value) {
+        tvValueOrientation_FCL12.setText(_value);
     }
 
-    public void setTvValueArea(final String _value) {
-        tvValueArea.setText(_value);
+    public final void setTvValueArea(final String _value) {
+        tvValueArea_FCL12.setText(_value);
     }
 
-    public void setTvValueProduction(final String _value) {
-        tvValueProduction.setText(_value);
+    public final void setTvValueProduction(final String _value) {
+        tvValueProduction_FCL12.setText(_value);
     }
 
-    public void setTvValueIncome(final String _value) {
-        tvValueIncome.setText(_value);
+    public final void setTvValueIncome(final String _value) {
+        tvValueIncome_FC12.setText(_value);
     }
 
 

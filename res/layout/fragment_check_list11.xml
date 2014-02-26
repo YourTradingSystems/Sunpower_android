@@ -3,26 +3,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/bg_screen_checklist"
         >
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/your_income"
             android:textColor="@color/checklist_main_text"
             android:layout_centerHorizontal="true"
             android:textSize="@dimen/ts_checklist_banner"
-            android:id="@+id/tvYour_Income"
+            android:id="@+id/tvYourIncome_FCL12"
             android:layout_above="@+id/tvYourFloorLivingArea"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp" android:gravity="center_horizontal"/>
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:id="@+id/tvYourFloorLivingArea"
             android:text="@string/your_floor_living_area"
             android:layout_centerInParent="true"
             android:textColor="@color/checklist_main_text"
             android:textSize="@dimen/text_size_subtitle"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" android:gravity="center_horizontal"/>
 
     <RelativeLayout
             android:layout_width="wrap_content"
@@ -33,42 +32,44 @@
             >
         <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="28dp"
+                android:layout_height="@dimen/h_radiobutton_text"
                 android:id="@+id/tvForRadioButton40"
                 android:textColor="@color/checklist_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:text="@string/value_of_40m"
-                android:layout_marginLeft="15dp" android:layout_alignParentBottom="false" android:gravity="bottom"
+                android:layout_marginLeft="@dimen/m_radiobutton_text"
+                android:layout_alignParentBottom="false"
+                android:gravity="bottom"
                 />
         <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="28dp"
+                android:layout_height="@dimen/h_radiobutton_text"
                 android:id="@+id/tvForRadioButton40_60"
                 android:textColor="@color/checklist_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:text="@string/value_40_60m"
                 android:layout_toRightOf="@+id/tvForRadioButton40"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/m_radiobutton_text"
                 android:gravity="bottom"/>
         <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="28dp"
+                android:layout_height="@dimen/h_radiobutton_text"
                 android:id="@+id/tvForRadioButton60_80"
                 android:textColor="@color/checklist_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:text="@string/value_60_80m"
                 android:layout_toRightOf="@+id/tvForRadioButton40_60"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/m_radiobutton_text"
                 android:gravity="bottom"/>
         <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="28dp"
+                android:layout_height="@dimen/h_radiobutton_text"
                 android:id="@+id/tvForRadioButtonMore80"
                 android:textColor="@color/checklist_main_text"
                 android:textSize="@dimen/text_size_subtitle"
                 android:text="@string/value_of_80m"
                 android:layout_toRightOf="@+id/tvForRadioButton60_80"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="@dimen/m_radiobutton_text"
                 android:gravity="bottom"/>
 
             </RelativeLayout>
@@ -89,28 +90,28 @@
                      android:button="@drawable/custom_radio_button"
                      android:layout_weight="1"
                      android:checked="true"
-                     android:layout_marginLeft="40dp"/>
+                     android:layout_marginLeft="@dimen/ml_radiobutton"/>
 
         <RadioButton android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:id="@+id/radio_btn_40_60m"
                      android:button="@drawable/custom_radio_button"
                      android:layout_weight="1"
-                     android:layout_marginLeft="40dp"/>
+                     android:layout_marginLeft="@dimen/ml_radiobutton"/>
 
         <RadioButton android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:id="@+id/radio_btn_60_80m"
                      android:button="@drawable/custom_radio_button"
                      android:layout_weight="1"
-                     android:layout_marginLeft="40dp"/>
+                     android:layout_marginLeft="@dimen/ml_radiobutton"/>
 
         <RadioButton android:layout_width="match_parent"
                      android:layout_height="wrap_content"
                      android:id="@+id/radio_btn_more_80"
                      android:button="@drawable/custom_radio_button"
                      android:layout_weight="1"
-                     android:layout_marginLeft="45dp"/>
+                     android:layout_marginLeft="@dimen/ml_radiobutton"/>
         </RadioGroup>
 
 </RelativeLayout>

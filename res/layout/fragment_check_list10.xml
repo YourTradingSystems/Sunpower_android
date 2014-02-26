@@ -3,21 +3,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/bg_screen_checklist"
 >
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/CheckListEtapBanner"
             android:text="@string/your_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/customMovementSun_FCL10"
             android:textColor="@color/text_home_button"
-            android:layout_centerHorizontal="true"
             android:textSize="@dimen/ts_checklist_banner"
-            android:id="@+id/tvYour_Income"
-            android:layout_marginBottom="20dp"/>
+            android:id="@+id/tvYourIncome_FCL10"
+            />
 
-    <com.makemepulse.sunpower.fragments.checklist10.CustomMovementSun
-            android:id="@+id/customMovementSun"
+    <com.makemepulse.sunpower.fragments.checklist_etape10.CustomMovementSun
+            android:id="@+id/customMovementSun_FCL10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

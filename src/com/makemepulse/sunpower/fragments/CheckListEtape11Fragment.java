@@ -19,11 +19,11 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
     public final static int IDX_RADIO_BUTTON_60_80 = 2;
     public final static int IDX_RADIO_BUTTON_OF_80 = 3;
 
-    private RadioGroup radioGroup;
+    private RadioGroup mRadioGroup;
 
-    private int checkedRadioButton = -1;
+    private int mCheckedRadioButton = -1;
 
-    public static CheckListEtape11Fragment create(){
+    public final static CheckListEtape11Fragment create() {
         return new CheckListEtape11Fragment();
     }
 
@@ -34,25 +34,24 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
     }
 
 
-    private void findViews(){
-        radioGroup = (RadioGroup)getView().findViewById(R.id.rgEtap11);
+    private final void findViews() {
+        mRadioGroup = (RadioGroup)getView().findViewById(R.id.rgEtap11);
     }
 
-    private void setCheckedChangeListener(){
-        radioGroup.setOnCheckedChangeListener(this);
+    private final void setCheckedChangeListener() {
+        mRadioGroup.setOnCheckedChangeListener(this);
     }
 
 
     @Override
-    public void onCheckedChanged(RadioGroup group, int checkedId) {
-        int radioButtonID = radioGroup.getCheckedRadioButtonId();
-        View radioButton = radioGroup.findViewById(radioButtonID);
-
-        checkedRadioButton = radioGroup.indexOfChild(radioButton);
+    public final void onCheckedChanged(final RadioGroup _group, final int _checkedId) {
+        int radioButtonID = mRadioGroup.getCheckedRadioButtonId();
+        View radioButton = mRadioGroup.findViewById(radioButtonID);
+        mCheckedRadioButton = mRadioGroup.indexOfChild(radioButton);
     }
 
-    public int getCheckedRadioButton() {
-        return checkedRadioButton;
+    public final int getmCheckedRadioButton() {
+        return mCheckedRadioButton;
     }
 
     @Override
