@@ -1,22 +1,14 @@
 package com.makemepulse.sunpower.fragments;
 
 
-import android.app.ActionBar;
-import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import com.makemepulse.sunpower.R;
-
-import static android.widget.LinearLayout.LayoutParams;
 
 public final class CheckListEtape3Fragment extends Fragment {
 
@@ -46,10 +38,10 @@ public final class CheckListEtape3Fragment extends Fragment {
     }
 
     private final void findViews() {
-        rbtnQuestion1Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap3Question1Var1);
-        rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap3Question2Var1);
-        rbtnQuestion3Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap3Question3Var1);
-        tvPopUp = (TextView) getView().findViewById(R.id.tvCheckListEtap3PopUp);
+        rbtnQuestion1Var1 = (RadioButton) getView().findViewById(R.id.rbtnQuestion1Var1_FCL3);
+        rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnQuestion2Var1_FCL3);
+        rbtnQuestion3Var1 = (RadioButton) getView().findViewById(R.id.rbtnQuestion3Var1_FCL3);
+        tvPopUp = (TextView) getView().findViewById(R.id.tvPopUp_FCL3);
     }
 
     private void saveAllFragment3Data() {

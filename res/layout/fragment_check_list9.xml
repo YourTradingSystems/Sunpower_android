@@ -3,37 +3,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@color/bg_screen_checklist">
-
+    android:gravity="center">
 
     <TextView
         android:id="@+id/tvBanner_FCL9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="@style/CheckListEtapBanner"
         android:text="@string/fragment_check_list_etap9_banner_text"
-        android:layout_alignParentTop="true" />
+        android:gravity="center" />
 
     <EditText
         android:id="@+id/etEmailAddress_FCL9"
+        android:layout_width="@dimen/w_checklist_question"
+        android:layout_height="wrap_content"
         android:hint="@string/fragment_check_list_etap9_question1_text"
         style="@style/CheckListET"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvBanner_FCL9" />
+        android:layout_below="@+id/tvBanner_FCL9"/>
 
     <TextView
         android:id="@+id/tvOwner_FCL9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="@style/CheckListQuestion"
         android:text="@string/fragment_check_list_etap9_question2_text"
         android:layout_below="@+id/etEmailAddress_FCL9"
-        android:layout_centerHorizontal="true" />
+        android:gravity="center" />
 
     <RadioGroup
         android:id="@+id/rgOwner_FCL9"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/tvOwner_FCL9"
-        android:layout_centerHorizontal="true">
+        android:gravity="center" >
 
         <RadioButton
             android:id="@+id/rbtnOwnerVar1_FCL9"
@@ -50,18 +54,20 @@
 
     <TextView
         android:id="@+id/tvPrimaryResidence_FCL9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="@style/CheckListQuestion"
         android:text="@string/fragment_check_list_etap9_question3_text"
         android:layout_below="@+id/rgOwner_FCL9"
-        android:layout_centerHorizontal="true" />
+        android:gravity="center" />
 
     <RadioGroup
         android:id="@+id/rgPrimaryResidence_FCL9"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/tvPrimaryResidence_FCL9"
-        android:layout_centerHorizontal="true">
+        android:gravity="center" >
 
         <RadioButton
             android:id="@+id/rbtnPrimaryResidenceVar1_FCL9"

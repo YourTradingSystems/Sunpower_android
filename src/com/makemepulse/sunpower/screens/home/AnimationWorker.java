@@ -14,13 +14,18 @@ import static com.makemepulse.sunpower.global.Constants.*;
  */
 abstract class AnimationWorker {
 
+    //center position for buttons
+    private static int mCenterX = 0;
+
     private static int mArgTopPos = 0;
     private static int mArgBottomPos = 0;
-    private static int mOffsetBtnArg = 0;
+    private static int mOffsetYBtnArg = 0;
+    private static int mOffsetXBtnArg = 0;
 
     private static int mCheckTopPos = 0;
     private static int mCheckBotPos = 0;
-    private static int mOffsetBtnCheck = 0;
+    private static int mOffsetYBtnCheck = 0;
+    private static int mOffsetXBtnCheck = 0;
 
     /**
      * Get and save positions for animations
@@ -33,16 +38,21 @@ abstract class AnimationWorker {
         //Root layout's y position and height
         final int rootY = (int) _rlRoot_SH.getY();
         final int rootHeight = _rlRoot_SH.getHeight();
+        final int rootWidth = _rlRoot_SH.getWidth();
+
+        mCenterX = rootWidth / 2;
 
         final int topSectorHeight = (int) (rootHeight * TOP_SECTOR_SIZE_PERCENT);
 
         mArgTopPos = rootY + topSectorHeight;
         mArgBottomPos = (int) (rootY + rootHeight * (1 - ARGUMENTARIE_START_Y_OFFSET_PERCENT));
-        mOffsetBtnArg = _btnArg_SH.getHeight() / 2;
+        mOffsetYBtnArg = _btnArg_SH.getHeight() / 2;
+        mOffsetXBtnArg = _btnArg_SH.getWidth() / 2;
 
         mCheckTopPos = rootY + topSectorHeight;
         mCheckBotPos = (int) (rootY + rootHeight * (1 - CHECKLIST_START_Y_OFFSET_PERCENT));
-        mOffsetBtnCheck = _btnChecklist_SH.getHeight() / 2;
+        mOffsetYBtnCheck = _btnChecklist_SH.getHeight() / 2;
+        mOffsetXBtnCheck = _btnChecklist_SH.getWidth() / 2;
     }
 
     /**
@@ -53,15 +63,30 @@ abstract class AnimationWorker {
      */
     protected static final void animateArg(final FrameLayout _flArg_SH, final ImageButton _btnArg_SH) {
         final int currentPos = (int) _flArg_SH.getY();
-        final int dest = currentPos == mArgTopPos ? mArgBottomPos : mArgTopPos;
+        //animation coordinates layout and button
+        final int destLy, destBx;
+        if (currentPos == mArgTopPos) {
+            destLy = mArgBottomPos;
+            destBx = mCenterX;
+        } else {
+            destLy = mArgTopPos;
+            destBx = mOffsetXBtnArg;
+        }
 
-        final ObjectAnimator animatorL = ObjectAnimator.ofFloat(_flArg_SH, "y", dest);
+        //animate layout top-bottom
+        final ObjectAnimator animatorL = ObjectAnimator.ofFloat(_flArg_SH, "y", destLy);
         animatorL.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
         animatorL.start();
 
-        final ObjectAnimator animatorB = ObjectAnimator.ofFloat(_btnArg_SH, "y", dest - mOffsetBtnArg);
-        animatorB.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
-        animatorB.start();
+        //animate button top-bottom with layout
+        final ObjectAnimator animatorBy = ObjectAnimator.ofFloat(_btnArg_SH, "y", destLy - mOffsetYBtnArg);
+        animatorBy.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
+        animatorBy.start();
+
+        //animate button left-center
+        final ObjectAnimator animatorBx = ObjectAnimator.ofFloat(_btnArg_SH, "x", destBx - mOffsetXBtnArg);
+        animatorBx.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
+        animatorBx.start();
     }
 
     /**
@@ -72,14 +97,29 @@ abstract class AnimationWorker {
      */
     protected static final void animateCheck(final FrameLayout _flChecklist_SH, final ImageButton _btnChecklist_SH) {
         final int currentPos = (int) _flChecklist_SH.getY();
-        final int dest = currentPos == mCheckTopPos ? mCheckBotPos : mCheckTopPos;
+        //animation coordinates layout and button
+        final int destLy, destBx;
+        if (currentPos == mCheckTopPos) {
+            destLy = mCheckBotPos;
+            destBx = mCenterX;
+        } else {
+            destLy = mCheckTopPos;
+            destBx = mOffsetXBtnCheck;
+        }
 
-        final ObjectAnimator animatorL = ObjectAnimator.ofFloat(_flChecklist_SH, "y", dest);
+        //animate layout top-bottom
+        final ObjectAnimator animatorL = ObjectAnimator.ofFloat(_flChecklist_SH, "y", destLy);
         animatorL.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
         animatorL.start();
 
-        final ObjectAnimator animatorB = ObjectAnimator.ofFloat(_btnChecklist_SH, "y", dest - mOffsetBtnCheck);
+        //animate button top-bottom with layout
+        final ObjectAnimator animatorB = ObjectAnimator.ofFloat(_btnChecklist_SH, "y", destLy - mOffsetYBtnCheck);
         animatorB.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
         animatorB.start();
+
+        //animate button left-center
+        final ObjectAnimator animatorBx = ObjectAnimator.ofFloat(_btnChecklist_SH, "x", destBx - mOffsetXBtnCheck);
+        animatorBx.setDuration(HOME_OPEN_CLOSE_ANIM_DURATION);
+        animatorBx.start();
     }
 }
