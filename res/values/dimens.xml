@@ -26,6 +26,7 @@
     <dimen name="p_home_btn">20dp</dimen>
     <dimen name="mt_home_cb">-20dp</dimen>
     <dimen name="mb_home_cb">-20dp</dimen>
+    <dimen name="p_home_btn_open_close">10dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Action Bar ~~~~~~~~~~~~~~~~~~~~~ -->
