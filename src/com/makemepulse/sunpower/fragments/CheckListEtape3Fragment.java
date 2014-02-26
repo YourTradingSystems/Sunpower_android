@@ -44,6 +44,10 @@ public final class CheckListEtape3Fragment extends Fragment {
         tvPopUp = (TextView) getView().findViewById(R.id.tvPopUp_FCL3);
     }
 
+    /**
+     * save user input data
+     */
+
     private void saveAllFragment3Data() {
         if (rbtnQuestion1Var1.isChecked()) question1 = "OUI";
         else question1 = "NON";
@@ -53,9 +57,18 @@ public final class CheckListEtape3Fragment extends Fragment {
         else question3 = "NON";
     }
 
+
+    /**
+     * show popUp window
+     */
+
     private void showPopUp() {
         tvPopUp.setVisibility(View.VISIBLE);
     }
+
+    /**
+     * hide popUp window
+     */
 
     private void hidePopUp() {
         tvPopUp.setVisibility(View.INVISIBLE);
