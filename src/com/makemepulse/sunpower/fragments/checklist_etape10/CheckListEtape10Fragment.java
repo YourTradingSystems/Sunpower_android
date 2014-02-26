@@ -1,4 +1,4 @@
-package com.makemepulse.sunpower.fragments.checklist10;
+package com.makemepulse.sunpower.fragments.checklist_etape10;
 
 
 import android.os.Bundle;

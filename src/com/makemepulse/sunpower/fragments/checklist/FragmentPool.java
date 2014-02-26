@@ -2,7 +2,7 @@ package com.makemepulse.sunpower.fragments.checklist;
 
 import android.support.v4.app.Fragment;
 import com.makemepulse.sunpower.fragments.*;
-import com.makemepulse.sunpower.fragments.checklist10.CheckListEtape10Fragment;
+import com.makemepulse.sunpower.fragments.checklist_etape10.CheckListEtape10Fragment;
 
 import java.util.ArrayList;
 

@@ -29,7 +29,8 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/etLogin_SL" android:layout_width="match_parent" android:layout_height="wrap_content"
             android:gravity="center" android:layout_alignRight="@+id/ivLogo_SL"
-            android:layout_alignLeft="@+id/ivLogo_SL" android:hint="@string/password" android:singleLine="true"/>
+            android:layout_alignLeft="@+id/ivLogo_SL" android:hint="@string/password" android:singleLine="true"
+            android:inputType="textPassword"/>
         <TextView
             android:id="@+id/tvError_SL"
             style="@style/LogErrorMsg"
