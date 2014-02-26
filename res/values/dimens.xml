@@ -13,13 +13,15 @@
     <dimen name="drawable_margin">5sp</dimen>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
-    <dimen name="p_log_sign_in">15dp</dimen>
-    <dimen name="m_log_sign_in">20dp</dimen>
-    <dimen name="mt_log_edit">10dp</dimen>
-    <dimen name="mb_log_edit">10dp</dimen>
-    <dimen name="mr_log_title">20dp</dimen>
-    <dimen name="p_log_sub_title">5dp</dimen>
-    <dimen name="m_log_connect_btn">10dp</dimen>
+    <dimen name="m_login_logo">10dp</dimen>
+    <dimen name="w_login_edit">400dp</dimen>
+    <dimen name="m_login_edit">10dp</dimen>
+    <dimen name="p_login_edit">5dp</dimen>
+    <dimen name="ts_login_edit">20sp</dimen>
+    <dimen name="w_login_connect_btn">400dp</dimen>
+    <dimen name="m_login_connect_btn">10dp</dimen>
+    <dimen name="p_login_connect_btn">5dp</dimen>
+    <dimen name="ts_login_connect_btn">20sp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~ -->

@@ -19,7 +19,7 @@
               android:id="@+id/tvCheckListEtap1subtitle"
               android:text="@string/environment_more"
               android:textSize="@dimen/text_size_subtitle"
-              android:textColor="@color/bg_screen_login"
+              android:textColor="@color/bg_screen_home"
               android:gravity="center"
               android:layout_above="@+id/tblLayout"/>
     <TableLayout

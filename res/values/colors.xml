@@ -9,8 +9,6 @@
     <!-- //////////////// screens ////////////////////////////////// -->
     <color name="bg_screen_checklist">#FEB822</color>
     <color name="bg_screen_home">#24201D</color>
-    <color name="bg_screen_login">#FFFFFF</color>
-    <color name="bg_screen_login_left_panel">#FEB822</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
@@ -23,6 +21,11 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ CheckList ~~~~~~~~~~~~~~~~~~~~~ -->
     <color name="checklist_main_text">@android:color/white</color>
     <color name="checklist_sub_main_text">#97951e</color>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
+    <color name="login_main_text">@android:color/white</color>
+    <color name="login_sub_main_text">#24201D</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Indicator ~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -40,6 +43,7 @@
     <color name="button_home_argument">#90931E</color>
     <color name="button_home_administrator">#342F29</color>
     <color name="button_checklist">@android:color/white</color>
+    <color name="button_login_connection">@android:color/white</color>
     <color name="button_action_bar">#E4E4E4</color>
     <!-- ////////////////////////////////////////////////////////// -->
 </resources>
