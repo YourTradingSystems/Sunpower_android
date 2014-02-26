@@ -33,28 +33,24 @@
     </style>
 
     <style name="CheckListRightAnswerRB">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/ts_checklist_answer</item>
         <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:padding">@dimen/p_checklist_answer</item>
+        <item name="android:drawablePadding">@dimen/p_checklist_answer</item>
         <item name="android:button">@null</item>
         <item name="android:drawableLeft">@drawable/custom_radio_button</item>
     </style>
 
     <style name="CheckListLeftAnswerRB">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/ts_checklist_answer</item>
         <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:padding">@dimen/p_checklist_answer</item>
+        <item name="android:drawablePadding">@dimen/p_checklist_answer</item>
         <item name="android:button">@null</item>
         <item name="android:drawableRight">@drawable/custom_radio_button</item>
     </style>
 
     <style name="CheckListResizableBTN">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_checklist</item>
     </style>
 

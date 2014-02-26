@@ -41,12 +41,16 @@
 
         <RadioButton
             android:id="@+id/rbtnOwnerVar1_FCL9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/CheckListLeftAnswerRB"
             android:checked="true"
             android:text="@string/fragment_check_list_etap9_answer1_text" />
 
         <RadioButton
             android:id="@+id/rbtnOwnerVar2_FCL9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/CheckListRightAnswerRB"
             android:text="@string/fragment_check_list_etap9_answer2_text" />
 
@@ -71,12 +75,16 @@
 
         <RadioButton
             android:id="@+id/rbtnPrimaryResidenceVar1_FCL9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/CheckListLeftAnswerRB"
             android:checked="true"
             android:text="@string/fragment_check_list_etap9_answer1_text" />
 
         <RadioButton
             android:id="@+id/rbtnPrimaryResidenceVar2_FCL9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/CheckListRightAnswerRB"
             android:text="@string/fragment_check_list_etap9_answer2_text" />
 

@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center" >
+    android:gravity="center">
 
     <TextView
         android:id="@+id/tvBannerFCL6"
@@ -44,13 +44,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnRoofVar1_FCL6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
-                    android:text="@string/fragment_check_list_etap6_answer1_text"
-                    android:layout_width="wrap_content" />
+                    android:text="@string/fragment_check_list_etap6_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnRoofVar2_FCL6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap6_answer2_text" />
 
@@ -75,12 +78,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnPresenceVar1_FCL6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap6_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnPresenceVar2_FCL6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap6_answer2_text"/>
 
@@ -111,12 +118,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnStructuralConcreteVar1_FCL6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap6_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnStructuralConcreteVar2_FCL6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap6_answer2_text"/>
 
