@@ -12,12 +12,12 @@ import com.makemepulse.sunpower.R;
  * Created by Eduard on 21.02.14.
  */
 public final class CheckListEtape10Fragment extends Fragment {
+    CustomMovementSun sunPosition;
 
 
-    public static CheckListEtape10Fragment create(){
+    public final static CheckListEtape10Fragment create() {
         return new CheckListEtape10Fragment();
     }
-
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
@@ -25,8 +25,8 @@ public final class CheckListEtape10Fragment extends Fragment {
     }
 
 
-    private void findViews(){
-        CustomMovementSun sunPosition = (CustomMovementSun) getView().findViewById(R.id.customMovementSun);
+    private final void findViews() {
+        sunPosition = (CustomMovementSun) getView().findViewById(R.id.customMovementSun_FCL10);
     }
 
 
@@ -35,4 +35,10 @@ public final class CheckListEtape10Fragment extends Fragment {
         super.onActivityCreated(_savedInstanceState);
         findViews();
     }
+
+    public final int getCompassParty() {
+        return sunPosition.getCompassDegree();
+    }
+
+
 }

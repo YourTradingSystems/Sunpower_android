@@ -14,10 +14,10 @@ package com.makemepulse.sunpower.fragments;
  */
 public final class CheckListEtape0Fragment extends Fragment implements View.OnClickListener {
 
-    private Button btnStartChecklist;
-    private TextView tvParentProfile;
-    private Button btnLeadChange;
-    private Button btnNewLead;
+    private Button btnStart_FCL0;
+    private TextView tvParentProfile_FCL0;
+    private Button btnLead_CL0;
+    private Button btnNewLead_FCL0;
 
     private CheckListEtape0Fragment(){}
 
@@ -30,17 +30,17 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
         return  _inflater.inflate(R.layout.fragment_check_list0, _container, false);
     }
 
-    private void findViews(){
-        btnStartChecklist = (Button)getView().findViewById(R.id.btnStartChecklist);
-        tvParentProfile = (TextView)getView().findViewById(R.id.tvParentProfile);
-        btnLeadChange = (Button)getView().findViewById(R.id.btnLeadChange);
-        btnNewLead = (Button)getView().findViewById(R.id.btnNewLead);
+    private final void findViews(){
+        btnStart_FCL0 = (Button)getView().findViewById(R.id.btnStart_FCL0);
+        tvParentProfile_FCL0 = (TextView)getView().findViewById(R.id.tvParentProfile_FCL0);
+        btnLead_CL0 = (Button)getView().findViewById(R.id.btnLead_CL0);
+        btnNewLead_FCL0 = (Button)getView().findViewById(R.id.btnNewLead_FCL0);
     }
 
-    private void setBtnOnClickListener(){
-        btnStartChecklist.setOnClickListener(this);
-        btnLeadChange.setOnClickListener(this);
-        btnNewLead.setOnClickListener(this);
+    private final void setBtnOnClickListener(){
+        btnStart_FCL0.setOnClickListener(this);
+        btnLead_CL0.setOnClickListener(this);
+        btnNewLead_FCL0.setOnClickListener(this);
     }
 
     @Override

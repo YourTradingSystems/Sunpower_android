@@ -63,6 +63,9 @@
     <dimen name="pr_checklist_spinner">40dp</dimen>
     <dimen name="pltb_checklist_spinner">15dp</dimen>
     <dimen name="popup_padding">2dp</dimen>
+    <dimen name="h_radiobutton_text">28dp</dimen>
+    <dimen name="m_radiobutton_text">15dp</dimen>
+    <dimen name="ml_radiobutton">40dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

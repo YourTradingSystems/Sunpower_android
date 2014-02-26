@@ -3,7 +3,6 @@ package com.makemepulse.sunpower.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,48 +19,46 @@ import java.util.List;
 
 public final class CheckListEtape1Fragment extends Fragment implements OnClickListener {
 
-    private List<RadioButton> radioButtonList;
+    private List<RadioButton> mRadioButtonList;
 
-    public static CheckListEtape1Fragment create(){
+    public final static CheckListEtape1Fragment create() {
         return new CheckListEtape1Fragment();
     }
 
-    private CheckListEtape1Fragment(){
-        radioButtonList = new ArrayList<RadioButton>();
+    private CheckListEtape1Fragment() {
+        mRadioButtonList = new ArrayList<RadioButton>();
     }
 
     @Override
-    public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
+    public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container,
+                                   final Bundle _savedInstanceState) {
         return  _inflater.inflate(R.layout.fragment_check_list1, _container, false);
     }
 
 
-    private void findViews(){
-        radioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_coastal_zone));
-        radioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_urban));
-        radioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_suburbs));
-        radioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_open_space));
-        radioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_open_terrain));
+    private final void findViews() {
+        mRadioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_coastal_zone_FCL1));
+        mRadioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_urban_FCL1));
+        mRadioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_suburbs_FCL1));
+        mRadioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_open_space_FCL1));
+        mRadioButtonList.add((RadioButton)getView().findViewById(R.id.radio_btn_open_terrain_FCL1));
     }
 
-    private void setOnClickListeners(){
-        for(RadioButton rb: radioButtonList)
+    private final void setOnClickListeners() {
+        for (RadioButton rb: mRadioButtonList)
             rb.setOnClickListener(this);
     }
 
 
-    public final int getChecked(){
-        if (niceList(radioButtonList)){
-            for(int i = 0; i < radioButtonList.size(); i++){
-                if(radioButtonList.get(i).isChecked())
-                    return i;
-            }
-        }
+    public final int getChecked() {
+        if (niceList(mRadioButtonList))
+            for (int i = 0; i < mRadioButtonList.size(); i++)
+                if(mRadioButtonList.get(i).isChecked()) return i;
         return -1;
     }
 
-    private boolean niceList(final List<RadioButton> list){
-        return list != null && !list.isEmpty();
+    private final boolean niceList(final List<RadioButton> _list){
+        return _list != null && !_list.isEmpty();
     }
 
     @Override
@@ -72,13 +69,10 @@ public final class CheckListEtape1Fragment extends Fragment implements OnClickLi
     }
 
     @Override
-    public void onClick(final View _view) {
-        for(RadioButton rb: radioButtonList){
-            if(_view == rb)
-                rb.setChecked(true);
-            else
-                rb.setChecked(false);
+    public final void onClick(final View _view) {
+        for (RadioButton rb: mRadioButtonList) {
+            if (_view == rb) rb.setChecked(true);
+            else rb.setChecked(false);
         }
-        Log.i("Click", "> " + getChecked());
     }
 }

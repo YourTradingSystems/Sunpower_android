@@ -3,49 +3,55 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/bg_screen_checklist"
         >
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap2Banner"
+              android:id="@+id/tvBanner_FCL2"
               android:text="@string/environment"
               android:textSize="@dimen/ts_checklist_banner"
               android:textColor="@color/bg_screen_login"
-              android:gravity="center" android:layout_above="@+id/tvCheckListEtap2subtitle"/>
+              android:gravity="center"
+              android:layout_above="@+id/tvSubtitle_FCL2"/>
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap2subtitle"
+              android:id="@+id/tvSubtitle_FCL2"
               android:text="@string/distance_to_sea"
               android:textSize="@dimen/text_size_subtitle"
               android:textColor="@color/bg_screen_login"
-              android:gravity="center" android:layout_above="@+id/rg"/>
+              android:gravity="center"
+              android:layout_above="@+id/rg"/>
 
-        <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/rg"
-                android:layout_centerInParent="true"
-                android:orientation="vertical">
-
+    <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/tblLayout_FCL1">
+        <TableRow>
             <RadioButton android:layout_width="match_parent"
                          android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:id="@+id/radioBtnUrbanLessThan3km_FCL2"
+                         style="@style/CheckListLeftAnswerRB"
                          android:checked="true"
-                         android:id="@+id/radio_btn_more_than_10km"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/more_than_10km"/>
-
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/radio_btn_urban_less_than_3km"
-                         android:button="@drawable/custom_radio_button"
                          android:text="@string/less_than_3km"/>
 
             <RadioButton android:layout_width="match_parent"
                          android:layout_height="wrap_content"
+                         android:layout_weight="1"
                          android:text="@string/between_3km_and_10km"
-                         android:button="@drawable/custom_radio_button"
-                         android:id="@+id/radio_btn_between_3km_and_10km"/>
-        </RadioGroup>
+                         style="@style/CheckListRightAnswerRB"
+                         android:id="@+id/radioBtnBetween3kmAnd10km_FCL2"/>
+        </TableRow>
+        <TableRow>
+            <RadioButton android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/radioBtnMoreThan10km_FCL2"
+                         style="@style/CheckListLeftAnswerRB"
+                         android:text="@string/more_than_10km"/>
+        </TableRow>
+
+
+    </TableLayout>
 
 </RelativeLayout>

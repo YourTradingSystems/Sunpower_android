@@ -40,7 +40,7 @@ public final class CustomMovementSun extends View {
         init();
     }
 
-    private void init() {
+    private final void init() {
         mPointerRadius = 0;
         mCircletPulmonary = 0;
         mAngle = 180;
@@ -69,16 +69,12 @@ public final class CustomMovementSun extends View {
             obs.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
             @Override
             public boolean onPreDraw () {
-                mPointerRadius = getHeight() / 3;
+                mPointerRadius = (int) (getHeight() / 3.5);
                 mCircletPulmonary = mPointerRadius / 4;
                 return true;
-
             }
         });
-
     }
-
-
 
     @Override
     protected final void onDraw(final Canvas _canvas) {
@@ -86,16 +82,14 @@ public final class CustomMovementSun extends View {
         drawToggle(_canvas, mAngle); // draw Toggle
         drawTextInCenterCircle(_canvas); // Draw text in center circle
         drawTextInCircle(_canvas, mPointerRadius + mCircletPulmonary + 20);
-
     }
 
-
-    private void drawCircle(final Canvas _canvas){
+    private final void drawCircle(final Canvas _canvas) {
         _canvas.drawCircle(getWidth()/2, getHeight()/2,
                 mPointerRadius, mCircletPaint);
     }
 
-    private void drawTextInCenterCircle(final Canvas _canvas){
+    private final void drawTextInCenterCircle(final Canvas _canvas) {
         textPaint.setTextSize(25);
         final int xPos = (_canvas.getWidth() / 2);
         final int yPos = (int) ((_canvas.getHeight() / 2) - ((textPaint.descent() + textPaint.ascent()) / 2)) ;
@@ -110,30 +104,28 @@ public final class CustomMovementSun extends View {
     }
 
 
-    private void drawToggle(final Canvas _canvas, final int _angle){
+    private final void drawToggle(final Canvas _canvas, final int _angle) {
         int x = (int) (getWidth()/2 + mPointerRadius * Math.sin(Math.PI * _angle / 180));
         int y = (int) (getHeight()/2 + mPointerRadius * Math.cos(Math.PI * _angle / 180));
         _canvas.drawCircle(x, y, mCircletPulmonary, paintToggle);
         _canvas.drawCircle(x, y, mCircletPulmonary + 1, mCircletTogglePaint);
     }
 
-    private void drawTextInCircle(final Canvas _canvas, final int _radius){
+    private final void drawTextInCircle(final Canvas _canvas, final int _radius) {
         for(int i = 0; i < 8; i++){
             int x = (int) (getWidth()/2 + _radius * Math.sin(Math.PI * i * 45 / 180));
             int y = (int) (getHeight()/2 + _radius * Math.cos(Math.PI * i * 45 / 180));
             String [] cardinal = getResources().getStringArray(R.array.cardinal);
-            if (i % 2 == 0)
-                textPaint.setTextSize(25);
-            else
-                textPaint.setTextSize(16);
+            if (i % 2 == 0) textPaint.setTextSize(25);
+            else textPaint.setTextSize(16);
             _canvas.drawText(cardinal[i], x, y + 10, textPaint);
         }
     }
 
     @Override
     public final boolean onTouchEvent(final MotionEvent _event) {
-        int x = (int)_event.getX();
-        int y = (int)_event.getY();
+        int x = (int) _event.getX();
+        int y = (int) _event.getY();
         switch (_event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 break;
@@ -144,47 +136,44 @@ public final class CustomMovementSun extends View {
                 correction();
                 break;
         }
-
         return true;
     }
 
 
-    private double sideLength(final int _x1, final int _y1, final int _x2, final int _y2){
+    private final double sideLength(final int _x1, final int _y1, final int _x2, final int _y2) {
         return Math.sqrt(Math.pow((_x2 - _x1), 2) + Math.pow((_y2 - _y1), 2));
     }
 
 
-    private void calcAndRedraw(final int _x, final int _y){
+    private final void calcAndRedraw(final int _x, final int _y) {
         double a = sideLength(_x, _y, getWidth()/2, getHeight()/2 + mPointerRadius);
         double c = sideLength(_x, _y, getWidth()/2, getHeight()/2);
         double b = sideLength(getWidth()/2, getHeight()/2, getWidth()/2, getHeight()/2) + mPointerRadius;
-        if ( a < b + c && b < a + c && c < a + b && a != 0 && b != 0 && c != 0 ){
+        if (isNiceTriangle(a, b, c)){
             double k3 = Math.acos(((c * c) + (b * b)-(a * a)) / (2.0 * c * b));
             c = (int)(( k3 * 180) / Math.PI);
-            if (_x < getWidth()/2)
-                c = 2 * 180 - c;
+            if (_x < getWidth()/2) c = 2 * 180 - c;
             mAngle = (int) c;
             invalidate();
         }
     }
 
+    private final boolean isNiceTriangle(final double _a, final double _b, final double _c) {
+        return _a < _b + _c && _b < _a + _c && _c < _a + _b && _a != 0 && _b != 0 && _c != 0;
+    }
 
-    private void correction(){
+    private final void correction() {
         int angle = mAngle;
         int part = mAngle / 45;
         mAngle = part * 45;
-        if(Math.abs(angle - mAngle) > EPS){
-            mAngle += 45;
-        }
+        if (Math.abs(angle - mAngle) > EPS) mAngle += 45;
         invalidate();
     }
 
-    public final int getCompassDegree(){
+    public final int getCompassDegree() {
         int res = mAngle / 45;
-        if(res == 8)
-            res = 0;
+        if (res == 8) res = 0;
         return res;
     }
-
 
 }
