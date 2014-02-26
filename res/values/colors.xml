@@ -4,6 +4,7 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <color name="green_dark_arg">#90931e</color>
     <color name="main_orange">#FEB822</color>
+    <color name="main_error">#c14a0c</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- //////////////// screens ////////////////////////////////// -->
@@ -12,6 +13,15 @@
     <color name="bg_screen_login">#FFFFFF</color>
     <color name="bg_screen_login_left_panel">#FEB822</color>
     <!-- ////////////////////////////////////////////////////////// -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <color name="stroke_login_text_field">@android:color/white</color>
+    <color name="text_login_text_field">@android:color/white</color>
+    <color name="bg_login_error">@color/main_error</color>
+    <color name="text_login_error">@android:color/white</color>
+    <color name="bg_login_btn">@android:color/white</color>
+    <color name="bg_login_btn_pressed">#444444</color>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->
     <color name="arg_title">@android:color/white</color>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="LogSignIn">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">@dimen/p_log_sign_in</item>
         <item name="android:layout_margin">@dimen/m_log_sign_in</item>
@@ -10,8 +8,6 @@
     </style>
 
     <style name="LogTitle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/ts_checklist_banner</item>
         <item name="android:textColor">@color/text_title</item>
         <item name="android:textStyle">bold</item>
@@ -19,45 +15,35 @@
     </style>
 
     <style name="LogSubTitle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:textColor">@color/text_title</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">@dimen/p_log_sub_title</item>
     </style>
 
-    <style name="LogLoginEdit">
-        <item name="android:layout_width">300dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:inputType">text</item>
-        <item name="android:layout_marginTop">@dimen/mt_log_edit</item>
+    <style name="LoginTextFields">
+        <item name="android:background">@drawable/bg_login_text_field</item>
         <item name="android:layout_marginBottom">@dimen/mb_log_edit</item>
-    </style>
-
-    <style name="LogPassEdit">
-        <item name="android:layout_width">300dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:inputType">textPassword</item>
-        <item name="android:layout_marginTop">@dimen/mt_log_edit</item>
-        <item name="android:layout_marginBottom">@dimen/mb_log_edit</item>
+        <item name="android:textSize">@dimen/text_size_login_text_fields</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingTop">@dimen/ptb_login_text</item>
+        <item name="android:paddingBottom">@dimen/ptb_login_text</item>
+        <item name="android:textColor">@color/text_login_text_field</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor</item>
     </style>
 
     <style name="LogErrorMsg">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_subtitle</item>
-        <item name="android:textColor">@color/text_title</item>
-        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_login_error</item>
         <item name="android:padding">@dimen/p_log_sub_title</item>
-        <item name="android:drawableLeft">@drawable/login_error</item>
+        <item name="android:background">@drawable/bg_login_error</item>
     </style>
 
     <style name="LogConnectBTN">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:textColor">@color/text_title</item>
-        <item name="android:layout_margin">@dimen/m_log_connect_btn</item>
+        <item name="android:paddingTop">@dimen/ptb_login_text</item>
+        <item name="android:paddingBottom">@dimen/ptb_login_text</item>
+        <item name="android:background">@drawable/selector_btn_login</item>
     </style>
 </resources>
