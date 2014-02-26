@@ -51,12 +51,12 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
     }
 
     private final void findViews() {
-        btnQuestion1 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question1);
-        btnQuestion2 = (Button) getView().findViewById(R.id.btnCheckListEtap14Question2);
-        btnQuestion3Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Camera);
-        btnQuestion3Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question3Picture);
-        btnQuestion4Camera = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Camera);
-        btnQuestion4Picture = (Button) getView().findViewById(R.id.btnCheckListEtap14Question4Picture);
+        btnQuestion1 = (Button) getView().findViewById(R.id.btnQuestion1_FCL14);
+        btnQuestion2 = (Button) getView().findViewById(R.id.btnQuestion2_FCL14);
+        btnQuestion3Camera = (Button) getView().findViewById(R.id.btnQuestion3Camera_FCL14);
+        btnQuestion3Picture = (Button) getView().findViewById(R.id.btnQuestion3Picture_FCL14);
+        btnQuestion4Camera = (Button) getView().findViewById(R.id.btnQuestion4Camera_FCL14);
+        btnQuestion4Picture = (Button) getView().findViewById(R.id.btnQuestion4Picture_FCL14);
     }
 
     private final void setListeners() {
@@ -71,27 +71,27 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnCheckListEtap14Question1:
+            case R.id.btnQuestion1_FCL14:
                 buttonClicked = 1; //Button1
                 getPictureFromCamera();
                 break;
-            case R.id.btnCheckListEtap14Question2:
+            case R.id.btnQuestion2_FCL14:
                 buttonClicked = 2; //Button2
                 getPictureFromCamera();
                 break;
-            case R.id.btnCheckListEtap14Question3Camera:
+            case R.id.btnQuestion3Camera_FCL14:
                 buttonClicked = 31; //Button3 Camera
                 getPictureFromCamera();
                 break;
-            case R.id.btnCheckListEtap14Question3Picture:
+            case R.id.btnQuestion3Picture_FCL14:
                 buttonClicked = 32; //Button3 Picture
                 getPictureFromGallery();
                 break;
-            case R.id.btnCheckListEtap14Question4Camera:
+            case R.id.btnQuestion4Camera_FCL14:
                 buttonClicked = 41; //Button4 Camera
                 getPictureFromCamera();
                 break;
-            case R.id.btnCheckListEtap14Question4Picture:
+            case R.id.btnQuestion4Picture_FCL14:
                 buttonClicked = 42; //Button4 Picture
                 getPictureFromGallery();
                 break;

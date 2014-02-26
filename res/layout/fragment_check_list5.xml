@@ -6,25 +6,25 @@
               android:gravity="center">
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap5Banner"
+              android:id="@+id/tvBanner_FCL5"
               android:text="@string/fragment_check_list_etap5_banner_text"
               android:layout_alignParentTop="true"
               style="@style/CheckListEtapBanner"/>
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap5subtitle"
+              android:id="@+id/tvSubtitle_FCL5"
               android:text="@string/fragment_check_list_etap5_subtitle_text"
-              android:layout_below="@id/tvCheckListEtap5Banner"
+              android:layout_below="@id/tvBanner_FCL5"
               style="@style/CheckListEtapSubtitle"/>
 
     <RelativeLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:id="@+id/etap5_bottom_main_layout"
-                  android:layout_below="@id/tvCheckListEtap5subtitle">
+                  android:id="@+id/rlBottom_FCL5"
+                  android:layout_below="@id/tvSubtitle_FCL5">
               <TextView android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/fragment_check_list_etap5_question1_text"
-                        android:id="@+id/tvCheckListEtap5Text1"
+                        android:id="@+id/tvQuestion1_FCL5"
                         android:layout_alignParentTop="true"
                         style="@style/CheckListEtapStandard"/>
 
@@ -32,38 +32,38 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center"
-                        android:id="@+id/tvCheckListEtap5RadioGroup1"
-                      android:layout_below="@id/tvCheckListEtap5Text1">
+                        android:id="@+id/rgQuestion1_FCL5"
+                      android:layout_below="@id/tvQuestion1_FCL5">
                 <RadioButton android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
-                             android:id="@+id/rbtnEtap5Question1Var1"
+                             android:id="@+id/rbtnQuestion1Var1_FCL5"
                              android:text="@string/fragment_check_list_etap5_question_var1"/>
                 <RadioButton android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
-                             android:id="@+id/rbtnEtap5Question1Var2"
+                             android:id="@+id/rbtnQuestion1Var2_FCL5"
                              android:text="@string/fragment_check_list_etap5_question_var2"/>
               </RadioGroup>
 
               <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
                   android:text="@string/fragment_check_list_etap5_question2_text"
-                  android:id="@+id/tvCheckListEtap5Text2"
-                  android:layout_below="@id/tvCheckListEtap5RadioGroup1"
+                  android:id="@+id/tvQuestion2_FCL5"
+                  android:layout_below="@id/rgQuestion1_FCL5"
                   style="@style/CheckListEtapStandard"/>
 
               <RadioGroup android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:id="@+id/tvCheckListEtap5RadioGroup2"
-                    android:layout_below="@id/tvCheckListEtap5Text2">
+                    android:id="@+id/rgQuestion2_FCL5"
+                    android:layout_below="@id/tvQuestion2_FCL5">
                 <RadioButton android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:id="@+id/rbtnEtap5Question2Var1"
+                         android:id="@+id/rbtnQuestion2Var1_FCL5"
                          android:text="@string/fragment_check_list_etap5_question_var1"/>
                 <RadioButton android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:id="@+id/rbtnEtap5Question2Var2"
+                         android:id="@+id/rbtnQuestion2Var2_FCL5"
                          android:text="@string/fragment_check_list_etap5_question_var2"/>
               </RadioGroup>
 

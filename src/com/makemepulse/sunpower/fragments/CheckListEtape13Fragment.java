@@ -54,11 +54,11 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     }
 
     private final void findViews() {
-        etQuestion1     = (EditText) getView().findViewById(R.id.etCheckListEtap13Question1);
-        btnQuestion2    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question2);
-        btnQuestion3    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question3);
-        btnQuestion4    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question4);
-        btnQuestion5    = (Button) getView().findViewById(R.id.btnCheckListEtap13Question5);
+        etQuestion1     = (EditText) getView().findViewById(R.id.etQuestion1_FCL13);
+        btnQuestion2    = (Button) getView().findViewById(R.id.btnQuestion2_FCL13);
+        btnQuestion3    = (Button) getView().findViewById(R.id.btnQuestion3_FCL13);
+        btnQuestion4    = (Button) getView().findViewById(R.id.btnQuestion4_FCL13);
+        btnQuestion5    = (Button) getView().findViewById(R.id.btnQuestion5_FCL13);
     }
 
     private final void setListeners() {
@@ -72,16 +72,16 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnCheckListEtap13Question2:
+            case R.id.btnQuestion2_FCL13:
                 buttonClicked = 1;
                 break;
-            case R.id.btnCheckListEtap13Question3:
+            case R.id.btnQuestion3_FCL13:
                 buttonClicked = 2;
                 break;
-            case R.id.btnCheckListEtap13Question4:
+            case R.id.btnQuestion4_FCL13:
                 buttonClicked = 3;
                 break;
-            case R.id.btnCheckListEtap13Question5:
+            case R.id.btnQuestion5_FCL13:
                 buttonClicked = 4;
                 break;
         }

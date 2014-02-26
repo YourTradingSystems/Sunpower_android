@@ -6,34 +6,34 @@
               android:gravity="center">
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap16Banner"
+              android:id="@+id/tvBanner_FCL16"
               android:text="@string/fragment_check_list_etap16_banner_text"
               android:layout_alignParentTop="true"
               style="@style/CheckListEtapBanner"/>
     <RelativeLayout android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvCheckListEtap16Banner">
+                android:layout_below="@+id/tvBanner_FCL16">
             <Button android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/fragment_check_list_etap16_button1_text"
-                    android:id="@+id/btnCheckListEtap16Up"
+                    android:id="@+id/btnTop_FCL16"
                     android:drawableRight="@drawable/check"
                     android:drawablePadding="@dimen/drawable_margin"
                     android:layout_alignParentTop="true"/>
             <Button android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:id="@+id/btnCheckListEtap16Down"
+                    android:id="@+id/btnMiddle_FCL16"
                     android:text="@string/fragment_check_list_etap16_button2_text"
-                    android:layout_below="@id/btnCheckListEtap16Up"/>
+                    android:layout_below="@id/btnTop_FCL16"/>
             <Button android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:id="@+id/btnCheckListEtap16Refresh"
+                    android:id="@+id/btnRefreshFCL16"
                     android:drawableLeft="@drawable/refresh"
                     android:text="@string/fragment_check_list_etap16_button3_text"
-                    android:layout_below="@id/btnCheckListEtap16Down"/>
+                    android:layout_below="@id/btnMiddle_FCL16"/>
     </RelativeLayout>
 
 

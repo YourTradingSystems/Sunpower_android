@@ -34,8 +34,8 @@ public final class CheckListEtape5Fragment extends Fragment {
     }
 
     private final void findViews() {
-        rbtnQuestion1Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question1Var1);
-        rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnEtap5Question2Var1);
+        rbtnQuestion1Var1 = (RadioButton) getView().findViewById(R.id.rbtnQuestion1Var1_FCL5);
+        rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnQuestion2Var1_FCL5);
     }
 
     private void saveAllFragment5Data() {
