@@ -3,8 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center"
-              android:background="@color/bg_screen_checklist">
+              android:gravity="center">
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvCheckListEtap15Banner"
