@@ -20,7 +20,7 @@
 
     <RelativeLayout android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:id="@+id/bottom_main_layout"
+                  android:id="@+id/etap5_bottom_main_layout"
                   android:layout_below="@id/tvCheckListEtap5subtitle">
               <TextView android:layout_width="match_parent"
                         android:layout_height="wrap_content"

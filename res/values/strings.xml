@@ -26,16 +26,26 @@
     <!-- Etap1 -->
     <string name="environment">ENVIRONMENT</string>
     <string name="environment_more">Environment more particularly described as</string>
-    <string name="coastal_zone">Coastal zone</string>
+    <string name="coastal_zone">Zone cotière</string>
     <string name="urban">Urban</string>
     <string name="suburbs">Suburbs</string>
     <string name="open_space">Open space</string>
-    <string name="open_terrain">Open terrain with occasional obstacles</string>
+    <string name="open_terrain">Open terrain with \n\r occasional obstacles</string>
     <!-- Etap2  -->
     <string name="distance_to_sea">Distance to sea:</string>
     <string name="less_than_3km">Less than 3km</string>
     <string name="between_3km_and_10km">Between 3km and 10km</string>
     <string name="more_than_10km">More than 10km</string>
+
+    <!-- Etap3 -->
+    <string name="fragment_check_list_etap3_banner_text">L\'ENVIRONNEMENT</string>
+    <string name="fragment_check_list_etap3_subtitle_text">ETAPE #3</string>
+    <string name="fragment_check_list_etap3_question1_text">Le site est-il en zone classée ABF ?</string>
+    <string name="fragment_check_list_etap3_question2_text">Y a-t-il des arbres gênants ?</string>
+    <string name="fragment_check_list_etap3_question3_text">Si oui, est-ce que le propriétaire peut les couper ou élaguer ?</string>
+    <string name="fragment_check_list_etap3_question_var1">OUI</string>
+    <string name="fragment_check_list_etap3_question_var2">NON</string>
+    <string name="fragment_check_list_etap3_popup_text">LEAD NON ELIGIBLE</string>
 
     <!-- Etap4 -->
     <string name="fragment_check_list_etap4_banner_text">VOTRE MAISON</string>
@@ -57,6 +67,53 @@
     <string name="fragment_check_list_etap5_question_var1">OUI</string>
     <string name="fragment_check_list_etap5_question_var2">NON</string>
 
+    <!-- Etap6 -->
+    <string name="fragment_check_list_etap6_banner_text">VOTRE MAISON</string>
+    <string name="fragment_check_list_etap6_subtitle_text">ETAPE #6</string>
+    <string name="fragment_check_list_etap6_question1_text">Toiture en microciment ou autre que tuile non entièrement démontable ?</string>
+    <string name="fragment_check_list_etap6_question2_text">Présence d’amiante dans la charpente ?</string>
+    <string name="fragment_check_list_etap6_question3_text">Charpente en béton ou métallique ?</string>
+    <string name="fragment_check_list_etap6_question4_text">Année de construction de la charpente ?</string>
+    <string name="fragment_check_list_etap6_answer1_text">OUI</string>
+    <string name="fragment_check_list_etap6_answer2_text">NON</string>
+
+    <string-array name="fragment_checklist_etap6_answer3_array">
+        <item>1980</item>
+    </string-array>
+
+    <!-- Etap7 -->
+    <string name="fragment_check_list_etap7_banner_text">VOUS</string>
+    <string name="fragment_check_list_etap7_question1_text">Nom</string>
+    <string name="fragment_check_list_etap7_question2_text">Prénom</string>
+    <string name="fragment_check_list_etap7_question3_text">Adresse</string>
+    <string name="fragment_check_list_etap7_question4_text">Code postal</string>
+    <string name="fragment_check_list_etap7_question5_text">Ville</string>
+    <string name="fragment_check_list_etap7_question6_text">Propriétaire de la maison ?</string>
+    <string name="fragment_check_list_etap7_question7_text">Tel fixe</string>
+    <string name="fragment_check_list_etap7_question8_text">Tel portable</string>
+    <string name="fragment_check_list_etap7_question9_text">Tel bureau</string>
+    <string name="fragment_check_list_etap7_question10_text">Email</string>
+    <string name="fragment_check_list_etap7_question11_text">Résidence principale ?</string>
+    <string name="fragment_check_list_etap7_answer1_text">OUI</string>
+    <string name="fragment_check_list_etap7_answer2_text">NON</string>
+
+    <!-- Etap8 -->
+    <string name="fragment_check_list_etap8_banner_text">VOUS</string>
+    <string name="fragment_check_list_etap8_question1_text">Type de courant de consommation ?</string>
+    <string name="fragment_check_list_etap8_question2_text">Estimation de la consommation électrique annuelle en kWH :</string>
+    <string name="fragment_check_list_etap8_question3_text">Estimation de la facture d’électricité annuelle en EUR :</string>
+    <string name="fragment_check_list_etap8_answer1_text">Monophasé</string>
+    <string name="fragment_check_list_etap8_answer2_text">Triphasé</string>
+    <string name="fragment_check_list_etap8_answer3_text">3644 kWH / an</string>
+    <string name="fragment_check_list_etap8_answer4_text">700€ / an</string>
+
+    <!-- Etap9 -->
+    <string name="fragment_check_list_etap9_banner_text">VOTRE REVENU</string>
+    <string name="fragment_check_list_etap9_question1_text">Votre adresse</string>
+    <string name="fragment_check_list_etap9_question2_text">Propriétaire de la maison ?</string>
+    <string name="fragment_check_list_etap9_question3_text">Résidence principale ?</string>
+    <string name="fragment_check_list_etap9_answer1_text">OUI</string>
+    <string name="fragment_check_list_etap9_answer2_text">NON</string>
 
     <!-- Etap10 -->
     <string name="orientation">Orientation</string>
@@ -106,8 +163,14 @@
 
     <!-- Etap15 -->
     <string name="fragment_check_list_etap15_banner_text">Le dossier de Mr.Dupont est rempli à 100%, n\'oubliez pas de remplir les informations complémentaires.</string>
-    <string name="fragment_check_list_etap15_button1_text">INFOS COMPLÉMENTAIRES</string>
+    <string name="fragment_check_list_etap15_button1_text">>INFOS COMPLÉMENTAIRES</string>
     <string name="fragment_check_list_etap15_button2_text">ENVOYER BROCHURE PAR EMAIL</string>
     <string name="fragment_check_list_etap15_button3_text">SYNCHRONISER \n dernière synchro le 20/01/2014</string>
+
+    <!-- Etap16 -->
+    <string name="fragment_check_list_etap16_banner_text">Le dossier de Mr.Dupont est rempli à 100%</string>
+    <string name="fragment_check_list_etap16_button1_text">> INFOS COMPLÉMENTAIRES</string>
+    <string name="fragment_check_list_etap16_button2_text">ENVOYER BROCHURE PAR EMAIL</string>
+    <string name="fragment_check_list_etap16_button3_text">SYNCHRONISER \n dernière synchro le 20/01/2014</string>
 
 </resources>

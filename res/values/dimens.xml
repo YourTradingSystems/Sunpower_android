@@ -10,6 +10,7 @@
     <dimen name="text_size_standard">16sp</dimen>
     <dimen name="text_size_subtitle_bottom_margin">30sp</dimen>
     <dimen name="button_width">40sp</dimen>
+    <dimen name="drawable_margin">5sp</dimen>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
     <dimen name="p_log_sign_in">15dp</dimen>
@@ -54,8 +55,14 @@
     <dimen name="p_checklist_banner">10dp</dimen>
     <dimen name="ts_checklist_answer">20sp</dimen>
     <dimen name="p_checklist_answer">15dp</dimen>
-    <dimen name="p_checklist_question">10dp</dimen>
+    <dimen name="w_checklist_question">350dp</dimen>
+    <dimen name="p_checklist_question">5dp</dimen>
     <dimen name="mt_checklist_question">10dp</dimen>
+    <dimen name="pr_checklist_tests_container">30dp</dimen>
+    <dimen name="m_checklist_btn">5dp</dimen>
+    <dimen name="pr_checklist_spinner">40dp</dimen>
+    <dimen name="pltb_checklist_spinner">15dp</dimen>
+    <dimen name="popup_padding">2dp</dimen>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 

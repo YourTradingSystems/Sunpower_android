@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/bg_screen_checklist">
+
+    <TextView
+        android:id="@+id/tvBannerFCL6"
+        style="@style/CheckListEtapBanner"
+        android:text="@string/fragment_check_list_etap6_banner_text"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/tvBannerFCL6">
+
+        <LinearLayout
+            style="@style/CheckListTestsContainer"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRoof_FCL6"
+                style="@style/CheckListQuestion"
+                android:text="@string/fragment_check_list_etap6_question1_text"/>
+
+            <RadioGroup
+                android:id="@+id/rgRoof_FCL6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnRoofVar1_FCL6"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:checked="true"
+                    android:text="@string/fragment_check_list_etap6_answer1_text" />
+
+                <RadioButton
+                    android:id="@+id/rbtnRoofVar2_FCL6"
+                    style="@style/CheckListRightAnswerRB"
+                    android:text="@string/fragment_check_list_etap6_answer2_text" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvPresence_FCL6"
+                style="@style/CheckListQuestion"
+                android:text="@string/fragment_check_list_etap6_question2_text" />
+
+            <RadioGroup
+                android:id="@+id/rgPresence_FCL6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnPresenceVar1_FCL6"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:checked="true"
+                    android:text="@string/fragment_check_list_etap6_answer1_text" />
+
+                <RadioButton
+                    android:id="@+id/rbtnPresenceVar2_FCL6"
+                    style="@style/CheckListRightAnswerRB"
+                    android:text="@string/fragment_check_list_etap6_answer2_text"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CheckListTestsContainer"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStructuralConcrete_FCL6"
+                style="@style/CheckListQuestion"
+                android:text="@string/fragment_check_list_etap6_question3_text" />
+
+            <RadioGroup
+                android:id="@+id/rgStructuralConcrete_FCL6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnStructuralConcreteVar1_FCL6"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:checked="true"
+                    android:text="@string/fragment_check_list_etap6_answer1_text" />
+
+                <RadioButton
+                    android:id="@+id/rbtnStructuralConcreteVar2_FCL6"
+                    style="@style/CheckListRightAnswerRB"
+                    android:text="@string/fragment_check_list_etap6_answer2_text"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvYear_FCL6"
+                style="@style/CheckListQuestion"
+                android:text="@string/fragment_check_list_etap6_question4_text" />
+
+            <Spinner
+                android:id="@+id/sYear_FCL6"
+                style="@style/CheckListSpinner"
+                android:entries="@array/fragment_checklist_etap6_answer3_array"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
