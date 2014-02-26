@@ -8,8 +8,11 @@
 
     <TextView
         android:id="@+id/tvBanner_FCL4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="@style/CheckListEtapBanner"
         android:text="@string/fragment_check_list_etap4_banner_text"
+        android:gravity="center"
         android:layout_alignParentTop="true" />
 
     <LinearLayout
@@ -17,22 +20,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_below="@id/tvBanner_FCL4">
+        android:layout_below="@id/tvBanner_FCL4"
+        android:baselineAligned="false">
 
-        <LinearLayout
-            style="@style/CheckListTestsContainer"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvSimpleRoof_FCL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap4_question1_text" />
+                android:text="@string/fragment_check_list_etap4_question1_text"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgSimpleRoof_FCL4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvSimpleRoof_FCL4"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnSimpleRoofVar1_FCL4"
@@ -49,14 +60,20 @@
 
             <TextView
                 android:id="@+id/tvAzimuth_FCL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap4_question2_text" />
+                android:text="@string/fragment_check_list_etap4_question2_text"
+                android:layout_below="@id/rgSimpleRoof_FCL4"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgAzimuth_FCL4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvAzimuth_FCL4"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnAzimuthVar1_FCL4"
@@ -73,14 +90,20 @@
 
             <TextView
                 android:id="@+id/tvOriented_FCL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap4_question3_text" />
+                android:text="@string/fragment_check_list_etap4_question3_text"
+                android:layout_below="@id/rgAzimuth_FCL4"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgOriented_FCL4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvOriented_FCL4"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnOrientedVar1_FCL4"
@@ -95,22 +118,29 @@
 
             </RadioGroup>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
-            style="@style/CheckListTestsContainer"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvSimpleSlope_FCL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap4_question4_text" />
+                android:text="@string/fragment_check_list_etap4_question4_text"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgSimpleSlope_FCL4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvSimpleSlope_FCL4"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnSimpleSlopeVar1_FCL4"
@@ -127,14 +157,20 @@
 
             <TextView
                 android:id="@+id/tvSlope45_FCL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap4_question5_text" />
+                android:text="@string/fragment_check_list_etap4_question5_text"
+                android:layout_below="@id/rgSimpleSlope_FCL4"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgSlope45_FCL4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvSlope45_FCL4"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnSlope45Var1_FCL4"
@@ -151,14 +187,20 @@
 
             <TextView
                 android:id="@+id/tvSlope10_FCL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap4_question6_text" />
+                android:text="@string/fragment_check_list_etap4_question6_text"
+                android:layout_below="@id/rgSlope45_FCL4"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgSlope10_FCL4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvSlope10_FCL4"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnSlope10Var1_FCL4"
@@ -173,6 +215,6 @@
 
             </RadioGroup>
 
-        </LinearLayout>
+        </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

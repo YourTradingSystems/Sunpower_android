@@ -29,7 +29,7 @@ public final class CheckListEtape7Fragment extends Fragment {
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
         View view = _inflater.inflate(R.layout.fragment_check_list7, _container, false);
-        findViews(view);
+        //findViews(view);
         return view;
     }
 

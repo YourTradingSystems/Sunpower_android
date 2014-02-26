@@ -3,42 +3,51 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@color/bg_screen_checklist">
+    android:gravity="center" >
 
     <TextView
         android:id="@+id/tvBannerFCL6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="@style/CheckListEtapBanner"
         android:text="@string/fragment_check_list_etap6_banner_text"
-        android:layout_alignParentTop="true" />
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_below="@id/tvBannerFCL6"
         android:gravity="center"
-        android:layout_below="@id/tvBannerFCL6">
+        android:baselineAligned="false">
 
-        <LinearLayout
-            style="@style/CheckListTestsContainer"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvRoof_FCL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap6_question1_text"/>
+                android:text="@string/fragment_check_list_etap6_question1_text"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgRoof_FCL6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvRoof_FCL6"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnRoofVar1_FCL6"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
-                    android:text="@string/fragment_check_list_etap6_answer1_text" />
+                    android:text="@string/fragment_check_list_etap6_answer1_text"
+                    android:layout_width="wrap_content" />
 
                 <RadioButton
                     android:id="@+id/rbtnRoofVar2_FCL6"
@@ -49,14 +58,20 @@
 
             <TextView
                 android:id="@+id/tvPresence_FCL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap6_question2_text" />
+                android:text="@string/fragment_check_list_etap6_question2_text"
+                android:layout_below="@id/rgRoof_FCL6"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgPresence_FCL6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvPresence_FCL6"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnPresenceVar1_FCL6"
@@ -71,22 +86,28 @@
 
             </RadioGroup>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
-            style="@style/CheckListTestsContainer"
-            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <TextView
                 android:id="@+id/tvStructuralConcrete_FCL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap6_question3_text" />
+                android:text="@string/fragment_check_list_etap6_question3_text"
+                android:gravity="center" />
 
             <RadioGroup
                 android:id="@+id/rgStructuralConcrete_FCL6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_below="@id/tvStructuralConcrete_FCL6"
+                android:gravity="center">
 
                 <RadioButton
                     android:id="@+id/rbtnStructuralConcreteVar1_FCL6"
@@ -103,15 +124,23 @@
 
             <TextView
                 android:id="@+id/tvYear_FCL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 style="@style/CheckListQuestion"
-                android:text="@string/fragment_check_list_etap6_question4_text" />
+                android:text="@string/fragment_check_list_etap6_question4_text"
+                android:layout_below="@id/rgStructuralConcrete_FCL6"
+                android:gravity="center" />
 
             <Spinner
                 android:id="@+id/sYear_FCL6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 style="@style/CheckListSpinner"
-                android:entries="@array/fragment_checklist_etap6_answer3_array"/>
+                android:entries="@array/fragment_checklist_etap6_answer3_array"
+                android:layout_below="@id/tvYear_FCL6"
+                android:layout_centerHorizontal="true" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 </RelativeLayout>
