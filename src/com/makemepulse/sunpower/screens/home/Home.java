@@ -50,7 +50,7 @@ public final class Home extends FragmentActivity implements ViewTreeObserver.OnG
     @Override
     public final void onGlobalLayout() {
         if (Build.VERSION.SDK_INT < 16) rlRoot_SH.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-        else rlRoot_SH.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+        else rlRoot_SH.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 
         ViewWorker.initSizeAndPositionData(rlRoot_SH);
 
