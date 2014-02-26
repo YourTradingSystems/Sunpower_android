@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/bg_screen_checklist">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_check_list_etap3_popup_text"
+            android:id="@+id/tvCheckListEtap3PopUp"
+            android:drawableLeft="@drawable/popup_info"
+            style="@style/CheckListEtap3PopUp"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvCheckListEtap3Banner"
+              android:text="@string/fragment_check_list_etap3_banner_text"
+              android:layout_alignParentTop="true"
+              style="@style/CheckListEtapBanner"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvCheckListEtap3subtitle"
+              android:text="@string/fragment_check_list_etap3_subtitle_text"
+              android:layout_below="@id/tvCheckListEtap3Banner"
+              style="@style/CheckListEtapSubtitle"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/etap3_bottom_main_layout"
+                  android:layout_below="@id/tvCheckListEtap3subtitle">
+              <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_check_list_etap3_question1_text"
+                        android:id="@+id/tvCheckListEtap3Text1"
+                        android:layout_alignParentTop="true"
+                        style="@style/CheckListEtapStandard"/>
+
+              <RadioGroup android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/CheckListEtap3RadioGroup1"
+                      android:layout_below="@id/tvCheckListEtap3Text1">
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/rbtnEtap3Question1Var1"
+                             android:text="@string/fragment_check_list_etap3_question_var1"/>
+                <RadioButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/rbtnEtap3Question1Var2"
+                             android:text="@string/fragment_check_list_etap3_question_var2"/>
+              </RadioGroup>
+
+              <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/fragment_check_list_etap3_question2_text"
+                  android:id="@+id/tvCheckListEtap3Text2"
+                  android:layout_below="@+id/CheckListEtap3RadioGroup1"
+                  style="@style/CheckListEtapStandard"/>
+
+              <RadioGroup android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/CheckListEtap3RadioGroup2"
+                    android:layout_below="@id/tvCheckListEtap3Text2">
+                <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/rbtnEtap3Question2Var1"
+                         android:text="@string/fragment_check_list_etap3_question_var1"/>
+                <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/rbtnEtap3Question2Var2"
+                         android:text="@string/fragment_check_list_etap3_question_var2"/>
+              </RadioGroup>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/fragment_check_list_etap3_question3_text"
+                  android:id="@+id/tvCheckListEtap3Text3"
+                  android:layout_below="@id/CheckListEtap3RadioGroup2"
+                  style="@style/CheckListEtapStandard"/>
+
+        <RadioGroup android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/CheckListEtap3RadioGroup3"
+                    android:layout_below="@id/tvCheckListEtap3Text3">
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/rbtnEtap3Question3Var1"
+                         android:text="@string/fragment_check_list_etap3_question_var1"/>
+            <RadioButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/rbtnEtap3Question3Var2"
+                         android:text="@string/fragment_check_list_etap3_question_var2"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+</RelativeLayout>

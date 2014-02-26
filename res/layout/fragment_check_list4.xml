@@ -9,8 +9,6 @@
     <TextView
         android:id="@+id/tvCheckListEtap4Banner"
         style="@style/CheckListEtapBanner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/fragment_check_list_etap4_banner_text"
         android:layout_alignParentTop="true" />
 
@@ -22,10 +20,7 @@
         android:layout_below="@id/tvCheckListEtap4Banner">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingRight="40dp"
+            style="@style/CheckListTestsContainer"
             android:orientation="vertical">
 
             <TextView
@@ -103,9 +98,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            style="@style/CheckListTestsContainer"
             android:orientation="vertical">
 
             <TextView
