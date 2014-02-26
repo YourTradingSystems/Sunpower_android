@@ -3,50 +3,50 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen_home">
+    android:background="@color/bg_screen_home" android:gravity="center">
 
     <RelativeLayout
-        android:id="@+id/rlSignIn_SL"
-        style="@style/LogSignIn"
-        android:layout_centerInParent="true">
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivLogo_SL" android:layout_centerHorizontal="true" android:src="@drawable/logo"
+                android:layout_marginBottom="@dimen/mb_log_edit"/>
         <EditText
             android:id="@+id/etLogin_SL"
-            style="@style/LogPassEdit"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:id="@+id/tvLogin_SL"
-            style="@style/LogTitle"
-            android:layout_toLeftOf="@id/etLogin_SL"
-            android:layout_alignBaseline="@id/etLogin_SL"
-            android:text="@string/login_screen_login_text" />
-
+            style="@style/LoginTextFields"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLogo_SL"
+            android:layout_alignLeft="@+id/ivLogo_SL"
+            android:layout_alignRight="@+id/ivLogo_SL" android:gravity="center" android:hint="@string/login"
+            android:singleLine="true"/>
         <EditText
             android:id="@+id/etPass_SL"
-            style="@style/LogLoginEdit"
+            style="@style/LoginTextFields"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/etLogin_SL" />
-
-        <TextView
-            android:id="@+id/tvPass_SL"
-            style="@style/LogTitle"
-            android:layout_toLeftOf="@id/etPass_SL"
-            android:layout_alignBaseline="@id/etPass_SL"
-            android:text="@string/login_screen_pass_text" />
-
+            android:layout_below="@id/etLogin_SL" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:layout_alignRight="@+id/ivLogo_SL"
+            android:layout_alignLeft="@+id/ivLogo_SL" android:hint="@string/password" android:singleLine="true"/>
         <TextView
             android:id="@+id/tvError_SL"
             style="@style/LogErrorMsg"
             android:layout_below="@id/etPass_SL"
             android:layout_centerHorizontal="true"
-            android:text="@string/login_screen_err_text"/>
-
+            android:text="@string/login_screen_err_text" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:layout_alignLeft="@+id/ivLogo_SL"
+            android:layout_alignRight="@+id/ivLogo_SL" android:layout_marginBottom="@dimen/mb_log_edit"/>
         <Button
             android:id="@+id/btnConnect_SL"
             style="@style/LogConnectBTN"
             android:layout_below="@id/tvError_SL"
             android:layout_centerHorizontal="true"
-            android:text="@string/login_screen_connect_text" />
+            android:text="@string/login_screen_connect_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ivLogo_SL"
+            android:layout_alignRight="@+id/ivLogo_SL"/>
     </RelativeLayout>
 </RelativeLayout>

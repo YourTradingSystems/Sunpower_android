@@ -33,12 +33,16 @@
 
         <RadioButton
             android:id="@+id/rbtnTypeConsumptionVar1_FCL8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/CheckListLeftAnswerRB"
             android:checked="true"
             android:text="@string/fragment_check_list_etap8_answer1_text" />
 
         <RadioButton
             android:id="@+id/rbtnTypeConsumptionVar2_FCL8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/CheckListRightAnswerRB"
             android:text="@string/fragment_check_list_etap8_answer2_text" />
 

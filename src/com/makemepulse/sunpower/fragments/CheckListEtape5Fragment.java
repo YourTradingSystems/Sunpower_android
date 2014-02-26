@@ -38,6 +38,10 @@ public final class CheckListEtape5Fragment extends Fragment {
         rbtnQuestion2Var1 = (RadioButton) getView().findViewById(R.id.rbtnQuestion2Var1_FCL5);
     }
 
+    /*
+     * save user input data
+     */
+
     private void saveAllFragment5Data() {
         if (rbtnQuestion1Var1.isChecked()) question1 = "OUI";
         else question1 = "NON";

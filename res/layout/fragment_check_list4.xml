@@ -46,12 +46,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnSimpleRoofVar1_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnSimpleRoofVar2_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text" />
 
@@ -76,12 +80,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnAzimuthVar1_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnAzimuthVar2_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
@@ -106,12 +114,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnOrientedVar1_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnOrientedVar2_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
@@ -143,12 +155,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnSimpleSlopeVar1_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnSimpleSlopeVar2_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text" />
 
@@ -173,12 +189,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnSlope45Var1_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnSlope45Var2_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
@@ -203,12 +223,16 @@
 
                 <RadioButton
                     android:id="@+id/rbtnSlope10Var1_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
                     android:id="@+id/rbtnSlope10Var2_FCL4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 

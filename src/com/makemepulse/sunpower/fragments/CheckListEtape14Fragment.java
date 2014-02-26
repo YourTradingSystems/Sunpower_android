@@ -99,15 +99,31 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
 
     }
 
+    /**
+     * get image path from camera shot
+     *
+     * no @param
+     */
+
     private final void getPictureFromCamera() {
         intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, RESULT_LOAD_IMAGE);
     }
 
+    /**
+     * get image path from gallery
+     *
+     * no @param
+     */
+
     private final void getPictureFromGallery() {
         intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, RESULT_LOAD_IMAGE);
     }
+
+    /**
+     * get results from camera/gallery and set data to question'x' variables
+     */
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -146,6 +162,10 @@ public final class CheckListEtape14Fragment extends Fragment implements OnClickL
             }
 
      }
+
+    /**
+     * save all user input data
+     */
 
     private void saveAllFragment14Data() {
 
