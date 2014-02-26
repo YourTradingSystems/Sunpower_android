@@ -15,12 +15,12 @@ public final class CheckListEtape4Fragment extends Fragment {
     private String question1;
     private String question2;
 
-    private RadioButton rbtnQuestion1Var1;
-    private RadioButton rbtnQuestion2Var1;
-    private RadioButton rbtnQuestion3Var1;
-    private RadioButton rbtnQuestion4Var1;
-    private RadioButton rbtnQuestion5Var1;
-    private RadioButton rbtnQuestion6Var1;
+    private RadioButton rbtnSimpleRoof_FCL4;
+    private RadioButton rbtnAzimuth_FCL4;
+    private RadioButton rbtnOriented_FCL4;
+    private RadioButton rbtnSimpleSlope_FCL4;
+    private RadioButton rbtnSlope45_FCL4;
+    private RadioButton rbtnSlope10_FCL4;
 
     public static final CheckListEtape4Fragment create() {
         return new CheckListEtape4Fragment();
@@ -34,18 +34,18 @@ public final class CheckListEtape4Fragment extends Fragment {
     }
 
     private final void findViews(View _view) {
-        rbtnQuestion1Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap4Question1Var1);
-        rbtnQuestion2Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap4Question2Var1);
-        rbtnQuestion3Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap4Question3Var1);
-        rbtnQuestion4Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap4Question4Var1);
-        rbtnQuestion5Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap4Question5Var1);
-        rbtnQuestion6Var1 = (RadioButton) _view.findViewById(R.id.rbtnEtap4Question6Var1);
+        rbtnSimpleRoof_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSimpleRoofVar1_FCL4);
+        rbtnAzimuth_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnAzimuthVar1_FCL4);
+        rbtnOriented_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnOrientedVar1_FCL4);
+        rbtnSimpleSlope_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSimpleSlopeVar1_FCL4);
+        rbtnSlope45_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSlope45Var1_FCL4);
+        rbtnSlope10_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSlope10Var1_FCL4);
     }
 
     private void saveAllFragment4Data() {
-        if (rbtnQuestion1Var1.isChecked()) question1 = "OUI";
+        if (rbtnSimpleRoof_FCL4.isChecked()) question1 = "OUI";
         else question1 = "NON";
-        if (rbtnQuestion2Var1.isChecked()) question2 = "OUI";
+        if (rbtnAzimuth_FCL4.isChecked()) question2 = "OUI";
         else question2 = "NON";
 
     }

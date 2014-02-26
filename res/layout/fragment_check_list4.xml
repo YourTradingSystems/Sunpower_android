@@ -7,7 +7,7 @@
     android:background="@color/bg_screen_checklist">
 
     <TextView
-        android:id="@+id/tvCheckListEtap4Banner"
+        android:id="@+id/tvBanner_FCL4"
         style="@style/CheckListEtapBanner"
         android:text="@string/fragment_check_list_etap4_banner_text"
         android:layout_alignParentTop="true" />
@@ -17,79 +17,79 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_below="@id/tvCheckListEtap4Banner">
+        android:layout_below="@id/tvBanner_FCL4">
 
         <LinearLayout
             style="@style/CheckListTestsContainer"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvCheckListEtap4Text1"
+                android:id="@+id/tvSimpleRoof_FCL4"
                 style="@style/CheckListQuestion"
                 android:text="@string/fragment_check_list_etap4_question1_text" />
 
             <RadioGroup
-                android:id="@+id/tvCheckListEtap4RadioGroup1"
+                android:id="@+id/rgSimpleRoof_FCL4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question1Var1"
+                    android:id="@+id/rbtnSimpleRoofVar1_FCL4"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question1Var2"
+                    android:id="@+id/rbtnSimpleRoofVar2_FCL4"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text" />
 
             </RadioGroup>
 
             <TextView
-                android:id="@+id/tvCheckListEtap4Text2"
+                android:id="@+id/tvAzimuth_FCL4"
                 style="@style/CheckListQuestion"
                 android:text="@string/fragment_check_list_etap4_question2_text" />
 
             <RadioGroup
-                android:id="@+id/tvCheckListEtap4RadioGroup2"
+                android:id="@+id/rgAzimuth_FCL4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question2Var1"
+                    android:id="@+id/rbtnAzimuthVar1_FCL4"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question2Var2"
+                    android:id="@+id/rbtnAzimuthVar2_FCL4"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
             </RadioGroup>
 
             <TextView
-                android:id="@+id/tvCheckListEtap4Text3"
+                android:id="@+id/tvOriented_FCL4"
                 style="@style/CheckListQuestion"
                 android:text="@string/fragment_check_list_etap4_question3_text" />
 
             <RadioGroup
-                android:id="@+id/tvCheckListEtap4RadioGroup3"
+                android:id="@+id/rgOriented_FCL4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question3Var1"
+                    android:id="@+id/rbtnOrientedVar1_FCL4"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question3Var2"
+                    android:id="@+id/rbtnOrientedVar2_FCL4"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
@@ -102,72 +102,72 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvCheckListEtap4Text4"
+                android:id="@+id/tvSimpleSlope_FCL4"
                 style="@style/CheckListQuestion"
                 android:text="@string/fragment_check_list_etap4_question4_text" />
 
             <RadioGroup
-                android:id="@+id/tvCheckListEtap4RadioGroup4"
+                android:id="@+id/rgSimpleSlope_FCL4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question4Var1"
+                    android:id="@+id/rbtnSimpleSlopeVar1_FCL4"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question4Var2"
+                    android:id="@+id/rbtnSimpleSlopeVar2_FCL4"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text" />
 
             </RadioGroup>
 
             <TextView
-                android:id="@+id/tvCheckListEtap4Text5"
+                android:id="@+id/tvSlope45_FCL4"
                 style="@style/CheckListQuestion"
                 android:text="@string/fragment_check_list_etap4_question5_text" />
 
             <RadioGroup
-                android:id="@+id/tvCheckListEtap4RadioGroup5"
+                android:id="@+id/rgSlope45_FCL4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question5Var1"
+                    android:id="@+id/rbtnSlope45Var1_FCL4"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question5Var2"
+                    android:id="@+id/rbtnSlope45Var2_FCL4"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
             </RadioGroup>
 
             <TextView
-                android:id="@+id/tvCheckListEtap4Text6"
+                android:id="@+id/tvSlope10_FCL4"
                 style="@style/CheckListQuestion"
                 android:text="@string/fragment_check_list_etap4_question6_text" />
 
             <RadioGroup
-                android:id="@+id/tvCheckListEtap4RadioGroup6"
+                android:id="@+id/rgSlope10_FCL4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question6Var1"
+                    android:id="@+id/rbtnSlope10Var1_FCL4"
                     style="@style/CheckListLeftAnswerRB"
                     android:checked="true"
                     android:text="@string/fragment_check_list_etap4_answer1_text" />
 
                 <RadioButton
-                    android:id="@+id/rbtnEtap4Question6Var2"
+                    android:id="@+id/rbtnSlope10Var2_FCL4"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/fragment_check_list_etap4_answer2_text"/>
 
