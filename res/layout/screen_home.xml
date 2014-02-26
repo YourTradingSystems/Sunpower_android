@@ -2,45 +2,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen_home">
+    android:background="@color/bg_screen_home" android:id="@+id/rlRoot_SH">
 
-    <Button
-        android:id="@+id/btnAdministrator_SH"
-        style="@style/HomeAdministratorBTN"
-        android:layout_alignParentTop="true"
-        android:text="@string/home_screen_my_table_text" />
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#f00" android:id="@+id/flTopSector_SH">
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/flArg_SH" android:background="@color/bg_arg">
+        <fragment android:name="com.makemepulse.sunpower.fragments.argumentarie.ArgumentarieFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/afArg_SH"/>
+    </FrameLayout>
 
-    <Button
-        android:id="@+id/btnCheckList_SH"
-        style="@style/HomeCheckListBTN"
-        android:layout_alignParentBottom="true"
-        android:text="@string/home_screen_eligibility_text" />
-
-    <Button
-        android:id="@+id/btnArgumentaire_SH"
-        style="@style/HomeArgumentarieBTN"
-        android:layout_above="@id/btnCheckList_SH"
-        android:text="@string/home_screen_presentation_text" />
-
-    <CheckBox
-        android:id="@+id/cbArgumentaire_SH"
-        style="@style/HomeArgumentarieCB"
-        android:layout_alignTop="@id/btnArgumentaire_SH"
-        android:layout_centerHorizontal="true"
-        />
-
-    <CheckBox
-        android:id="@+id/cbCheckList_SH"
-        style="@style/HomeCheckListCB"
-        android:layout_alignTop="@id/btnCheckList_SH"
-        android:layout_centerHorizontal="true"
-        />
-
-    <CheckBox
-        android:id="@+id/cbAdministrator_SH"
-        style="@style/HomeAdministratorCB"
-        android:layout_alignBottom="@id/btnAdministrator_SH"
-        android:layout_centerHorizontal="true"
-        />
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnArg_SH" android:src="@drawable/homepage_cb_down_btn_green"
+            android:adjustViewBounds="true" android:background="#00000000"
+            android:layout_centerHorizontal="true"/>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/flChecklist_SH" android:background="@color/bg_screen_checklist">
+        <fragment android:name="com.makemepulse.sunpower.fragments.checklist.ChecklistFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/cfChecklist_SH"/>
+    </FrameLayout>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChecklist_SH" android:src="@drawable/homepage_cb_down_btn_yellow"
+            android:adjustViewBounds="true" android:background="#00000000"
+            android:layout_centerHorizontal="true"
+            />
 </RelativeLayout>
 

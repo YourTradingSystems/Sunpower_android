@@ -1,9 +1,8 @@
-package com.makemepulse.sunpower.screens.argumentarie;
+package com.makemepulse.sunpower.fragments.argumentarie;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import com.makemepulse.sunpower.fragments.argumentarie.ArgPage;
 
 /**
  * adapter for ViewPager, requires arrays titles and messages that

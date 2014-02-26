@@ -6,14 +6,14 @@
     <android.support.v4.view.ViewPager
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/vpPager_SC" android:layout_above="@+id/cpiIndicator_SC"/>
+            android:id="@+id/vpPager_FC" android:layout_above="@+id/cpiIndicator_FC"/>
     <com.viewpagerindicator.CirclePageIndicator
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/cpiIndicator_SC"
-            style="@style/ArgIndicator" android:layout_above="@+id/nvNavigation_SC"/>
-    <com.makemepulse.sunpower.screens.checklist.NavigationView
+            android:id="@+id/cpiIndicator_FC"
+            style="@style/ArgIndicator" android:layout_above="@+id/nvNavigation_FC"/>
+    <com.makemepulse.sunpower.fragments.checklist.NavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" android:id="@+id/nvNavigation_SC"/>
+            android:layout_alignParentBottom="true" android:id="@+id/nvNavigation_FC"/>
 </RelativeLayout>

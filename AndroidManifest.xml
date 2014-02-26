@@ -18,7 +18,7 @@
                  android:icon="@drawable/ic_launcher"
                  android:theme="@style/ThemeDarkActionBar">
 
-        <activity android:name=".screens.Home"
+        <activity android:name=".screens.home.Home"
                   android:screenOrientation="landscape"
                   android:theme="@style/ThemeDarkActionBar"/>
         

@@ -1,4 +1,4 @@
-package com.makemepulse.sunpower.screens.checklist;
+package com.makemepulse.sunpower.fragments.checklist;
 
 import android.content.res.Resources;
 import android.support.v4.app.FragmentActivity;

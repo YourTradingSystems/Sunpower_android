@@ -2,13 +2,16 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/rlRoot_SA" android:background="@color/bg_arg">
-    <android.support.v4.view.ViewPager
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/vpPager_SA" android:layout_above="@+id/cpiIndicator_SA"/>
+                android:id="@+id/rlRoot_FA"
+                android:background="@color/bg_arg">
+    <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vpPager_FA"
+            android:layout_above="@+id/cpiIndicator_FA"/>
     <com.viewpagerindicator.CirclePageIndicator
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_alignParentBottom="true"
-            android:id="@+id/cpiIndicator_SA" style="@style/ArgIndicator"/>
+            android:id="@+id/cpiIndicator_FA" style="@style/ArgIndicator"/>
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.makemepulse.sunpower.screens.checklist;
+package com.makemepulse.sunpower.fragments.checklist;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,7 +10,7 @@ import android.widget.TextView;
  * Date: 21.02.14
  * Time: 16:56
  */
-public final class NavigationView extends RelativeLayout {
+final class NavigationView extends RelativeLayout {
 
     private TextView tvPosition;
 
