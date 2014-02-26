@@ -17,52 +17,49 @@
               android:textSize="@dimen/text_size_subtitle"
               android:textColor="@color/bg_screen_login"
               android:gravity="center"
-              android:layout_above="@+id/ll"/>
-    <LinearLayout
-            android:layout_width="wrap_content"
+              android:layout_above="@+id/tblLayout"/>
+    <TableLayout
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:id="@+id/ll"
-            android:orientation="horizontal">
+            android:id="@+id/tblLayout">
+        <TableRow>
+            <RadioButton
+                    android:id="@+id/radio_btn_coastal_zone"
+                    android:layout_width="wrap_content"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:text="@string/coastal_zone"
+                    android:layout_gravity="right"/>
+            <RadioButton
+                    android:id="@+id/radio_btn_open_space"
+                    style="@style/CheckListRightAnswerRB"
+                    android:text="@string/open_space"/>
+        </TableRow>
+        <TableRow>
+            <RadioButton
+                    android:id="@+id/radio_btn_urban"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:layout_width="wrap_content"
+                    android:text="@string/urban"
+                    android:layout_gravity="right"/>
+            <RadioButton
+                    android:id="@+id/radio_btn_open_terrain"
+                    style="@style/CheckListRightAnswerRB"
+                    android:text="@string/open_terrain"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"/>
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rg"
-            android:layout_weight="1"
-            android:gravity="right"
-            android:orientation="vertical">
-        <RadioButton
-            android:id="@+id/radio_btn_coastal_zone"
-            style="@style/CheckListLeftAnswerRB"
-            android:text="@string/coastal_zone"/>
-        <RadioButton
-            android:id="@+id/radio_btn_urban"
-            style="@style/CheckListLeftAnswerRB"
-            android:text="@string/urban"/>
-        <RadioButton
-            android:text="@string/suburbs"
-            style="@style/CheckListLeftAnswerRB"
-            android:id="@+id/radio_btn_suburbs"/>
-    </RadioGroup>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/radio_group_right"
-        android:orientation="vertical">
+        </TableRow>
+        <TableRow>
+            <RadioButton
+                    android:text="@string/suburbs"
+                    style="@style/CheckListLeftAnswerRB"
+                    android:id="@+id/radio_btn_suburbs"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right"/>
+        </TableRow>
 
-        <RadioButton
-            android:id="@+id/radio_btn_environment_more"
-            style="@style/CheckListRightAnswerRB"
-            android:text="@string/environment_more"/>
+    </TableLayout>
 
-        <RadioButton
-            android:id="@+id/radio_btn_environment"
-            style="@style/CheckListRightAnswerRB"
-            android:text="@string/environment"/>
-
-        </RadioGroup>
-    </LinearLayout>
 
 </RelativeLayout>

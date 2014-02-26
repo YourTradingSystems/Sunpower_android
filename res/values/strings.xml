@@ -30,7 +30,7 @@
     <string name="urban">Urban</string>
     <string name="suburbs">Suburbs</string>
     <string name="open_space">Open space</string>
-    <string name="open_terrain">Open terrain with occasional obstacles</string>
+    <string name="open_terrain">Open terrain with \n\r occasional obstacles</string>
     <!-- Etap2  -->
     <string name="distance_to_sea">Distance to sea:</string>
     <string name="less_than_3km">Less than 3km</string>
