@@ -16,7 +16,7 @@
             android:id="@+id/tvYour_Income"
             android:layout_marginBottom="20dp"/>
 
-    <com.makemepulse.sunpower.fragments.checklist10.CustomMovementSun
+    <com.makemepulse.sunpower.fragments.checklist_etape10.CustomMovementSun
             android:id="@+id/customMovementSun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
