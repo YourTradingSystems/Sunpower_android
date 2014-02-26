@@ -19,11 +19,13 @@ abstract class AnimationWorker {
 
     private static int mArgTopPos = 0;
     private static int mArgBottomPos = 0;
+    //offsets to center of button arg
     private static int mOffsetYBtnArg = 0;
     private static int mOffsetXBtnArg = 0;
 
     private static int mCheckTopPos = 0;
     private static int mCheckBotPos = 0;
+    //offsets to center of button check
     private static int mOffsetYBtnCheck = 0;
     private static int mOffsetXBtnCheck = 0;
 
