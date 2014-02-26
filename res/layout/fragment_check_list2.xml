@@ -39,12 +39,16 @@
                      style="@style/CheckListLeftAnswerRB"
                      android:checked="true"
                      android:layout_gravity="right"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
                      android:text="@string/less_than_3km"/>
 
         <RadioButton
                      android:layout_gravity="right"
                      android:id="@+id/radioBtnMoreThan10km_FCL2"
                      style="@style/CheckListLeftAnswerRB"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
                      android:text="@string/more_than_10km"/>
 
 

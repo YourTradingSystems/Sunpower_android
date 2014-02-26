@@ -37,17 +37,23 @@
                     style="@style/CheckListLeftAnswerRB"
                     android:text="@string/coastal_zone"
                     android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:layout_gravity="right"/>
             <RadioButton
                     android:text="@string/suburbs"
                     style="@style/CheckListLeftAnswerRB"
                     android:lines="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:id="@+id/radio_btn_suburbs_FCL1"
                     android:layout_gravity="right"/>
             <RadioButton
                     android:id="@+id/radio_btn_urban_FCL1"
                     style="@style/CheckListLeftAnswerRB"
                     android:text="@string/urban"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:layout_gravity="right"/>
 
         </LinearLayout>
@@ -59,11 +65,14 @@
             <RadioButton
                     android:id="@+id/radio_btn_open_space_FCL1"
                     style="@style/CheckListRightAnswerRB"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
                     android:text="@string/open_space"/>
             <RadioButton
                     android:id="@+id/radio_btn_open_terrain_FCL1"
                     style="@style/CheckListRightAnswerRB"
                     android:text="@string/open_terrain"
+                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"/>
         </LinearLayout>
 
