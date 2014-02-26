@@ -13,10 +13,10 @@
             android:layout_above="@+id/customMovementSun_FCL10"
             android:textColor="@color/text_home_button"
             android:textSize="@dimen/ts_checklist_banner"
-            android:id="@+id/tvYourIncome_FCL12"
+            android:id="@+id/tvYourIncome_FCL10"
             />
 
-    <com.makemepulse.sunpower.fragments.checklist10.CustomMovementSun
+    <com.makemepulse.sunpower.fragments.checklist_etape10.CustomMovementSun
             android:id="@+id/customMovementSun_FCL10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
