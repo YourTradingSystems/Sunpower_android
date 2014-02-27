@@ -11,7 +11,7 @@
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/ivLogo_SL" android:layout_centerHorizontal="true" android:src="@drawable/logo"
+                android:id="@+id/ivLogo_SL" android:layout_centerHorizontal="true" android:src="@drawable/sunpower_prime"
                 android:layout_marginBottom="@dimen/mb_login"/>
         <EditText
             android:id="@+id/etLogin_SL"

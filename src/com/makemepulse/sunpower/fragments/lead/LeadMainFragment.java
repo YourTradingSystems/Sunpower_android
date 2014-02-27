@@ -35,6 +35,7 @@ public class LeadMainFragment extends Fragment {
         super.onActivityCreated(_savedInstanceState);
 
         findViews();
+
         addLeadStartFragment();
     }
 
@@ -44,7 +45,7 @@ public class LeadMainFragment extends Fragment {
 
     private final void addLeadStartFragment() {
         final FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        final LeadStartFragment fragment = new LeadStartFragment();
+        final LeadStartFragment fragment = LeadStartFragment.create();
         transaction.add(R.id.rlRoot_FLM, fragment);
         transaction.commit();
     }

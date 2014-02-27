@@ -1,10 +1,13 @@
 package com.makemepulse.sunpower.fragments.lead;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import com.makemepulse.sunpower.R;
 
 /**
@@ -13,6 +16,23 @@ import com.makemepulse.sunpower.R;
  * Time: 12:26
  */
 public class LeadStartFragment extends Fragment {
+
+    private TextView tvWelcome_FLS;
+
+    private Activity mActivity;
+
+    /**
+     * Creating instance only through factory method.
+     */
+    private LeadStartFragment() {}
+
+    /**
+     * Factory method.
+     * @return new instance
+     */
+    public static final LeadStartFragment create() {
+        return new LeadStartFragment();
+    }
 
     /**
      * inflating layout of fragment
@@ -30,9 +50,22 @@ public class LeadStartFragment extends Fragment {
     public final void onActivityCreated(final Bundle _savedInstanceState) {
         super.onActivityCreated(_savedInstanceState);
 
+        mActivity = getActivity();
+
         findViews();
+
+        setWelcomeText(mActivity, tvWelcome_FLS, "Jean-Michel Dupont");
     }
 
     private final void findViews() {
+        tvWelcome_FLS       = (TextView) getView().findViewById(R.id.tvWelcome_FLS);
+    }
+
+    /**
+     * Set welcome text in format: "Bonjour user".
+     * @param _name
+     */
+    private final void setWelcomeText(final Context _context, final TextView _tvWelcome_FLS, final String _name) {
+        _tvWelcome_FLS.setText(_context.getString(R.string.welcome) + " " + _name);
     }
 }

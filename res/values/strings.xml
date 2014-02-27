@@ -7,16 +7,23 @@
     <string name="password">Mot de passe</string>
     <string name="login_screen_err_text">Login / Mot de passe erroné</string>
     <string name="login_screen_connect_text">CONNEXION</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <!-- ~~~~~~~~~~~ HOME SCREEN ~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ HOME SCREEN ~~~~~~~~~~~~~~~~~~~~~~ -->
     <string name="home_screen_my_table_text">Mon tableau de bord</string>
     <string name="home_screen_presentation_text">Presentation de l`offre</string>
     <string name="home_screen_eligibility_text">Éligibilite &amp; rendement</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Lead ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="welcome">Bonjour</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~ ACTION BAR ~~~~~~~~~~~~ -->
     <string name="action_bar_home_text">HOME</string>
     <string name="action_bar_argumentarie_text">FAIRE DÉCOUVRIR</string>
     <string name="action_bar_checklist_text">REVENU SOLAIRE</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~ CHECK_LIST ~~~~~~~~~~~~ -->
     <!-- Etap0 -->
