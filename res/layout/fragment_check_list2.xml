@@ -10,7 +10,7 @@
               android:id="@+id/tvCheckListEtap2Banner"
               android:text="@string/environment"
               android:textSize="@dimen/ts_checklist_banner"
-              android:textColor="@color/bg_screen_login"
+              android:textColor="@color/bg_screen_home"
               android:gravity="center"
               android:layout_above="@+id/tvSubtitle_FCL2"/>
 
@@ -19,7 +19,7 @@
               android:id="@+id/tvCheckListEtap2subtitle"
               android:text="@string/distance_to_sea"
               android:textSize="@dimen/text_size_subtitle"
-              android:textColor="@color/bg_screen_login"
+              android:textColor="@color/bg_screen_home"
               android:gravity="center"
               android:layout_above="@+id/tblLayout_FCL1"/>
 

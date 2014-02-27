@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="LogSignIn">
-        <item name="android:gravity">center</item>
-        <item name="android:padding">@dimen/p_log_sign_in</item>
-        <item name="android:layout_margin">@dimen/m_log_sign_in</item>
-        <item name="android:background">@drawable/background_login</item>
-    </style>
-
-    <style name="LogTitle">
-        <item name="android:textSize">@dimen/ts_checklist_banner</item>
-        <item name="android:textColor">@color/text_title</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_marginRight">@dimen/mr_log_title</item>
-    </style>
-
-    <style name="LogSubTitle">
-        <item name="android:textSize">@dimen/text_size_subtitle</item>
-        <item name="android:textColor">@color/text_title</item>
-        <item name="android:gravity">center</item>
-        <item name="android:padding">@dimen/p_log_sub_title</item>
-    </style>
 
     <style name="LoginTextFields">
         <item name="android:background">@drawable/bg_login_text_field</item>
@@ -33,14 +13,14 @@
         <item name="android:imeOptions">flagNoExtractUi</item>
     </style>
 
-    <style name="LogErrorMsg">
+    <style name="LoginErrorMsg">
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:textColor">@color/text_login_error</item>
         <item name="android:padding">@dimen/p_log_sub_title</item>
         <item name="android:background">@drawable/bg_login_error</item>
     </style>
 
-    <style name="LogConnectBTN">
+    <style name="LoginConnectBTN">
         <item name="android:textSize">@dimen/text_size_subtitle</item>
         <item name="android:textColor">@color/text_title</item>
         <item name="android:paddingTop">@dimen/ptb_login_text</item>

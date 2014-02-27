@@ -33,7 +33,7 @@
             android:inputType="textPassword"/>
         <TextView
             android:id="@+id/tvError_SL"
-            style="@style/LogErrorMsg"
+            style="@style/LoginErrorMsg"
             android:layout_below="@id/etPass_SL"
             android:layout_centerHorizontal="true"
             android:text="@string/login_screen_err_text" android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             android:layout_alignRight="@+id/ivLogo_SL" android:layout_marginBottom="@dimen/mb_log_edit"/>
         <Button
             android:id="@+id/btnConnect_SL"
-            style="@style/LogConnectBTN"
+            style="@style/LoginConnectBTN"
             android:layout_below="@id/tvError_SL"
             android:layout_centerHorizontal="true"
             android:text="@string/login_screen_connect_text"
