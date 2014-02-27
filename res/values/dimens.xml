@@ -13,15 +13,13 @@
     <dimen name="drawable_margin">5sp</dimen>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Login ~~~~~~~~~~~~~~~~~~~~~ -->
-    <dimen name="p_log_sign_in">15dp</dimen>
-    <dimen name="m_log_sign_in">20dp</dimen>
-    <dimen name="mb_log_edit">25dp</dimen>
-    <dimen name="mr_log_title">20dp</dimen>
-    <dimen name="p_log_sub_title">5dp</dimen>
-
-    <dimen name="width_stroke_login_text_fields">1dp</dimen>
-    <dimen name="text_size_login_text_fields">18sp</dimen>
-    <dimen name="ptb_login_text">7dp</dimen>
+    <dimen name="width_stroke_login">1dp</dimen>
+    <dimen name="ts_login">18sp</dimen>
+    <dimen name="ts_login_error">15sp</dimen>       <!-- should be smaller than "ts_login" -->
+    <dimen name="ptb_login">7dp</dimen>
+    <dimen name="ptb_login_error">5dp</dimen>       <!-- should be smaller than "ptb_login" -->
+    <dimen name="mb_login">20dp</dimen>
+    <dimen name="mtb_login_error">10dp</dimen>      <!-- should be (mb_login / 2) -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~~~~~~~ -->

@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen_home" android:gravity="center">
+    android:background="@color/bg_screen_login" android:gravity="center">
 
     <RelativeLayout
             android:layout_width="wrap_content"
@@ -12,7 +12,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/ivLogo_SL" android:layout_centerHorizontal="true" android:src="@drawable/logo"
-                android:layout_marginBottom="@dimen/mb_log_edit"/>
+                android:layout_marginBottom="@dimen/mb_login"/>
         <EditText
             android:id="@+id/etLogin_SL"
             style="@style/LoginTextFields"
@@ -22,7 +22,7 @@
             android:layout_below="@+id/ivLogo_SL"
             android:layout_alignLeft="@+id/ivLogo_SL"
             android:layout_alignRight="@+id/ivLogo_SL" android:gravity="center" android:hint="@string/login"
-            android:singleLine="true"/>
+            android:singleLine="true" android:layout_marginBottom="@dimen/mb_login"/>
         <EditText
             android:id="@+id/etPass_SL"
             style="@style/LoginTextFields"
@@ -30,24 +30,32 @@
             android:layout_below="@id/etLogin_SL" android:layout_width="match_parent" android:layout_height="wrap_content"
             android:gravity="center" android:layout_alignRight="@+id/ivLogo_SL"
             android:layout_alignLeft="@+id/ivLogo_SL" android:hint="@string/password" android:singleLine="true"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" android:layout_marginBottom="@dimen/mtb_login_error"/>
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/tvError_SL"
-            style="@style/LogErrorMsg"
+            style="@style/LoginErrorText"
+            android:text="@string/login_screen_err_text"
+            android:gravity="center"
             android:layout_below="@id/etPass_SL"
-            android:layout_centerHorizontal="true"
-            android:text="@string/login_screen_err_text" android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:gravity="center" android:layout_alignLeft="@+id/ivLogo_SL"
-            android:layout_alignRight="@+id/ivLogo_SL" android:layout_marginBottom="@dimen/mb_log_edit"/>
+            android:layout_alignLeft="@+id/ivLogo_SL"
+            android:layout_alignRight="@+id/ivLogo_SL"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivError_SL" android:layout_alignTop="@+id/tvError_SL"
+                android:layout_alignBottom="@+id/tvError_SL"
+                style="@style/LoginErrorIcon"/>
         <Button
             android:id="@+id/btnConnect_SL"
-            style="@style/LogConnectBTN"
+            style="@style/LoginButton"
             android:layout_below="@id/tvError_SL"
             android:layout_centerHorizontal="true"
             android:text="@string/login_screen_connect_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ivLogo_SL"
-            android:layout_alignRight="@+id/ivLogo_SL"/>
+            android:layout_alignRight="@+id/ivLogo_SL" android:layout_marginTop="@dimen/mtb_login_error"/>
     </RelativeLayout>
 </RelativeLayout>

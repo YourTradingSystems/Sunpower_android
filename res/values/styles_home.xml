@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="HomeBtnOpenClose">
-        <item name="android:adjustViewBounds">true</item>
-        <item name="android:background">@android:color/transparent</item>
+    <style name="HomeBtnOpenClose" parent="EmptyImageView">
         <item name="android:padding">@dimen/p_home_btn_open_close</item>
     </style>
 
