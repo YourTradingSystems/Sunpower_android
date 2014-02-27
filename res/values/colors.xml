@@ -5,13 +5,14 @@
     <color name="green_dark_arg">#90931e</color>
     <color name="main_orange">#FEB822</color>
     <color name="main_error">#c14a0c</color>
-    <color name="dark_login">#24201d</color>
+    <color name="lead_dark">#24201d</color>
+    <color name="lead_light">#342f29</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- //////////////// screens ////////////////////////////////// -->
     <color name="bg_screen_checklist">#FEB822</color>
     <color name="bg_screen_home">#24201d</color>
-    <color name="bg_screen_login">@color/dark_login</color>
+    <color name="bg_screen_login">@color/lead_dark</color>
     <color name="bg_screen_login_left_panel">#FEB822</color>
     <!-- ////////////////////////////////////////////////////////// -->
 
@@ -23,6 +24,10 @@
     <color name="text_login_text_field">@android:color/white</color>
     <color name="text_login_error">@android:color/white</color>
     <color name="text_login_btn">@android:color/black</color>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Lead ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <color name="bg_lead">@color/lead_dark</color>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Argumentarie ~~~~~~~~~~~~~~~~~~~~~ -->

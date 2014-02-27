@@ -16,7 +16,7 @@ import com.makemepulse.sunpower.R;
 public final class Home extends FragmentActivity implements ViewTreeObserver.OnGlobalLayoutListener, View.OnClickListener {
 
     private RelativeLayout rlRoot_SH;
-    private FrameLayout flArg_SH, flChecklist_SH, flTopSector_SH;
+    private FrameLayout flArg_SH, flChecklist_SH, flTopSector_SH, flLead_SH;
     private ImageButton btnArg_SH, btnChecklist_SH;
 
     @Override
@@ -33,6 +33,7 @@ public final class Home extends FragmentActivity implements ViewTreeObserver.OnG
         flArg_SH            = (FrameLayout) findViewById(R.id.flArg_SH);
         flChecklist_SH      = (FrameLayout) findViewById(R.id.flChecklist_SH);
         flTopSector_SH      = (FrameLayout) findViewById(R.id.flTopSector_SH);
+        flLead_SH           = (FrameLayout) findViewById(R.id.flLead_SH);
         btnArg_SH           = (ImageButton) findViewById(R.id.btnArg_SH);
         btnChecklist_SH     = (ImageButton) findViewById(R.id.btnChecklist_SH);
     }
@@ -55,6 +56,7 @@ public final class Home extends FragmentActivity implements ViewTreeObserver.OnG
         ViewWorker.initSizeAndPositionData(rlRoot_SH);
 
         ViewWorker.resizeTopSector(flTopSector_SH);
+        ViewWorker.resizeAndMoveLead(flLead_SH);
         ViewWorker.resizeAndMoveArg(flArg_SH, btnArg_SH);
         ViewWorker.resizeAndMoveChecklist(flChecklist_SH, btnChecklist_SH);
 
