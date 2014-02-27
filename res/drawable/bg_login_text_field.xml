@@ -3,5 +3,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
        android:shape="rectangle">
     <solid android:color="@android:color/transparent"/>
-    <stroke android:color="@color/stroke_login_text_field" android:width="@dimen/width_stroke_login_text_fields"/>
+    <stroke android:color="@color/stroke_login_text_field" android:width="@dimen/width_stroke_login"/>
 </shape>

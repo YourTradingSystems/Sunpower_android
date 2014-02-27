@@ -2,29 +2,34 @@
 <resources>
 
     <style name="LoginTextFields">
-        <item name="android:background">@drawable/bg_login_text_field</item>
-        <item name="android:layout_marginBottom">@dimen/mb_log_edit</item>
-        <item name="android:textSize">@dimen/text_size_login_text_fields</item>
-        <item name="android:minHeight">0dp</item>
-        <item name="android:paddingTop">@dimen/ptb_login_text</item>
-        <item name="android:paddingBottom">@dimen/ptb_login_text</item>
+        <item name="android:textSize">@dimen/ts_login</item>
         <item name="android:textColor">@color/text_login_text_field</item>
         <item name="android:textCursorDrawable">@drawable/text_cursor</item>
+        <item name="android:background">@drawable/bg_login_text_field</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingTop">@dimen/ptb_login</item>
+        <item name="android:paddingBottom">@dimen/ptb_login</item>
         <item name="android:imeOptions">flagNoExtractUi</item>
     </style>
 
-    <style name="LoginErrorMsg">
-        <item name="android:textSize">@dimen/text_size_subtitle</item>
-        <item name="android:textColor">@color/text_login_error</item>
-        <item name="android:padding">@dimen/p_log_sub_title</item>
+    <style name="LoginErrorText">
         <item name="android:background">@drawable/bg_login_error</item>
+        <item name="android:textSize">@dimen/ts_login_error</item>
+        <item name="android:textColor">@color/text_login_error</item>
+        <item name="android:paddingTop">@dimen/ptb_login_error</item>
+        <item name="android:paddingBottom">@dimen/ptb_login_error</item>
     </style>
 
-    <style name="LoginConnectBTN">
-        <item name="android:textSize">@dimen/text_size_subtitle</item>
-        <item name="android:textColor">@color/text_title</item>
-        <item name="android:paddingTop">@dimen/ptb_login_text</item>
-        <item name="android:paddingBottom">@dimen/ptb_login_text</item>
+    <style name="LoginErrorIcon" parent="EmptyImageView">
+        <item name="android:src">@drawable/ic_error</item>
+        <item name="android:scaleType">fitStart</item>
+    </style>
+
+    <style name="LoginButton">
+        <item name="android:textSize">@dimen/ts_login</item>
+        <item name="android:textColor">@color/text_login_btn</item>
         <item name="android:background">@drawable/selector_btn_login</item>
+        <item name="android:paddingTop">@dimen/ptb_login</item>
+        <item name="android:paddingBottom">@dimen/ptb_login</item>
     </style>
 </resources>

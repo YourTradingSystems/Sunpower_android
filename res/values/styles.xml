@@ -20,4 +20,9 @@
         <item name="android:background">@drawable/background_action_bar_button</item>
         <item name="android:drawableLeft">@drawable/custom_radio_button</item>
     </style>
+
+    <style name="EmptyImageView">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>
