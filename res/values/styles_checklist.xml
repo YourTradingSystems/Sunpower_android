@@ -10,7 +10,7 @@
 
     <style name="CheckListEtapSubtitle">
         <item name="android:textSize">@dimen/text_size_subtitle</item>
-        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:layout_marginBottom">@dimen/text_size_subtitle_bottom_margin</item>
     </style>
 
@@ -55,8 +55,6 @@
     </style>
 
     <style name="CheckListBTN">
-        <item name="android:layout_width">@dimen/width_button_checklist</item>
-        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/button_checklist</item>
         <item name="android:textColor">@color/bg_screen_checklist</item>
         <item name="android:layout_margin">@dimen/m_checklist_btn</item>
@@ -94,8 +92,8 @@
         <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:padding">@dimen/p_checklist_question</item>
         <item name="android:layout_marginTop">@dimen/mt_checklist_question</item>
-        <item name="android:singleLine">true</item>
         <item name="android:background">@drawable/custom_checklist_edit_text</item> !-->
+        <item name="android:singleLine">true</item>
     </style>
 
 </resources>

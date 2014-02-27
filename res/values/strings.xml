@@ -24,18 +24,18 @@
     <string name="new_lead">NEW LEAD</string>
     <string name="start_checklist">START CHECKLIST</string>
     <!-- Etap1 -->
-    <string name="environment">ENVIRONMENT</string>
-    <string name="environment_more">Environment more particularly described as</string>
-    <string name="coastal_zone">Zone cotière</string>
-    <string name="urban">Urban</string>
-    <string name="suburbs">Suburbs</string>
-    <string name="open_space">Open space</string>
-    <string name="open_terrain">Open terrain with \n\r occasional obstacles</string>
+    <string name="environment">L\u0027ENVIRONNEMENT</string>
+    <string name="environment_more">Environnement plus particulièrement décrit comme :</string>
+    <string name="coastal_zone">Zone côtière</string>
+    <string name="urban">Urbain</string>
+    <string name="suburbs">Banlieue</string>
+    <string name="open_space">Espace dégagé</string>
+    <string name="open_terrain">Terrain dégagé avec \n\r obstacles ponctuels</string>
     <!-- Etap2  -->
-    <string name="distance_to_sea">Distance to sea:</string>
-    <string name="less_than_3km">Less than 3km</string>
-    <string name="between_3km_and_10km">Between 3km and 10km</string>
-    <string name="more_than_10km">More than 10km</string>
+    <string name="distance_to_sea">Distance par rapport à la mer:</string>
+    <string name="less_than_3km">Moins de 3km</string>
+    <string name="between_3km_and_10km">Entre 3km et 10km</string>
+    <string name="more_than_10km">Plus de 10km</string>
 
     <!-- Etap3 -->
     <string name="fragment_check_list_etap3_banner_text">L\'ENVIRONNEMENT</string>
@@ -162,9 +162,9 @@
     <string name="fragment_check_list_etap14_question4_text">- Copie d’une facture EDF ou autre fournisseur (N°PDL)</string>
 
     <!-- Etap15 -->
-    <string name="fragment_check_list_etap15_banner_text">Le dossier de Mr.Dupont est rempli à 100%, n\'oubliez pas de remplir les informations complémentaires.</string>
-    <string name="fragment_check_list_etap15_button1_text">>INFOS COMPLÉMENTAIRES</string>
-    <string name="fragment_check_list_etap15_button2_text">ENVOYER BROCHURE PAR EMAIL</string>
+    <string name="fragment_check_list_etap15_banner_text">DOSSIER COMPLET!</string>
+    <string name="fragment_check_list_etap15_button1_text">Informations supplémentaires</string>
+    <string name="fragment_check_list_etap15_button2_text">Envoyer brochure par email</string>
     <string name="fragment_check_list_etap15_button3_text">SYNCHRONISER \n dernière synchro le 20/01/2014</string>
 
     <!-- Etap16 -->
