@@ -1,53 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/bg_screen_checklist"
-        >
-    <TextView android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap2Banner"
-              android:text="@string/environment"
-              android:textSize="@dimen/ts_checklist_banner"
-              android:textColor="@color/bg_screen_home"
-              android:gravity="center"
-              android:layout_above="@+id/tvSubtitle_FCL2"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/tvBanner_FCL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CheckListEtapBanner"
+        android:text="@string/environment"
+        android:gravity="center"
+        android:layout_above="@+id/tvSubtitle_FCL2"/>
 
-    <TextView android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/tvCheckListEtap2subtitle"
-              android:text="@string/distance_to_sea"
-              android:textSize="@dimen/text_size_subtitle"
-              android:textColor="@color/bg_screen_home"
-              android:gravity="center"
-              android:layout_above="@+id/tblLayout_FCL1"/>
+    <TextView
+        android:id="@+id/tvSubtitle_FCL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CheckListEtapSubtitle"
+        android:text="@string/distance_to_sea"
+        android:gravity="center"
+        android:layout_above="@+id/tblLayout_FCL1"/>
 
-        <RadioGroup
-                android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:id="@+id/tblLayout_FCL1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radioBtnUrbanLessThan3km_FCL2"
+                style="@style/CheckListLeftAnswerRB"
+                android:checked="true"
+                android:layout_gravity="right"
                 android:layout_height="wrap_content"
-                android:id="@+id/rg"
-                android:layout_centerInParent="true"
-                android:orientation="vertical">
+                android:layout_width="wrap_content"
+                android:text="@string/less_than_3km"/>
 
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:checked="true"
-                         android:id="@+id/radio_btn_more_than_10km"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/more_than_10km"/>
+            <RadioButton
+                android:layout_gravity="right"
+                android:id="@+id/radioBtnMoreThan10km_FCL2"
+                style="@style/CheckListLeftAnswerRB"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/more_than_10km"/>
 
-            <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/radio_btn_urban_less_than_3km"
-                         android:button="@drawable/custom_radio_button"
-                         android:text="@string/less_than_3km"/>
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
             <RadioButton android:layout_width="match_parent"
-                         android:layout_height="wrap_content"
-                         android:text="@string/between_3km_and_10km"
-                         android:button="@drawable/custom_radio_button"
-                         android:id="@+id/radio_btn_between_3km_and_10km"/>
-        </RadioGroup>
+                android:layout_height="wrap_content"
+                android:text="@string/between_3km_and_10km"
+                style="@style/CheckListRightAnswerRB"
+                android:id="@+id/radioBtnBetween3kmAnd10km_FCL2"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

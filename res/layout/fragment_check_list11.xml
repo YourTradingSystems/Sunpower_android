@@ -8,20 +8,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/your_income"
-            android:textColor="@color/checklist_main_text"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/ts_checklist_banner"
             android:id="@+id/tvYourIncome_FCL12"
-            android:layout_above="@+id/tvYourFloorLivingArea"
-            android:layout_marginBottom="20dp" android:gravity="center_horizontal"/>
+       style="@style/CheckListEtapBanner"
+        android:gravity="center"
+            android:layout_above="@+id/tvYourFloorLivingArea"/>
     <TextView
             android:layout_width="match_parent"
             android:id="@+id/tvYourFloorLivingArea"
             android:text="@string/your_floor_living_area"
             android:layout_centerInParent="true"
             android:textColor="@color/checklist_main_text"
-            android:textSize="@dimen/text_size_subtitle"
-            android:layout_height="wrap_content" android:gravity="center_horizontal"/>
+            android:layout_height="wrap_content"
+        style="@style/CheckListQuestion"
+        android:gravity="center_horizontal"/>
 
     <RelativeLayout
             android:layout_width="wrap_content"

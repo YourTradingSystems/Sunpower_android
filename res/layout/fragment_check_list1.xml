@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-        >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
     <TextView
               android:id="@+id/tvBanner_FC1"
               style="@style/CheckListEtapBanner"
               android:text="@string/environment"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:layout_width="match_parent"
-              android:layout_above="@+id/tvSubtitle_FCL1"/>
+        android:gravity="center" />
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:id="@+id/tvSubtitle_FCL1"
+              style="@style/CheckListEtapSubtitle"
               android:text="@string/environment_more"
-              android:textSize="@dimen/text_size_subtitle"
-              android:textColor="@color/bg_screen_home"
               android:gravity="center"
-              android:layout_above="@+id/lLayout_FCL1"/>
+              android:layout_below="@id/tvBanner_FC1"/>
 
     <LinearLayout
             android:id="@+id/lLayout_FCL1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_below="@id/tvSubtitle_FCL1">
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
