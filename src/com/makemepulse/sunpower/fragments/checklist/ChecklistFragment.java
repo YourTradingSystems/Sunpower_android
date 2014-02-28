@@ -46,7 +46,7 @@ public class ChecklistFragment extends Fragment implements ViewPager.OnPageChang
     private final void findViews() {
         vpPager_FC          = (ViewPager) getView().findViewById(R.id.vpPager_FC);
         cpiIndicator_FC     = (CirclePageIndicator) getView().findViewById(R.id.cpiIndicator_FC);
-        nvNavigation_FC     = (NavigationView) getView().findViewById(R.id.nvNavigation_FC);
+        //nvNavigation_FC     = (NavigationView) getView().findViewById(R.id.nvNavigation_FC);
     }
 
     private final void setListeners() {
@@ -54,13 +54,13 @@ public class ChecklistFragment extends Fragment implements ViewPager.OnPageChang
     }
 
     private final void initNavigation(final ViewPager _vpPager_SA) {
-        nvNavigation_FC.setCount(FragmentPool.getFragments().size());
+        //nvNavigation_FC.setCount(FragmentPool.getFragments().size());
     }
 
     //region OnPageChangeListener
     @Override
     public final void onPageScrolled(final int _i, final float _v, final int _i2) {
-        nvNavigation_FC.setPosition(_i);
+        //nvNavigation_FC.setPosition(_i);
     }
 
     @Override

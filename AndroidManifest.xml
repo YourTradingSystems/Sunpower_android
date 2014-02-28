@@ -21,7 +21,7 @@
         <activity android:name=".screens.home.Home"
                   android:screenOrientation="sensorLandscape"
                   android:theme="@style/ThemeDarkActionBar"/>
-        
+
         <activity android:name=".screens.Login"
                   android:screenOrientation="sensorLandscape"
                   android:theme="@style/ThemeNoTitleBar">

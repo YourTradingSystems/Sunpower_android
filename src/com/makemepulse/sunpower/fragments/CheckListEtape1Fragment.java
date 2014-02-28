@@ -20,6 +20,7 @@ import java.util.List;
 public final class CheckListEtape1Fragment extends Fragment implements OnClickListener {
 
     private List<RadioButton> mRadioButtonList;
+    private View returnView;
 
     public final static CheckListEtape1Fragment create() {
         return new CheckListEtape1Fragment();
@@ -32,7 +33,13 @@ public final class CheckListEtape1Fragment extends Fragment implements OnClickLi
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container,
                                    final Bundle _savedInstanceState) {
-        return  _inflater.inflate(R.layout.fragment_check_list1, _container, false);
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list1, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
 

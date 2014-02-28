@@ -23,6 +23,8 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
 
     private int mCheckedRadioButton = -1;
 
+    private View returnView;
+
     public final static CheckListEtape11Fragment create() {
         return new CheckListEtape11Fragment();
     }
@@ -30,7 +32,13 @@ public final class CheckListEtape11Fragment extends Fragment implements OnChecke
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        return _inflater.inflate(R.layout.fragment_check_list11, _container, false);
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list11, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
 

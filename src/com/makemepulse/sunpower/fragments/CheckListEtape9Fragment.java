@@ -20,14 +20,21 @@ public final class CheckListEtape9Fragment extends Fragment {
     private RadioButton rbtnOwner_FCL9;
     private RadioButton rbtnPrimaryResidence_FCL9;
 
+    private View returnView;
+
     public static CheckListEtape9Fragment create() {
         return new CheckListEtape9Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list9, _container, false);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list9, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     private void findViews() {

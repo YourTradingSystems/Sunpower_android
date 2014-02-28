@@ -21,14 +21,21 @@ public final class CheckListEtape3Fragment extends Fragment {
     private RadioButton rbtnQuestion3Var1;
     private TextView tvPopUp;
 
+    private View returnView;
+
     public static final CheckListEtape3Fragment create() {
         return new CheckListEtape3Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list3, _container, false);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list3, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     @Override

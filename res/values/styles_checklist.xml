@@ -88,12 +88,14 @@
 
 
     <style name="CheckListET">
-        <!-- <item name="android:textColorHint">@color/checklist_main_text</item>
+        <item name="android:textColorHint">@color/checklist_main_text</item>
         <item name="android:textColor">@color/checklist_main_text</item>
         <item name="android:padding">@dimen/p_checklist_question</item>
         <item name="android:layout_marginTop">@dimen/mt_checklist_question</item>
-        <item name="android:background">@drawable/custom_checklist_edit_text</item> !-->
-        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/custom_checklist_edit_text</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
     </style>
 
 </resources>

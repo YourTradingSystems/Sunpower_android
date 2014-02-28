@@ -17,6 +17,7 @@ public final class CheckListEtape15Fragment extends Fragment implements OnClickL
     private Button btnBottom;
     private Button btnRefresh;
 
+    private View returnView;
 
     public static final CheckListEtape15Fragment create() {
         return new CheckListEtape15Fragment();
@@ -24,8 +25,13 @@ public final class CheckListEtape15Fragment extends Fragment implements OnClickL
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list15, _container, false);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list15, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     @Override
