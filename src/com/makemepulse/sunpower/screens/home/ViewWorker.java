@@ -19,6 +19,9 @@ abstract class ViewWorker {
      */
     private static int mTopSectorHeight = 0;
 
+    private static int mLeadHeight = 0;
+    private static int mLeadStartPos = 0;
+
     private static int mArgHeight = 0;
     private static int mArgStartPos = 0;
 
@@ -36,15 +39,19 @@ abstract class ViewWorker {
         final int rootHeight = _rlRoot_SH.getHeight();
 
         //Calculate and save top sector height
-        mTopSectorHeight = (int) (rootHeight * TOP_SECTOR_SIZE_PERCENT);
+        mTopSectorHeight    = (int) (rootHeight * TOP_SECTOR_SIZE_PERCENT);
+
+        //Calculate and save lead height and initial position
+        mLeadHeight         = (int) (rootHeight - mTopSectorHeight - (rootHeight * ARGUMENTARIE_START_Y_OFFSET_PERCENT));
+        mLeadStartPos       = rootY + mTopSectorHeight;
 
         //Calculate and save arg height and initial position
-        mArgHeight = (int) (rootHeight - mTopSectorHeight - (rootHeight * CHECKLIST_START_Y_OFFSET_PERCENT));
-        mArgStartPos = (int) (rootY + rootHeight * (1 - ARGUMENTARIE_START_Y_OFFSET_PERCENT));
+        mArgHeight          = (int) (rootHeight - mTopSectorHeight - (rootHeight * CHECKLIST_START_Y_OFFSET_PERCENT));
+        mArgStartPos        = (int) (rootY + rootHeight * (1 - ARGUMENTARIE_START_Y_OFFSET_PERCENT));
 
         //Calculate and save checklist height and initial position
-        mChecklistHeight = rootHeight - mTopSectorHeight;
-        mChecklistStartPos = (int) (rootY + rootHeight * (1 - CHECKLIST_START_Y_OFFSET_PERCENT));
+        mChecklistHeight    = rootHeight - mTopSectorHeight;
+        mChecklistStartPos  = (int) (rootY + rootHeight * (1 - CHECKLIST_START_Y_OFFSET_PERCENT));
     }
 
     /**
@@ -55,6 +62,18 @@ abstract class ViewWorker {
     protected static final void resizeTopSector(final FrameLayout _flTopSector_SH) {
         _flTopSector_SH.getLayoutParams().height = mTopSectorHeight;
         _flTopSector_SH.requestLayout();
+    }
+
+    /**
+     * Resize and set initial position of lead frame.
+     * Should be called after initSizeAndPositionData();
+     * @param _flLead_SH lead frame layout
+     */
+    protected static final void resizeAndMoveLead(final FrameLayout _flLead_SH) {
+        final RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) _flLead_SH.getLayoutParams();
+        params.height = mLeadHeight;
+        params.setMargins(0, mLeadStartPos, 0, -mLeadHeight);
+        _flLead_SH.requestLayout();
     }
 
     /**

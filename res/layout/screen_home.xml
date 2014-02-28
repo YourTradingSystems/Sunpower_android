@@ -6,7 +6,16 @@
 
     <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:background="#f00" android:id="@+id/flTopSector_SH">
+            android:layout_height="wrap_content" android:background="@color/lead_light" android:id="@+id/flTopSector_SH">
+    </FrameLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/flLead_SH" android:background="@color/bg_lead">
+        <fragment android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:name="com.makemepulse.sunpower.fragments.lead.LeadMainFragment"
+                  android:id="@+id/lmfLead_SH"/>
     </FrameLayout>
     <FrameLayout android:layout_width="match_parent"
                  android:layout_height="match_parent"
