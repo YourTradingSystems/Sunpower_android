@@ -22,24 +22,36 @@ public final class CheckListEtape4Fragment extends Fragment {
     private RadioButton rbtnSlope45_FCL4;
     private RadioButton rbtnSlope10_FCL4;
 
+    private View returnView;
+
     public static final CheckListEtape4Fragment create() {
         return new CheckListEtape4Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list4, _container, false);
-        findViews(view);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list4, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
-    private final void findViews(View _view) {
-        rbtnSimpleRoof_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSimpleRoofVar1_FCL4);
-        rbtnAzimuth_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnAzimuthVar1_FCL4);
-        rbtnOriented_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnOrientedVar1_FCL4);
-        rbtnSimpleSlope_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSimpleSlopeVar1_FCL4);
-        rbtnSlope45_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSlope45Var1_FCL4);
-        rbtnSlope10_FCL4 = (RadioButton) _view.findViewById(R.id.rbtnSlope10Var1_FCL4);
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        findViews();
+    }
+
+    private final void findViews() {
+        rbtnSimpleRoof_FCL4 = (RadioButton) getView().findViewById(R.id.rbtnSimpleRoofVar1_FCL4);
+        rbtnAzimuth_FCL4 = (RadioButton) getView().findViewById(R.id.rbtnAzimuthVar1_FCL4);
+        rbtnOriented_FCL4 = (RadioButton) getView().findViewById(R.id.rbtnOrientedVar1_FCL4);
+        rbtnSimpleSlope_FCL4 = (RadioButton) getView().findViewById(R.id.rbtnSimpleSlopeVar1_FCL4);
+        rbtnSlope45_FCL4 = (RadioButton) getView().findViewById(R.id.rbtnSlope45Var1_FCL4);
+        rbtnSlope10_FCL4 = (RadioButton) getView().findViewById(R.id.rbtnSlope10Var1_FCL4);
     }
 
     private void saveAllFragment4Data() {

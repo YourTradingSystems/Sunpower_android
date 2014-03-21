@@ -22,15 +22,21 @@ public final class CheckListEtape6Fragment extends Fragment {
     private RadioButton rbtnStructuralConcrete_FCL6;
     private Spinner sYear_FCL6;
 
+    private View returnView;
+
     public static final CheckListEtape6Fragment create() {
         return new CheckListEtape6Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list6, _container, false);
-        findViews(view);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list6, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     private final void findViews(View _view) {

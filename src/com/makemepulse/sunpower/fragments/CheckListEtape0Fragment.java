@@ -18,6 +18,7 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
     private TextView tvParentProfile_FCL0;
     private Button btnLead_CL0;
     private Button btnNewLead_FCL0;
+    private View returnView;
 
     private CheckListEtape0Fragment(){}
 
@@ -27,7 +28,13 @@ public final class CheckListEtape0Fragment extends Fragment implements View.OnCl
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        return  _inflater.inflate(R.layout.fragment_check_list0, _container, false);
+        if(returnView == null)
+            returnView = _inflater.inflate(R.layout.fragment_check_list0, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     private final void findViews(){

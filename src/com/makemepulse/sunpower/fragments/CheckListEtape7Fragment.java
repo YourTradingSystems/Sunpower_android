@@ -22,15 +22,21 @@ public final class CheckListEtape7Fragment extends Fragment {
     private EditText etSuchFixed_FCL7, etMobilePhone_FCL7, etSuchOffice_FCL7, etEmail_FCL7;
     private RadioButton rbtnPrimaryResidence_FCL7;
 
+    private View returnView;
+
     public static final CheckListEtape7Fragment create() {
         return new CheckListEtape7Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list7, _container, false);
-        //findViews(view);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list7, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     private final void findViews(View _view) {

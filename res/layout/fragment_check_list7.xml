@@ -11,13 +11,12 @@
         android:layout_height="wrap_content"
         style="@style/CheckListEtapBanner"
         android:text="@string/fragment_check_list_etap7_banner_text"
-        android:layout_alignParentTop="true"
         android:gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation  ="horizontal"
         android:gravity="center"
         android:layout_below="@id/tvBanner_FCL7">
 
@@ -32,7 +31,9 @@
                 android:layout_height="wrap_content"
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question1_text"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true" />
 
             <EditText
                 android:id="@+id/etForename_FCL7"
@@ -41,7 +42,9 @@
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question2_text"
                 android:layout_below="@id/etName_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true" />
 
             <EditText
                 android:id="@+id/etAddress_FCL7"
@@ -50,7 +53,9 @@
                 android:layout_width="@dimen/w_checklist_question"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/etForename_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true" />
 
             <EditText
                 android:id="@+id/etPostalCode_FCL7"
@@ -59,7 +64,9 @@
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question4_text"
                 android:layout_below="@id/etAddress_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true" />
 
             <EditText
                 android:id="@+id/etCity_FCL7"
@@ -68,7 +75,9 @@
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question5_text"
                 android:layout_below="@id/etPostalCode_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true" />
 
             <TextView
                 android:id="@+id/tvOwner_FCL7"
@@ -117,7 +126,9 @@
                 android:layout_height="wrap_content"
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question7_text"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:gravity="center" />
 
             <EditText
                 android:id="@+id/etMobilePhone_FCL7"
@@ -126,7 +137,9 @@
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question8_text"
                 android:layout_below="@id/etSuchFixed_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:gravity="center" />
 
             <EditText
                 android:id="@+id/etSuchOffice_FCL7"
@@ -135,7 +148,9 @@
                 style="@style/CheckListET"
                 android:hint="@string/fragment_check_list_etap7_question9_text"
                 android:layout_below="@id/etMobilePhone_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:gravity="center" />
 
             <EditText
                 android:id="@+id/etEmail_FCL7"
@@ -144,7 +159,9 @@
                 android:hint="@string/fragment_check_list_etap7_question10_text"
                 style="@style/CheckListET"
                 android:layout_below="@id/etSuchOffice_FCL7"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tvPrimaryResidence_FCL7"

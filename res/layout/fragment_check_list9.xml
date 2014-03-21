@@ -20,7 +20,9 @@
         android:hint="@string/fragment_check_list_etap9_question1_text"
         style="@style/CheckListET"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvBanner_FCL9"/>
+        android:layout_below="@+id/tvBanner_FCL9"
+        android:singleLine="true"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/tvOwner_FCL9"

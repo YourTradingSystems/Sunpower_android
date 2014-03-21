@@ -33,6 +33,8 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
     private Button btnQuestion4;
     private Button btnQuestion5;
 
+    private View returnView;
+
     public CheckListEtape13Fragment() {
     }
 
@@ -42,8 +44,13 @@ public final class CheckListEtape13Fragment extends Fragment implements OnClickL
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list13, _container, false);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list13, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     @Override

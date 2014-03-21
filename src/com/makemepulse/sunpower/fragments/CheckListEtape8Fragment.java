@@ -17,14 +17,21 @@ public final class CheckListEtape8Fragment extends Fragment {
 
     private RadioButton rbtnTypeConsumption;
 
+    private View returnView;
+
     public static CheckListEtape8Fragment create() {
         return new CheckListEtape8Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list8, _container, false);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list8, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     private void findViews() {

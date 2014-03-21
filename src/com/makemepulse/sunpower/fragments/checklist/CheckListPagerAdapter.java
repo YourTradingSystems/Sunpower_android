@@ -3,6 +3,9 @@ package com.makemepulse.sunpower.fragments.checklist;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.makemepulse.sunpower.fragments.CheckListEtape7Fragment;
 
 import java.util.ArrayList;
 
@@ -15,13 +18,13 @@ final class CheckListPagerAdapter extends FragmentPagerAdapter {
 
     private ArrayList<Fragment> mFragments;
 
-    private CheckListPagerAdapter(final FragmentManager _fm) {
+    private CheckListPagerAdapter(FragmentManager _fm) {
         super(_fm);
     }
 
     /**
      * factory method
-     * @param _fm FragmentManager for default constructor
+     * //@param _fm FragmentManager for default constructor
      * @return new instance
      */
     public static final CheckListPagerAdapter create(final FragmentManager _fm) {

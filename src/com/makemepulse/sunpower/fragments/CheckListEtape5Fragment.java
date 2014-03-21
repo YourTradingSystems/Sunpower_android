@@ -17,14 +17,21 @@ public final class CheckListEtape5Fragment extends Fragment {
     private RadioButton rbtnQuestion1Var1;
     private RadioButton rbtnQuestion2Var1;
 
+    private View returnView;
+
     public static final CheckListEtape5Fragment create() {
         return new CheckListEtape5Fragment();
     }
 
     @Override
     public final View onCreateView(final LayoutInflater _inflater, final ViewGroup _container, final Bundle _savedInstanceState) {
-        View view = _inflater.inflate(R.layout.fragment_check_list5, _container, false);
-        return view;
+        if(returnView == null)
+            returnView =  _inflater.inflate(R.layout.fragment_check_list5, _container, false);
+        else {
+            final ViewGroup vg = (ViewGroup)returnView.getParent();
+            vg.removeView(returnView);
+        }
+        return returnView;
     }
 
     @Override
