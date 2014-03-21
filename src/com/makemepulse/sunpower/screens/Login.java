@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.makemepulse.sunpower.R;
 import com.makemepulse.sunpower.screens.home.Home;
+import com.sforce.soap.enterprise.EnterpriseConnection;
+import com.sforce.ws.ConnectionException;
+import com.sforce.ws.ConnectorConfig;
 
 /**
  * Created by Denis on 19.02.14.
@@ -60,10 +63,12 @@ public final class Login extends Activity implements View.OnClickListener {
         final String login = etLogin_SL.getText().toString();
         final String pass = etPass_SL.getText().toString();
 
+        doLogin();
+
 //        if (login.isEmpty() || pass.isEmpty()) setErrorHintVisibility(true);
 
-        startActivity(new Intent(getBaseContext(), Home.class));
-        finish();
+//        startActivity(new Intent(getBaseContext(), Home.class));
+//        finish();
     }
 
     /**
@@ -73,5 +78,35 @@ public final class Login extends Activity implements View.OnClickListener {
     private final void setErrorHintVisibility(final boolean _visible) {
         tvError_SL.setVisibility(_visible ? View.VISIBLE : View.GONE);
         ivError_SL.setVisibility(_visible ? View.VISIBLE : View.GONE);
+    }
+
+    boolean success = false;
+
+    private boolean doLogin() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                final String authEndPoint = "https://login.salesforce.com/services/Soap/c/29.0";
+
+                String username = "vasiliy.barchiy@mobilesoft36.com";
+                String password = "123qwe456" + "yjPcLXgobHmdAisevyw11AS50";
+
+                try {
+                    ConnectorConfig config = new ConnectorConfig();
+                    config.setUsername(username);
+                    config.setPassword(password);
+
+                    config.setAuthEndpoint(authEndPoint);
+
+                    EnterpriseConnection  connection = new EnterpriseConnection(config);
+
+                    success = true;
+                } catch (ConnectionException ce) {
+                    ce.printStackTrace();
+                }
+             }
+        }).start();
+
+        return success;
     }
 }
